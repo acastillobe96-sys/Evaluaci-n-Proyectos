@@ -1,0 +1,6 @@
+# Planillas y datos (no versionar: plantilla, base de mercado y evaluaciones generadas)
+*.xlsm
+*.xlsx
+*.pdf
+*.png
+__pycache__/
