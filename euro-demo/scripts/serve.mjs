@@ -3,7 +3,7 @@ import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 
-const ROOT = new URL('../dist/', import.meta.url).pathname;
+const ROOT = new URL(`../${process.env.DIR ?? 'dist'}/`, import.meta.url).pathname;
 const PORT = Number(process.env.PORT ?? 4173);
 const TIPOS = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.avif': 'image/avif', '.png': 'image/png', '.woff2': 'font/woff2', '.xml': 'application/xml', '.txt': 'text/plain' };
 

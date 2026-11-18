@@ -34,7 +34,7 @@ function abrir(items: Item[], inicio: number, volver: HTMLElement | null, titulo
   const stage = $<HTMLElement>('[data-lb-stage]', el)!;
   const pintar = () => {
     const it = items[i]!;
-    stage.innerHTML = `<img src="${escapeHtml(it.src)}" srcset="${escapeHtml(it.srcset)}" sizes="100vw" width="${it.w}" height="${it.h}" alt="${escapeHtml(it.alt)}" class="max-h-full max-w-full rounded-xl object-contain${titulo.startsWith('Plantas') ? ' bg-white' : ''}">`;
+    stage.innerHTML = `<img src="${escapeHtml(it.src)}"${it.srcset ? ` srcset="${escapeHtml(it.srcset)}" sizes="100vw"` : ''}width="${it.w}" height="${it.h}" alt="${escapeHtml(it.alt)}" class="max-h-full max-w-full rounded-xl object-contain${titulo.startsWith('Plantas') ? ' bg-white' : ''}">`;
     $('[data-lb-count]', el)!.textContent = `${i + 1} de ${items.length}`;
     $('[data-lb-alt]', el)!.textContent = it.alt;
   };

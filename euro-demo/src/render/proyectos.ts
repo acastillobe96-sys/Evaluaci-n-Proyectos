@@ -11,7 +11,8 @@ export function ligero(p: Proyecto): ProyectoLigero {
     desdeUF: p.desdeUF, dormitorios: p.dormitorios, entregaTipo: p.entrega.tipo, entregaAnio: p.entrega.anio,
     entregaOrden: p.entrega.orden, entregaCorto: p.entrega.corto, subsidio: p.subsidio,
     lat: p.coords.lat, lng: p.coords.lng, precision: p.coords.precision,
-    img: p.imagenes.card ? `${p.imagenes.card.src.replace(/^\//, '')}-480.webp` : null,
+    // En la demo la ilustración ya está en la card; el popup del mapa va sin imagen para no duplicarla
+    img: p.imagenes.card ? (p.imagenes.card.svg ? null : `${p.imagenes.card.src.replace(/^\//, '')}-480.webp`) : null,
   };
 }
 
@@ -26,7 +27,7 @@ function hero(ctx: Ctx, ps: Proyecto[], comunas: Comuna[], fondo: Proyecto): Raw
   </div>
   <div class="wrap grid gap-8 pb-8 pt-[calc(var(--header-h)+2rem)] md:pb-14 md:pt-[calc(var(--header-h)+3rem)] lg:grid-cols-[1fr_380px] lg:items-end">
     <div>
-      <p class="eyebrow enter text-accent">Proyectos · Santiago y Coquimbo</p>
+      <p class="eyebrow enter text-accent">${ctx.demo ? 'Demo · Datos ficticios' : 'Proyectos · Santiago y Coquimbo'}</p>
       <h1 class="enter-lcp mt-4 font-display font-extrabold uppercase leading-[.9] [animation-delay:60ms]" style="font-size: clamp(2.6rem, 6vw, 5rem);">Encuentra tu próximo departamento<span class="dot">.</span></h1>
       <p class="enter mt-4 max-w-xl text-white/85 md:mt-5 md:text-lg [animation-delay:120ms]">Entrega inmediata o en verde, desde ${formatUF(desde)}. Compara precio, entrega y beneficios en un solo lugar.</p>
       <dl class="enter mt-6 grid max-w-xl grid-cols-3 gap-4 border-t border-white/20 pt-5 [animation-delay:180ms]">
@@ -144,13 +145,40 @@ function vacio(ctx: Ctx, cfg: SiteConfig): Raw {
   <p class="mt-3 text-muted">Prueba quitando un filtro o ampliando el precio. Si buscas algo puntual, un ejecutivo te puede orientar.</p>
   <div class="mt-6 flex flex-wrap justify-center gap-2">
     <button type="button" class="btn btn-dark" data-limpiar>Limpiar filtros</button>
-    <a class="btn btn-outline" href="${whatsappUrl(cfg.whatsapp)}" target="_blank" rel="noopener">${icon('whatsapp', 'size-4')} Hablar con un ejecutivo</a>
+    ${cfg.whatsapp ? html`<a class="btn btn-outline" href="${whatsappUrl(cfg.whatsapp)}" target="_blank" rel="noopener">${icon('whatsapp', 'size-4')} Hablar con un ejecutivo</a>` : ''}
   </div>
   <a href="${url(ctx, 'proyectos/')}" class="sr-only">Ver todos los proyectos</a>
 </div>`;
 }
 
+function procesoDemo(): Raw {
+  const pasos = [
+    ['Cotiza', 'Elige comuna, entrega y tipología, y pide tu cotización.'],
+    ['Reserva', 'Reserva el departamento con la preaprobación de tu crédito.'],
+    ['Promesa', 'Firmas la promesa de compraventa con precio y plazos.'],
+    ['Escritura', 'Gestionas el crédito y firmas la escritura.'],
+    ['Entrega', 'Recibes tu departamento y comienza la post venta.'],
+  ];
+  return html`<section id="confianza" class="bg-deep-2 py-[clamp(4rem,9vw,8rem)] text-white" aria-labelledby="confianza-t">
+  <div class="wrap">
+    <div class="reveal max-w-2xl">
+      <p class="eyebrow text-accent">Cómo se compra</p>
+      <h2 id="confianza-t" class="h-section mt-3 !text-white">Cinco pasos<span class="dot">.</span></h2>
+      <p class="mt-5 text-lg text-white/85">El camino habitual para comprar un departamento nuevo en Chile, desde la cotización hasta la entrega.</p>
+    </div>
+    <ol class="mt-12 grid gap-px overflow-hidden rounded-[22px] bg-white/15 sm:grid-cols-2 lg:grid-cols-5">
+      ${pasos.map(([t, d], i) => html`<li class="reveal flex flex-col gap-3 bg-deep-2 p-6" style="transition-delay:${i * 70}ms">
+        <span class="font-display text-5xl font-extrabold leading-none text-accent">${i + 1}</span>
+        <span class="text-lg font-bold">${t}</span>
+        <span class="text-sm text-white/80">${d}</span>
+      </li>`)}
+    </ol>
+  </div>
+</section>`;
+}
+
 function confianza(cfg: SiteConfig): Raw {
+  if (cfg.demo) return procesoDemo();
   const datos = [
     { n: '+35', t: 'años desarrollando vivienda', s: 'Para vivir o invertir' },
     { n: '+20.000', t: 'departamentos vendidos', s: 'En los últimos 15 años' },
@@ -216,6 +244,6 @@ export function paginaProyectos(ctx: Ctx, cfg: SiteConfig, ps: Proyecto[], comun
   ${confianza(cfg)}
 </main>
 ${footer(ctx, cfg)}
-<script type="application/json" id="datos-proyectos">${raw(JSON.stringify({ proyectos: lig, comunas: comunas.map((c) => ({ slug: c.slug, nombre: c.nombre })), ufCLP: cfg.ufCLP, whatsapp: cfg.whatsapp, root: ctx.root, explicitIndex: ctx.explicitIndex }).replace(/</g, '\\u003c'))}</script>`;
+<script type="application/json" id="datos-proyectos">${raw(JSON.stringify({ proyectos: lig, comunas: comunas.map((c) => ({ slug: c.slug, nombre: c.nombre })), ufCLP: cfg.ufCLP, whatsapp: cfg.whatsapp, root: ctx.root, explicitIndex: ctx.explicitIndex, demo: ctx.demo }).replace(/</g, '\\u003c'))}</script>`;
 }
 

@@ -41,7 +41,7 @@ function write(rel: string, contenido: string) {
   writeFileSync(f, contenido);
 }
 
-const ctxPara = (depth: number): Ctx => ({ root: '../'.repeat(depth), explicitIndex, v });
+const ctxPara = (depth: number): Ctx => ({ root: '../'.repeat(depth), explicitIndex, v, demo: false });
 const abs = (p: string) => cfg.baseUrlDemo + p;
 const ogImg = (p: Proyecto) => (p.imagenes.card ? `${p.imagenes.card.src}-1200.webp` : null);
 

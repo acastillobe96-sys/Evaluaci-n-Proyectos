@@ -55,14 +55,14 @@ function resumen(cfg: SiteConfig, p: Proyecto): Raw {
       </dl>
       <div class="flex flex-col justify-center gap-2 border-t border-line p-5 lg:border-l lg:border-t-0">
         <a class="btn btn-primary" href="#cotizar">Cotizar</a>
-        <a class="btn btn-outline" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener">${icon('whatsapp', 'size-4')} WhatsApp</a>
+        ${cfg.whatsapp ? html`<a class="btn btn-outline" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener">${icon('whatsapp', 'size-4')} WhatsApp</a>` : html`<a class="btn btn-outline" href="#tipologias">Ver tipologías</a>`}
       </div>
     </div>
   </div>
 </section>`;
 }
 
-function descripcion(p: Proyecto): Raw {
+function descripcion(cfg: SiteConfig, p: Proyecto): Raw {
   const [primero, ...resto] = p.descripcion.parrafos;
   return html`<section id="descripcion" class="wrap grid gap-12 py-[clamp(4rem,8vw,7rem)] lg:grid-cols-[1fr_380px]" aria-labelledby="desc-t">
   <div class="reveal">
@@ -79,7 +79,7 @@ function descripcion(p: Proyecto): Raw {
     <ul class="mt-4 space-y-3">
       ${p.beneficios.map((b) => html`<li class="flex gap-3">${icon('check-circle', 'size-5 shrink-0 mt-0.5 text-accent-ink')}<span>${b}</span></li>`)}
     </ul>
-    <p class="mt-5 text-xs text-muted">Según la ficha del proyecto en euroinmobiliaria.cl. Sujetos a <a class="underline" href="https://euroinmobiliaria.cl/bases-notariales">bases notariales</a>.</p>
+    ${cfg.demo ? html`<p class="mt-5 text-xs text-muted">Beneficios de ejemplo.</p>` : html`<p class="mt-5 text-xs text-muted">Según la ficha del proyecto en euroinmobiliaria.cl. Sujetos a <a class="underline" href="https://euroinmobiliaria.cl/bases-notariales">bases notariales</a>.</p>`}
   </aside>` : ''}
 </section>`;
 }
@@ -102,8 +102,8 @@ function galeria(ctx: Ctx, p: Proyecto): Raw {
     </li>`)}
   </ul>
   <script type="application/json" data-lb-data="galeria">${raw(JSON.stringify(g.map((img) => ({
-    src: `${ctx.root}${img.src.replace(/^\//, '')}-${img.anchos[img.anchos.length - 1]}.webp`,
-    srcset: img.anchos.map((a) => `${ctx.root}${img.src.replace(/^\//, '')}-${a}.webp ${a}w`).join(', '),
+    src: img.svg ?? `${ctx.root}${img.src.replace(/^\//, '')}-${img.anchos[img.anchos.length - 1]}.webp`,
+    srcset: img.svg ? '' : img.anchos.map((a) => `${ctx.root}${img.src.replace(/^\//, '')}-${a}.webp ${a}w`).join(', '),
     alt: img.alt, w: img.w, h: img.h,
   }))).replace(/</g, '\\u003c'))}</script>
 </section>`;
@@ -111,8 +111,8 @@ function galeria(ctx: Ctx, p: Proyecto): Raw {
 
 function tipologias(ctx: Ctx, cfg: SiteConfig, p: Proyecto): Raw {
   const plantas = p.tipologias.map((t) => t.planta ? {
-    src: `${ctx.root}${t.planta.src.replace(/^\//, '')}-${t.planta.anchos[t.planta.anchos.length - 1]}.webp`,
-    srcset: t.planta.anchos.map((a) => `${ctx.root}${t.planta!.src.replace(/^\//, '')}-${a}.webp ${a}w`).join(', '),
+    src: t.planta.svg ?? `${ctx.root}${t.planta.src.replace(/^\//, '')}-${t.planta.anchos[t.planta.anchos.length - 1]}.webp`,
+    srcset: t.planta.svg ? '' : t.planta.anchos.map((a) => `${ctx.root}${t.planta!.src.replace(/^\//, '')}-${a}.webp ${a}w`).join(', '),
     alt: `Planta tipología ${t.nombre}, ${p.nombre}`, w: t.planta.w, h: t.planta.h,
   } : null);
   let idx = -1;
@@ -165,7 +165,7 @@ function tipologias(ctx: Ctx, cfg: SiteConfig, p: Proyecto): Raw {
 </section>`;
 }
 
-function ubicacion(p: Proyecto): Raw {
+function ubicacion(cfg: SiteConfig, p: Proyecto): Raw {
   return html`<section id="ubicacion" class="wrap py-[clamp(4rem,8vw,7rem)]" aria-labelledby="ubi-t">
   <div class="grid gap-10 lg:grid-cols-[1.25fr_1fr]">
     <div class="reveal">
@@ -173,14 +173,14 @@ function ubicacion(p: Proyecto): Raw {
       <h2 id="ubi-t" class="h-section mt-3">${p.comuna}<span class="dot">.</span></h2>
       <p class="mt-4 flex items-center gap-2 text-lg">${icon('pin', 'size-5 shrink-0 text-accent-ink')} ${p.direccion}, ${p.comuna}</p>
       <div id="mapa-ficha" class="mt-6 aspect-[4/3] w-full overflow-hidden rounded-[22px] bg-surface-2 md:aspect-[16/10]" role="region" aria-label="Mapa de ubicación de ${p.nombre}"
-        data-lat="${p.coords.lat}" data-lng="${p.coords.lng}" data-nombre="${p.nombre}" data-precision="${p.coords.precision}">
+        data-lat="${p.coords.lat}" data-lng="${p.coords.lng}" data-nombre="${p.nombre}" data-precision="${p.coords.precision}" data-tiles="${cfg.demo ? 'no' : 'si'}">
         <noscript><p class="p-6">Dirección: ${p.direccion}, ${p.comuna}.</p></noscript>
       </div>
-      <p class="mt-3 text-xs text-muted">${p.coords.precision === 'aproximada' ? 'Ubicación aproximada (pendiente de validar). ' : ''}Mapa © OpenStreetMap. <a class="underline" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(`${p.direccion}, ${p.comuna}, Chile`)}" target="_blank" rel="noopener">Abrir en Google Maps</a></p>
+      ${cfg.demo ? html`<p class="mt-3 text-xs text-muted">Mapa esquemático con una ubicación ficticia.</p>` : html`<p class="mt-3 text-xs text-muted">${p.coords.precision === 'aproximada' ? 'Ubicación aproximada (pendiente de validar). ' : ''}Mapa © OpenStreetMap. <a class="underline" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(`${p.direccion}, ${p.comuna}, Chile`)}" target="_blank" rel="noopener">Abrir en Google Maps</a></p>`}
     </div>
     <div class="reveal">
       <h3 class="text-xl font-bold">Qué hay cerca</h3>
-      <p class="mt-1 text-sm text-muted">Puntos de interés a menos de 2 km, informados por Euro en la ficha del proyecto. Tiempos referenciales.</p>
+      <p class="mt-1 text-sm text-muted">${cfg.demo ? 'Puntos de interés de ejemplo.' : 'Puntos de interés a menos de 2 km, informados por Euro en la ficha del proyecto. Tiempos referenciales.'}</p>
       <div class="mt-5 divide-y divide-line border-y border-line">
         ${p.entorno.map((c, i) => html`<details class="group py-1" ${raw(i === 0 ? 'open' : '')}>
           <summary class="flex min-h-[56px] cursor-pointer list-none items-center gap-3 font-bold">
@@ -211,7 +211,7 @@ function formulario(cfg: SiteConfig, p: Proyecto): Raw {
         <li class="flex gap-3">${icon('check-circle', 'size-6 shrink-0 text-accent')} Respuesta en horario hábil.</li>
         <li class="flex gap-3">${icon('check-circle', 'size-6 shrink-0 text-accent')} Sin compromiso de compra.</li>
       </ul>
-      <a class="btn btn-glass mt-8" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener">${icon('whatsapp', 'size-5')} Prefiero WhatsApp</a>
+      ${cfg.whatsapp ? html`<a class="btn btn-glass mt-8" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener">${icon('whatsapp', 'size-5')} Prefiero WhatsApp</a>` : ''}
     </div>
     <div class="reveal rounded-[24px] bg-surface p-6 text-ink md:p-8" style="box-shadow: var(--shadow-2)">
       <form id="form-cotizar" novalidate data-proyecto="${p.nombre}">
@@ -251,7 +251,7 @@ function formulario(cfg: SiteConfig, p: Proyecto): Raw {
           <div class="sm:col-span-2">
             <label class="flex items-start gap-3 text-sm">
               <input type="checkbox" name="acepta" id="f-acepta" class="mt-0.5 size-5 shrink-0 accent-[rgb(var(--accent))]" required aria-describedby="e-acepta">
-              <span>Acepto que Euro Inmobiliaria me contacte por esta cotización, según su <a class="underline" href="https://euroinmobiliaria.cl/politicas-de-privacidad">política de privacidad</a>.</span>
+              <span>${cfg.demo ? 'Acepto que me contacten por esta cotización.' : html`Acepto que Euro Inmobiliaria me contacte por esta cotización, según su <a class="underline" href="https://euroinmobiliaria.cl/politicas-de-privacidad">política de privacidad</a>.`}</span>
             </label>
             <p class="error" id="e-acepta" hidden></p>
           </div>
@@ -287,13 +287,15 @@ export function paginaFicha(ctx: Ctx, cfg: SiteConfig, p: Proyecto, todos: Proye
 <main id="contenido">
   ${heroFicha(ctx, p)}
   ${resumen(cfg, p)}
-  ${descripcion(p)}
+  ${descripcion(cfg, p)}
   ${galeria(ctx, p)}
   ${tipologias(ctx, cfg, p)}
-  ${ubicacion(p)}
+  ${ubicacion(cfg, p)}
   ${formulario(cfg, p)}
   ${otros(ctx, cfg, p, todos)}
 </main>
 ${footer(ctx, cfg)}
-<a id="wa-float" data-visible="false" class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg max-sm:btn-icon max-sm:!w-14" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-6')}<span class="max-sm:hidden">Cotizar por WhatsApp</span></a>`;
+${cfg.whatsapp
+  ? html`<a id="wa-float" data-visible="false" class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg max-sm:btn-icon max-sm:!w-14" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-6')}<span class="max-sm:hidden">Cotizar por WhatsApp</span></a>`
+  : html`<a id="wa-float" data-visible="false" class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg" href="#cotizar">${icon('calendar', 'size-5')} Cotizar</a>`}`;
 }

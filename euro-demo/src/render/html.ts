@@ -34,12 +34,17 @@ export interface Ctx {
   explicitIndex: boolean;
   /** Hash de assets para romper caché */
   v: string;
+  /** Versión de demostración (marca ficticia, todo en línea, estado en el #) */
+  demo: boolean;
 }
 
 /** Ruta interna relativa: url(ctx, 'proyectos/vitro/') */
 export function url(ctx: Ctx, path: string): string {
-  let p = ctx.root + path.replace(/^\//, '');
-  if (ctx.explicitIndex && (p.endsWith('/') || p === '')) p += 'index.html';
+  const [ruta = '', query] = path.replace(/^\//, '').split('?');
+  // En la demo el listado vive en la raíz y los filtros van en el # (el visor no pasa query strings)
+  let p = ctx.root + (ctx.demo && ruta === 'proyectos/' ? '' : ruta);
+  if (ctx.explicitIndex && (p.endsWith('/') || p === ctx.root)) p += 'index.html';
+  if (query) p += (ctx.demo ? '#' : '?') + query;
   return p || './';
 }
 
@@ -51,6 +56,9 @@ export function asset(ctx: Ctx, path: string): string {
 export function picture(ctx: Ctx, img: Omit<Imagen, 'alt'> & { alt?: string }, o: {
   sizes: string; cls?: string; eager?: boolean; alt?: string; priority?: boolean;
 }): Raw {
+  if (img.svg) {
+    return html`<img src="${img.svg}" width="${img.w}" height="${img.h}" alt="${o.alt ?? img.alt ?? ''}" class="${o.cls ?? ''}" decoding="async">`;
+  }
   const set = (f: string) => img.anchos.map((a) => `${ctx.root}${img.src.replace(/^\//, '')}-${a}.${f} ${a}w`).join(', ');
   const fallbackW = img.anchos.find((a) => a >= 800) ?? img.anchos[img.anchos.length - 1] ?? img.w;
   const h = Math.round((img.h / img.w) * fallbackW);

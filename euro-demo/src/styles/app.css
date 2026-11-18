@@ -403,3 +403,14 @@
   .gal-btn img { transition: transform 600ms var(--ease-out); }
   @media (hover: hover) and (pointer: fine) { .gal-btn:hover img { transform: scale(1.03); } }
 }
+
+/* Demo: mapa esquemático sin mosaicos (el visor bloquea imágenes externas) */
+@layer components {
+  .map-esquema {
+    background-color: rgb(var(--surface-2)) !important;
+    background-image: linear-gradient(rgb(var(--line)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--line)) 1px, transparent 1px) !important;
+    background-size: 48px 48px !important;
+  }
+  .map-comuna { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; font-family: theme('fontFamily.display'); font-weight: 800; text-transform: uppercase; letter-spacing: .04em; font-size: 1.05rem; color: rgb(var(--muted)); opacity: .75; pointer-events: none; }
+  [data-demo-link] { cursor: default; }
+}

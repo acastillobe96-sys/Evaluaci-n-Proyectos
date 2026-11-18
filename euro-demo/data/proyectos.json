@@ -3934,9 +3934,9 @@
    "plusvalia": 0,
    "metro": null,
    "coords": {
-    "lat": -33.46987,
-    "lng": -70.624756,
-    "fuente": "OpenStreetMap (Nominatim)",
+    "lat": -33.485785,
+    "lng": -70.61902,
+    "fuente": "interpolación por numeración de Av. Vicuña Mackenna",
     "precision": "aproximada"
    },
    "beneficios": [

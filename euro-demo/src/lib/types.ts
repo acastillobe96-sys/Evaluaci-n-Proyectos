@@ -25,6 +25,8 @@ export interface Imagen {
   anchos: number[];
   formatos: Array<'avif' | 'webp'>;
   alt: string;
+  /** Solo en la demo: ilustración SVG como data URI (reemplaza a src/anchos) */
+  svg?: string;
 }
 
 export interface Tipologia {
@@ -69,6 +71,9 @@ export interface Proyecto {
 }
 
 export interface SiteConfig {
+  /** Demo: marca ficticia, sin canales reales de contacto */
+  demo?: boolean;
+  marca?: string;
   ufCLP: number;
   ufFecha: string;
   sitio: string;

@@ -86,3 +86,9 @@ if ('IntersectionObserver' in window) {
 } else {
   reveals.forEach((el) => el.classList.add('is-in'));
 }
+
+// Demo: secciones que solo existen en el sitio real
+document.addEventListener('click', (e) => {
+  const a = (e.target as Element).closest<HTMLAnchorElement>('[data-demo-link]');
+  if (a) e.preventDefault();
+});

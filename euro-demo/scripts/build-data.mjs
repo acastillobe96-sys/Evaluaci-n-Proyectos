@@ -66,7 +66,14 @@ const proyectos = tabla.map(([nombre, comuna, direccion, ent, desde, dorm, ban, 
   if (l.min_price !== desde) avisos.push(`${nombre}: "desde" del brief (${desde}) ≠ sitio (${l.min_price})`);
 
   let coords;
-  if (l.lat != null && l.lng != null) coords = { lat: +l.lat.toFixed(6), lng: +l.lng.toFixed(6), fuente: 'euroinmobiliaria.cl', precision: 'exacta' };
+  if (slug === 'nova-parque') {
+    // Euro no publica coordenadas y OSM solo devuelve el centroide del tramo (en el límite con Ñuñoa).
+    // Interpolación por numeración de Av. Vicuña Mackenna entre dos proyectos con coordenadas publicadas por Euro:
+    // N° 1432 (Vicuña Mackenna 1432) y N° 5970 (Entre Vicuñas). Calza con "Metro San Joaquín a 14 min a pie".
+    const a = listado.find((x) => x.slug === 'vicuna-mackenna-1432'), b = listado.find((x) => x.slug === 'entre-vicunas');
+    const t = (3747 - 1432) / (5970 - 1432);
+    coords = { lat: +(a.lat + (b.lat - a.lat) * t).toFixed(6), lng: +(a.lng + (b.lng - a.lng) * t).toFixed(6), fuente: 'interpolación por numeración de Av. Vicuña Mackenna', precision: 'aproximada' };
+  } else if (l.lat != null && l.lng != null) coords = { lat: +l.lat.toFixed(6), lng: +l.lng.toFixed(6), fuente: 'euroinmobiliaria.cl', precision: 'exacta' };
   else {
     const g = osm[slug];
     const exacta = g && /^\d+,/.test(g.match);

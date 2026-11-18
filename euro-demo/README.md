@@ -100,7 +100,7 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 
 | Tema | Detalle |
 |---|---|
-| **Coordenadas de Nova Parque** | El sitio no publica coordenadas. La de OpenStreetMap es **aproximada** (eje Vicuña Mackenna, sin número), y la ficha lo indica con un círculo. |
+| **Coordenadas de Nova Parque** | El sitio no publica coordenadas y OpenStreetMap solo da el centroide del tramo (en el límite con Ñuñoa). Se **interpoló** por numeración de Av. Vicuña Mackenna entre dos proyectos con coordenadas publicadas por Euro (N° 1432 y N° 5970). Es aproximada y la ficha lo indica con un círculo. |
 | **Coordenadas de Vista Portugal** | El sitio no las publica. Se tomaron de OpenStreetMap (calza con el número 755). |
 | **Rosas 1444** | El nombre dice 1444 pero la dirección publicada es **Rosas 1438**. |
 | **Guillermo Mann 1401** | La tabla y el listado dicen "2 dorm", pero la ficha tiene un modelo "1 dorm 1 baño" (el "desde" de UF 3.461) cargado con `dormitorios: 2`. Hoy el filtro "1 dorm" no lo muestra. |

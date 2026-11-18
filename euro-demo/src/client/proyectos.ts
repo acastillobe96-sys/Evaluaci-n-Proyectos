@@ -11,6 +11,8 @@ interface Datos {
   whatsapp: string;
   root: string;
   explicitIndex: boolean;
+  /** Demo en el visor de artefactos: el estado va en el # porque el visor no conserva query strings */
+  demo: boolean;
 }
 
 const datos = JSON.parse($('#datos-proyectos')?.textContent ?? '{}') as Datos;
@@ -33,7 +35,8 @@ const subsidioBtn = $<HTMLButtonElement>('#subsidio')!;
 const ordenSel = $<HTMLSelectElement>('#orden')!;
 const barra = $<HTMLElement>('#barra')!;
 
-let f: Filtros = leerFiltros(new URLSearchParams(location.search), comunasValidas);
+const estadoUrl = (): URLSearchParams => new URLSearchParams(datos.demo ? location.hash.slice(1) : location.search);
+let f: Filtros = leerFiltros(estadoUrl(), comunasValidas);
 let resultado: ProyectoLigero[] = [];
 
 // ── Render ──────────────────────────────────────────────
@@ -128,7 +131,12 @@ async function pintarMapa(): Promise<void> {
 
 function actualizar(opts: { historial?: boolean } = {}): void {
   const qs = escribirFiltros(f);
-  if (qs !== location.search) history[opts.historial ? 'pushState' : 'replaceState'](null, '', location.pathname + qs + location.hash);
+  if (datos.demo) {
+    const h = qs ? `#${qs.slice(1)}` : '';
+    if (h !== location.hash) history[opts.historial ? 'pushState' : 'replaceState'](null, '', location.pathname + location.search + h);
+  } else if (qs !== location.search) {
+    history[opts.historial ? 'pushState' : 'replaceState'](null, '', location.pathname + qs + location.hash);
+  }
   pintarControles();
   pintarChips();
   pintarResultados();
@@ -182,10 +190,9 @@ $$<HTMLAnchorElement>('[data-aplicar-subsidio]').forEach((a) => a.addEventListen
   actualizar({ historial: true });
   document.getElementById('proyectos')?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
 }));
-window.addEventListener('popstate', () => {
-  f = leerFiltros(new URLSearchParams(location.search), comunasValidas);
-  actualizar();
-});
+const restaurar = () => { f = leerFiltros(estadoUrl(), comunasValidas); actualizar(); };
+window.addEventListener('popstate', restaurar);
+if (datos.demo) window.addEventListener('hashchange', restaurar);
 
 // Popovers de escritorio (un grupo abierto a la vez)
 function cerrarGrupos(excepto?: Element): void {

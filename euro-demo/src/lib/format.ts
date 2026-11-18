@@ -43,3 +43,8 @@ export function whatsappUrl(numero: string, proyecto?: string): string {
     : 'Hola, quiero información sobre los proyectos de Euro Inmobiliaria.';
   return `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 }
+
+/** En la demo no hay WhatsApp real: los "Cotizar" llevan al formulario de la ficha. */
+export function cotizarHref(numero: string, proyecto: string, fichaUrl: string): string {
+  return numero ? whatsappUrl(numero, proyecto) : `${fichaUrl}#cotizar`;
+}

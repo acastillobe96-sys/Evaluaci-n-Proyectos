@@ -14,6 +14,10 @@ export interface Meta {
   scripts: string[];
   /** Precarga de la imagen LCP */
   preload?: { href: string; srcset: string; sizes: string; type: string } | undefined;
+  /** Demo: CSS y JS en línea (el visor de artefactos solo admite scripts de CDNs conocidos) */
+  inline?: { css: string; js: string[]; leaflet: boolean } | undefined;
+  /** Demo: la página principal la envuelve el visor (sin <html>/<head>/<body> propios) */
+  fragmento?: boolean;
 }
 
 export interface Comuna {
@@ -34,7 +38,19 @@ export function agruparComunas(ps: Proyecto[]): Comuna[] {
   return [...m.values()].sort((a, b) => b.proyectos.length - a.proyectos.length || a.nombre.localeCompare(b.nombre, 'es'));
 }
 
+function headDemo(m: Meta): Raw {
+  return html`<title>${m.title}</title>
+<meta name="description" content="${m.description}">
+<meta name="robots" content="noindex, nofollow">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700;800&family=Barlow+Semi+Condensed:wght@800&display=swap">
+<style>${raw(m.inline!.css)}</style>
+<script>(function(){try{var t=localStorage.getItem('euro-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}document.documentElement.classList.remove('no-js');})();</script>`;
+}
+
 function head(ctx: Ctx, cfg: SiteConfig, m: Meta): Raw {
+  if (cfg.demo) return headDemo(m);
   const canon = cfg.baseUrlDemo + m.path;
   const og = m.ogImage ? cfg.baseUrlDemo + m.ogImage : null;
   return html`<head>
@@ -92,6 +108,14 @@ function megaMenu(ctx: Ctx, comunas: Comuna[]): Raw {
 </div>`;
 }
 
+/** Marca ficticia de la demo: monograma cuadrado + palabra, sin parecido con un logo real. */
+function logoDemo(): Raw {
+  return html`<span class="flex items-center gap-2.5 leading-none">
+    <span class="grid size-9 place-items-center rounded-[10px] bg-accent font-display text-xl font-extrabold text-on-accent" aria-hidden="true">D</span>
+    <span class="flex flex-col"><span class="font-display text-[1.375rem] font-extrabold uppercase tracking-wide">Demo</span><span class="text-[11px] font-bold uppercase tracking-[.18em] opacity-80">Inmobiliaria</span></span>
+  </span>`;
+}
+
 export function header(ctx: Ctx, cfg: SiteConfig, comunas: Comuna[], activo: 'proyectos' | null, solido: boolean): Raw {
   const navs = Object.entries(cfg.nav);
   const inicio = navs.find(([k]) => k === 'Inicio');
@@ -99,13 +123,13 @@ export function header(ctx: Ctx, cfg: SiteConfig, comunas: Comuna[], activo: 'pr
   return html`<a href="#contenido" class="sr-only-focusable fixed left-4 top-4 z-[90] btn btn-primary">Saltar al contenido</a>
 <header class="site-header" id="site-header" data-solid="${solido ? 'true' : 'false'}" data-solid-fixed="${solido ? 'true' : 'false'}">
   <div class="wrap flex h-full items-center justify-between gap-4">
-    <a href="${url(ctx, 'proyectos/')}" class="shrink-0" aria-label="Euro Inmobiliaria, ir a proyectos">
-      <img class="logo-light h-10 w-auto md:h-11" src="${url(ctx, 'img/logo-euro-blanco.svg')}" alt="" width="110" height="44">
-      <img class="logo-dark h-10 w-auto md:h-11" src="${url(ctx, 'img/logo-euro.svg')}" alt="" width="110" height="44">
+    <a href="${url(ctx, 'proyectos/')}" class="shrink-0" aria-label="${cfg.marca ?? 'Euro Inmobiliaria'}, ir a proyectos">
+      ${cfg.demo ? logoDemo() : html`<img class="logo-light h-10 w-auto md:h-11" src="${url(ctx, 'img/logo-euro-blanco.svg')}" alt="" width="110" height="44">
+      <img class="logo-dark h-10 w-auto md:h-11" src="${url(ctx, 'img/logo-euro.svg')}" alt="" width="110" height="44">`}
     </a>
     <nav id="nav" aria-label="Principal" class="nav-drawer" data-open="false">
       <ul class="nav-list">
-        ${inicio ? html`<li><a class="nav-link" href="${inicio[1]}">Inicio</a></li>` : ''}
+        ${inicio ? html`<li><a class="nav-link" href="${cfg.demo ? url(ctx, 'proyectos/') : inicio[1]}">Inicio</a></li>` : ''}
         <li class="nav-has-mega">
           <button type="button" class="nav-link" id="mega-btn" aria-expanded="false" aria-controls="mega mega-mobile" ${raw(activo === 'proyectos' ? 'aria-current="page"' : '')}>Proyectos ${icon('chevron-down', 'size-4 mega-chev')}</button>
           <ul id="mega-mobile" class="mega-mobile" hidden>
@@ -113,8 +137,12 @@ export function header(ctx: Ctx, cfg: SiteConfig, comunas: Comuna[], activo: 'pr
             ${comunas.map((c) => html`<li><a class="mm-link" href="${url(ctx, `proyectos/?comuna=${c.slug}`)}"><span>${c.nombre}</span><span class="text-xs font-bold text-accent-ink">Desde ${formatUF(c.desde)}</span></a></li>`)}
           </ul>
         </li>
-        ${resto.map(([k, v]) => html`<li><a class="nav-link" href="${v}">${k}</a></li>`)}
-        <li class="nav-portal"><a class="btn btn-sm btn-portal" href="${cfg.portalClientes}" target="_blank" rel="noopener">${icon('user', 'size-4')} Portal Clientes<span class="sr-only"> (abre en una pestaña nueva)</span></a></li>
+        ${resto.map(([k, v]) => cfg.demo
+          ? html`<li><a class="nav-link" href="#" aria-disabled="true" data-demo-link>${k}</a></li>`
+          : html`<li><a class="nav-link" href="${v}">${k}</a></li>`)}
+        <li class="nav-portal">${cfg.demo
+          ? html`<a class="btn btn-sm btn-portal" href="#" aria-disabled="true" data-demo-link>${icon('user', 'size-4')} Portal Clientes</a>`
+          : html`<a class="btn btn-sm btn-portal" href="${cfg.portalClientes}" target="_blank" rel="noopener">${icon('user', 'size-4')} Portal Clientes<span class="sr-only"> (abre en una pestaña nueva)</span></a>`}</li>
       </ul>
     </nav>
     <div class="flex items-center gap-1">
@@ -126,7 +154,28 @@ export function header(ctx: Ctx, cfg: SiteConfig, comunas: Comuna[], activo: 'pr
 </header>`;
 }
 
+function footerDemo(): Raw {
+  return html`<footer class="bg-deep-2 text-white" id="pie">
+  <div class="wrap grid gap-10 py-14 md:grid-cols-[1.4fr_1fr]">
+    <div>
+      <span class="text-white">${logoDemo()}</span>
+      <p class="mt-5 max-w-md text-white/80">Sitio de demostración. La marca, los proyectos, los precios, las ubicaciones y las imágenes son ficticios y sirven solo para probar el diseño y la navegación.</p>
+    </div>
+    <div>
+      <h2 class="eyebrow text-accent">En el sitio real</h2>
+      <ul class="mt-4 space-y-2 text-white/85">
+        <li>Contacto por WhatsApp y oficina de ventas</li>
+        <li>Bases notariales, privacidad y derechos del consumidor</li>
+        <li>Redes sociales y Portal Clientes</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/15"><div class="wrap py-6 text-sm text-white/70">Demo de diseño · Datos ficticios · Precios en UF referenciales</div></div>
+</footer>`;
+}
+
 export function footer(ctx: Ctx, cfg: SiteConfig): Raw {
+  if (cfg.demo) return footerDemo();
   const redes: Record<string, string> = { Facebook: 'facebook', YouTube: 'youtube', Instagram: 'instagram', LinkedIn: 'linkedin' };
   return html`<footer class="bg-deep-2 text-white" id="pie">
   <div class="wrap grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
@@ -167,12 +216,29 @@ export function footer(ctx: Ctx, cfg: SiteConfig): Raw {
 }
 
 export function page(ctx: Ctx, cfg: SiteConfig, m: Meta, body: Raw): string {
+  if (cfg.demo) {
+    // El visor envuelve la página principal en su propio <html>/<head>/<body>; las demás páginas van completas
+    const scripts = m.inline ? html`${m.inline.leaflet ? html`<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>` : ''}${m.inline.js.map((j) => html`<script>${raw(j)}</script>`)}` : html``;
+    if (m.fragmento) {
+      return html`${head(ctx, cfg, m)}
+<script>document.documentElement.lang='es-CL'</script>
+${raw(sprite())}
+${body}
+${scripts}`.v;
+    }
+    return '<!doctype html>\n' + html`<html lang="es-CL" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">${head(ctx, cfg, m)}</head>
+<body>${raw(sprite())}
+${body}
+${scripts}</body></html>`.v;
+  }
   return '<!doctype html>\n' + html`<html lang="es-CL" class="no-js">
 ${head(ctx, cfg, m)}
 <body>
 ${raw(sprite())}
 ${body}
-${m.scripts.map((s) => html`<script type="module" src="${asset(ctx, `js/${s}.js`)}"></script>`)}
+${m.inline
+  ? html`${m.inline.leaflet ? html`<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>` : ''}${m.inline.js.map((j) => html`<script>${raw(j)}</script>`)}`
+  : m.scripts.map((s) => html`<script type="module" src="${asset(ctx, `js/${s}.js`)}"></script>`)}
 </body>
 </html>`.v;
 }

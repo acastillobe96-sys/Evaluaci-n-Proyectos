@@ -5,13 +5,13 @@ import type { ProyectoLigero } from '../lib/types.ts';
 import { formatCLPAprox, formatUF } from '../lib/format.ts';
 import { escapeHtml, reduceMotion } from './dom.ts';
 
-interface Contexto { root: string; explicitIndex: boolean; ufCLP: number }
+interface Contexto { root: string; explicitIndex: boolean; ufCLP: number; demo: boolean }
 
 const ATRIB = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 const TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 
 function cargarCss(root: string): void {
-  if (document.querySelector('link[data-leaflet]')) return;
+  if (document.querySelector('link[data-leaflet], style[data-leaflet]')) return;
   const l = document.createElement('link');
   l.rel = 'stylesheet';
   l.href = `${root}css/leaflet.css`;
@@ -19,15 +19,28 @@ function cargarCss(root: string): void {
   document.head.append(l);
 }
 
-function capaBase(map: L.Map): void {
-  L.tileLayer(TILES, { attribution: ATRIB, maxZoom: 19 }).addTo(map);
+function capaBase(map: L.Map, mosaicos: boolean, ps: Array<{ lat: number; lng: number; comuna?: string }> = []): void {
+  if (mosaicos) { L.tileLayer(TILES, { attribution: ATRIB, maxZoom: 19 }).addTo(map); return; }
+  // Demo: el visor bloquea imágenes externas. Mapa esquemático: retícula + nombres de comuna.
+  map.getContainer().classList.add('map-esquema');
+  const porComuna = new Map<string, { lat: number; lng: number; n: number }>();
+  for (const p of ps) {
+    if (!p.comuna) continue;
+    const c = porComuna.get(p.comuna) ?? { lat: 0, lng: 0, n: 0 };
+    c.lat += p.lat; c.lng += p.lng; c.n++;
+    porComuna.set(p.comuna, c);
+  }
+  for (const [nombre, c] of porComuna) {
+    L.marker([c.lat / c.n + 0.006, c.lng / c.n], { icon: L.divIcon({ className: '', html: `<span class="map-comuna">${escapeHtml(nombre)}</span>`, iconSize: [0, 0] }), interactive: false, keyboard: false }).addTo(map);
+  }
+  map.attributionControl.addAttribution('Mapa esquemático · ubicaciones ficticias');
 }
 
 const href = (c: Contexto, slug: string) => `${c.root}proyectos/${slug}/${c.explicitIndex ? 'index.html' : ''}`;
 
 function popup(c: Contexto, p: ProyectoLigero): string {
   return `<a href="${href(c, p.slug)}" class="block">
-    ${p.img ? `<img src="${c.root}${escapeHtml(p.img)}" alt="" width="260" height="163" class="block aspect-[16/10] w-full object-cover" loading="lazy">` : ''}
+    ${p.img ? `<img src="${p.img.startsWith('data:') ? escapeHtml(p.img) : c.root + escapeHtml(p.img)}" alt="" width="260" height="163" class="block aspect-[16/10] w-full object-cover" loading="lazy">` : ''}
     <span class="block p-4">
       <span class="block text-xs font-bold uppercase tracking-[.14em] text-muted">${escapeHtml(p.comuna)} · ${escapeHtml(p.entregaCorto)}</span>
       <span class="mt-1 block text-lg font-bold leading-tight text-ink">${escapeHtml(p.nombre)}</span>
@@ -39,9 +52,9 @@ function popup(c: Contexto, p: ProyectoLigero): string {
 }
 
 export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c: Contexto): Promise<{ actualizar: (ps: ProyectoLigero[]) => void }> {
-  cargarCss(c.root);
+  if (!c.demo) cargarCss(c.root);
   const map = L.map(el, { scrollWheelZoom: false, zoomControl: true, attributionControl: true });
-  capaBase(map);
+  let conBase = false;
   const capa = L.layerGroup().addTo(map);
   const anim = !reduceMotion();
   // Etiquetas de precio solo desde zoom 14; antes, puntos (evita superposición en Ñuñoa/Santiago Centro)
@@ -50,6 +63,7 @@ export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c:
 
   return {
     actualizar(ps) {
+      if (!conBase) { capaBase(map, !c.demo, ps); conBase = true; }
       capa.clearLayers();
       extra.replaceChildren();
       const markers: L.Marker[] = [];
@@ -100,10 +114,10 @@ export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c:
 }
 
 export async function crearMapaFicha(el: HTMLElement, root: string): Promise<void> {
-  cargarCss(root);
+  if (el.dataset['tiles'] !== 'no') cargarCss(root);
   const lat = Number(el.dataset['lat']), lng = Number(el.dataset['lng']);
   const map = L.map(el, { scrollWheelZoom: false }).setView([lat, lng], 15);
-  capaBase(map);
+  capaBase(map, el.dataset['tiles'] !== 'no');
   const aprox = el.dataset['precision'] === 'aproximada';
   L.marker([lat, lng], {
     icon: L.divIcon({ className: '', html: `<span class="pin${aprox ? ' border-dashed' : ''}">${escapeHtml(el.dataset['nombre'] ?? '')}</span>`, iconSize: [0, 0] }),

@@ -1,5 +1,5 @@
 import type { Proyecto, SiteConfig } from '../lib/types.ts';
-import { formatCLPAprox, formatTipologia, formatUF, whatsappUrl } from '../lib/format.ts';
+import { cotizarHref, formatCLPAprox, formatTipologia, formatUF } from '../lib/format.ts';
 import { html, icon, picture, url, type Ctx, type Raw } from './html.ts';
 
 export function cardProyecto(ctx: Ctx, cfg: SiteConfig, p: Proyecto, i: number): Raw {
@@ -30,7 +30,9 @@ export function cardProyecto(ctx: Ctx, cfg: SiteConfig, p: Proyecto, i: number):
     </div>
     <div class="above mt-5 grid grid-cols-2 gap-2">
       <a class="btn btn-dark btn-sm" href="${href}" tabindex="-1" aria-hidden="true">Ver proyecto</a>
-      <a class="btn btn-outline btn-sm" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-4')} Cotizar</a>
+      ${cfg.whatsapp
+        ? html`<a class="btn btn-outline btn-sm" href="${cotizarHref(cfg.whatsapp, p.nombre, href)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-4')} Cotizar</a>`
+        : html`<a class="btn btn-outline btn-sm" href="${cotizarHref('', p.nombre, href)}" aria-label="Cotizar ${p.nombre}">Cotizar</a>`}
     </div>
   </div>
 </article>
