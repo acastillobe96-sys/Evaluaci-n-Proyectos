@@ -1,0 +1,3213 @@
+{
+ "alto-irarrazaval": {
+  "card": {
+   "src": "/proyectos/alto-irarrazaval/card",
+   "w": 1250,
+   "h": 781,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Alto Irarrázaval al atardecer, Ñuñoa"
+  },
+  "hero": {
+   "src": "/proyectos/alto-irarrazaval/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Alto Irarrázaval"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/alto-irarrazaval/galeria-01",
+    "w": 1250,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Alto Irarrázaval al atardecer, Ñuñoa"
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con salida a la terraza, departamento Alto Irarrázaval"
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina americana con barra, departamento Alto Irarrázaval"
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Gimnasio del edificio Alto Irarrázaval"
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina en la azotea con vista a Santiago, Alto Irarrázaval"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/alto-irarrazaval/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/alto-irarrazaval/planta-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "diagonal-vicuna": {
+  "card": {
+   "src": "/proyectos/diagonal-vicuna/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Diagonal Vicuña al anochecer, Santiago Centro"
+  },
+  "hero": {
+   "src": "/proyectos/diagonal-vicuna/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Diagonal Vicuña"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Diagonal Vicuña al anochecer, Santiago Centro"
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina con barra, departamento Diagonal Vicuña"
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal con ventanal, Diagonal Vicuña"
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Quincho techado del edificio Diagonal Vicuña"
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento Diagonal Vicuña"
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño con tina, departamento Diagonal Vicuña"
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina en la azotea con vista a la cordillera, Diagonal Vicuña"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/diagonal-vicuna/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/diagonal-vicuna/planta-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "don-pepe-154": {
+  "card": {
+   "src": "/proyectos/don-pepe-154/card",
+   "w": 1000,
+   "h": 625,
+   "anchos": [
+    480,
+    800
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Don Pepe 154 al atardecer, La Florida"
+  },
+  "hero": {
+   "src": "/proyectos/don-pepe-154/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Don Pepe 154"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/don-pepe-154/galeria-01",
+    "w": 1000,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Don Pepe 154 al atardecer, La Florida"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento Don Pepe 154"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con dos camas, departamento Don Pepe 154"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina equipada, departamento Don Pepe 154"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño con tina, departamento Don Pepe 154"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Don Pepe 154"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Terraza con quinchos en la azotea, Don Pepe 154"
+   },
+   {
+    "src": "/proyectos/don-pepe-154/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina en la azotea, Don Pepe 154"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/don-pepe-154/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/don-pepe-154/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/don-pepe-154/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/don-pepe-154/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "entre-vicunas": {
+  "card": {
+   "src": "/proyectos/entre-vicunas/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Entre Vicuñas, La Florida"
+  },
+  "hero": {
+   "src": "/proyectos/entre-vicunas/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Entre Vicuñas"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/entre-vicunas/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Entre Vicuñas, La Florida"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Comedor y cocina, departamento Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con dos camas, departamento Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Terraza en la azotea, Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Salón multiuso con comedor, Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Sala de lavandería, Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-09",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Gimnasio del edificio Entre Vicuñas"
+   },
+   {
+    "src": "/proyectos/entre-vicunas/galeria-10",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Terraza con vista a la cordillera, Entre Vicuñas"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/entre-vicunas/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/entre-vicunas/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/entre-vicunas/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/entre-vicunas/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "froilan-roa-5731": {
+  "card": {
+   "src": "/proyectos/froilan-roa-5731/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Torres del proyecto Froilán Roa 5731 al atardecer, La Florida"
+  },
+  "hero": {
+   "src": "/proyectos/froilan-roa-5731/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Froilán Roa 5731"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Torres del proyecto Froilán Roa 5731 al atardecer, La Florida"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina y comedor, departamento Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño con ducha, departamento Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con dos camas, departamento Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina del edificio Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Sala de mascotas del edificio Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Salón con quincho, Froilán Roa 5731"
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/galeria-09",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Quincho con vista, Froilán Roa 5731"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/froilan-roa-5731/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/froilan-roa-5731/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "guillermo-mann-1401": {
+  "card": {
+   "src": "/proyectos/guillermo-mann-1401/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Guillermo Mann 1401 con la cordillera de fondo, Ñuñoa"
+  },
+  "hero": {
+   "src": "/proyectos/guillermo-mann-1401/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Guillermo Mann 1401"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Guillermo Mann 1401 con la cordillera de fondo, Ñuñoa"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor con cocina, departamento Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal con vista, Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina equipada, departamento Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con escritorio, Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Gimnasio del edificio Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Quincho en la azotea, Guillermo Mann 1401"
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/galeria-09",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina con jardín, Guillermo Mann 1401"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/guillermo-mann-1401/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/guillermo-mann-1401/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "independencia-4745": {
+  "card": {
+   "src": "/proyectos/independencia-4745/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Independencia 4745 al atardecer, Conchalí"
+  },
+  "hero": {
+   "src": "/proyectos/independencia-4745/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Independencia 4745"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/independencia-4745/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Independencia 4745 al atardecer, Conchalí"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Comedor y living, departamento Independencia 4745"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living, departamento Independencia 4745"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento Independencia 4745"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con vista a la ciudad, Independencia 4745"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con cocina americana, Independencia 4745"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, Independencia 4745"
+   },
+   {
+    "src": "/proyectos/independencia-4745/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina con barra, Independencia 4745"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/independencia-4745/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/independencia-4745/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/independencia-4745/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/independencia-4745/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "jose-pedro-alessandri": {
+  "card": {
+   "src": "/proyectos/jose-pedro-alessandri/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Edificio José Pedro Alessandri visto desde la avenida, Ñuñoa"
+  },
+  "hero": {
+   "src": "/proyectos/jose-pedro-alessandri/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio José Pedro Alessandri"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Edificio José Pedro Alessandri visto desde la avenida, Ñuñoa"
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con salida al balcón, departamento piloto José Pedro Alessandri"
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento piloto José Pedro Alessandri"
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living, departamento piloto José Pedro Alessandri"
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño con tina, José Pedro Alessandri"
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Balcón con vista a la ciudad, José Pedro Alessandri"
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina y living, departamento piloto José Pedro Alessandri"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/jose-pedro-alessandri/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/jose-pedro-alessandri/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "mapocho-3521": {
+  "card": {
+   "src": "/proyectos/mapocho-3521/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Mapocho 3521 al atardecer, Quinta Normal"
+  },
+  "hero": {
+   "src": "/proyectos/mapocho-3521/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Mapocho 3521"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/mapocho-3521/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Mapocho 3521 al atardecer, Quinta Normal"
+   },
+   {
+    "src": "/proyectos/mapocho-3521/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento Mapocho 3521"
+   },
+   {
+    "src": "/proyectos/mapocho-3521/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio, departamento Mapocho 3521"
+   },
+   {
+    "src": "/proyectos/mapocho-3521/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina con barra, departamento Mapocho 3521"
+   },
+   {
+    "src": "/proyectos/mapocho-3521/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Mapocho 3521"
+   },
+   {
+    "src": "/proyectos/mapocho-3521/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina en la azotea, Mapocho 3521"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/mapocho-3521/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/mapocho-3521/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/mapocho-3521/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "marina-pacifico": {
+  "card": {
+   "src": "/proyectos/marina-pacifico/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Edificio Marina Pacífico junto a la bahía de Coquimbo"
+  },
+  "hero": {
+   "src": "/proyectos/marina-pacifico/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Marina Pacífico"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/marina-pacifico/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Edificio Marina Pacífico junto a la bahía de Coquimbo"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Marina Pacífico"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento Marina Pacífico"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Comedor y cocina, departamento Marina Pacífico"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina con vista al mar, Marina Pacífico"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Comedor con vista, departamento Marina Pacífico"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living, departamento Marina Pacífico"
+   },
+   {
+    "src": "/proyectos/marina-pacifico/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Terraza con vista al mar, Marina Pacífico"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/marina-pacifico/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/marina-pacifico/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/marina-pacifico/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/marina-pacifico/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/marina-pacifico/planta-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "mirador-irarrazaval": {
+  "card": {
+   "src": "/proyectos/mirador-irarrazaval/card",
+   "w": 1000,
+   "h": 625,
+   "anchos": [
+    480,
+    800
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Torre Mirador Irarrázaval, Ñuñoa"
+  },
+  "hero": {
+   "src": "/proyectos/mirador-irarrazaval/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Mirador Irarrázaval"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-01",
+    "w": 1000,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Torre Mirador Irarrázaval, Ñuñoa"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con cocina y vista al cerro, Mirador Irarrázaval"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento Mirador Irarrázaval"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con dos camas, Mirador Irarrázaval"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal con vista, Mirador Irarrázaval"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Lobby del edificio Mirador Irarrázaval"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Sala de niños, Mirador Irarrázaval"
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Patio con piscina, Mirador Irarrázaval"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/mirador-irarrazaval/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/mirador-irarrazaval/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "nova-parque": {
+  "card": {
+   "src": "/proyectos/nova-parque/card",
+   "w": 1364,
+   "h": 853,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Nova Parque, San Joaquín"
+  },
+  "hero": {
+   "src": "/proyectos/nova-parque/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Nova Parque"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/nova-parque/galeria-01",
+    "w": 1364,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Nova Parque, San Joaquín"
+   },
+   {
+    "src": "/proyectos/nova-parque/galeria-02",
+    "w": 1600,
+    "h": 640,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Sala multiuso con vista al jardín, Nova Parque"
+   },
+   {
+    "src": "/proyectos/nova-parque/galeria-03",
+    "w": 1600,
+    "h": 828,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con cocina, departamento Nova Parque"
+   },
+   {
+    "src": "/proyectos/nova-parque/galeria-04",
+    "w": 1600,
+    "h": 694,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Lobby de acceso, Nova Parque"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/nova-parque/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "plaza-de-lourdes": {
+  "card": {
+   "src": "/proyectos/plaza-de-lourdes/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Edificio Plaza de Lourdes con locales en el primer piso, Quinta Normal"
+  },
+  "hero": {
+   "src": "/proyectos/plaza-de-lourdes/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Plaza de Lourdes"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/plaza-de-lourdes/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Edificio Plaza de Lourdes con locales en el primer piso, Quinta Normal"
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living, departamento Plaza de Lourdes"
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Plaza interior del proyecto Plaza de Lourdes"
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Quincho y comedor del edificio, Plaza de Lourdes"
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Gimnasio, Plaza de Lourdes"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/plaza-de-lourdes/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/planta-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/plaza-de-lourdes/planta-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "rosas-1444": {
+  "card": {
+   "src": "/proyectos/rosas-1444/card",
+   "w": 1000,
+   "h": 625,
+   "anchos": [
+    480,
+    800
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Rosas 1444, Santiago Centro"
+  },
+  "hero": {
+   "src": "/proyectos/rosas-1444/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Rosas 1444"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/rosas-1444/galeria-01",
+    "w": 1000,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Rosas 1444, Santiago Centro"
+   },
+   {
+    "src": "/proyectos/rosas-1444/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento Rosas 1444"
+   },
+   {
+    "src": "/proyectos/rosas-1444/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina, departamento Rosas 1444"
+   },
+   {
+    "src": "/proyectos/rosas-1444/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento Rosas 1444"
+   },
+   {
+    "src": "/proyectos/rosas-1444/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Rosas 1444"
+   },
+   {
+    "src": "/proyectos/rosas-1444/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Quincho del edificio Rosas 1444"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/rosas-1444/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/rosas-1444/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/rosas-1444/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "santa-elena-1670": {
+  "card": {
+   "src": "/proyectos/santa-elena-1670/card",
+   "w": 1000,
+   "h": 625,
+   "anchos": [
+    480,
+    800
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Fachada del edificio Santa Elena 1670 al atardecer, Santiago Centro"
+  },
+  "hero": {
+   "src": "/proyectos/santa-elena-1670/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Santa Elena 1670"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-01",
+    "w": 1000,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Fachada del edificio Santa Elena 1670 al atardecer, Santiago Centro"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con escritorio, departamento Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio principal, departamento Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con dos camas, Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina con barra, departamento Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Quinchos del edificio Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina en la azotea, Santa Elena 1670"
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/galeria-09",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Gimnasio, Santa Elena 1670"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/santa-elena-1670/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/santa-elena-1670/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "vicuna-mackenna-1432": {
+  "card": {
+   "src": "/proyectos/vicuna-mackenna-1432/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Torre Vicuña Mackenna 1432 al atardecer, Ñuñoa"
+  },
+  "hero": {
+   "src": "/proyectos/vicuna-mackenna-1432/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Vicuña Mackenna 1432"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Torre Vicuña Mackenna 1432 al atardecer, Ñuñoa"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor con vista, departamento piloto Vicuña Mackenna 1432"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina con barra, Vicuña Mackenna 1432"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio, departamento piloto Vicuña Mackenna 1432"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina, departamento piloto Vicuña Mackenna 1432"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento piloto Vicuña Mackenna 1432"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Salón de eventos del edificio, Vicuña Mackenna 1432"
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Piscina en la azotea, Vicuña Mackenna 1432"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vicuna-mackenna-1432/planta-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "vista-portugal": {
+  "card": {
+   "src": "/proyectos/vista-portugal/card",
+   "w": 750,
+   "h": 469,
+   "anchos": [
+    480
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Edificio Vista Portugal al anochecer, Santiago Centro"
+  },
+  "hero": {
+   "src": "/proyectos/vista-portugal/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Vista Portugal"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/vista-portugal/galeria-01",
+    "w": 750,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio, departamento piloto Vista Portugal"
+   },
+   {
+    "src": "/proyectos/vista-portugal/galeria-02",
+    "w": 750,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina, departamento piloto Vista Portugal"
+   },
+   {
+    "src": "/proyectos/vista-portugal/galeria-03",
+    "w": 750,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Baño, departamento piloto Vista Portugal"
+   },
+   {
+    "src": "/proyectos/vista-portugal/galeria-04",
+    "w": 750,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento piloto Vista Portugal"
+   },
+   {
+    "src": "/proyectos/vista-portugal/galeria-05",
+    "w": 750,
+    "h": 1000,
+    "anchos": [
+     640
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Edificio Vista Portugal al anochecer, Santiago Centro"
+   },
+   {
+    "src": "/proyectos/vista-portugal/galeria-06",
+    "w": 1404,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living y cocina, departamento piloto Vista Portugal"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/vista-portugal/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vista-portugal/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vista-portugal/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vista-portugal/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vista-portugal/planta-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ },
+ "vitro": {
+  "card": {
+   "src": "/proyectos/vitro/card",
+   "w": 1600,
+   "h": 1000,
+   "anchos": [
+    480,
+    800,
+    1200
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Edificio Vitro con la cordillera de fondo, Ñuñoa"
+  },
+  "hero": {
+   "src": "/proyectos/vitro/hero",
+   "w": 1920,
+   "h": 750,
+   "anchos": [
+    960,
+    1440,
+    1920
+   ],
+   "formatos": [
+    "avif",
+    "webp"
+   ],
+   "alt": "Render de la fachada del edificio Vitro"
+  },
+  "galeria": [
+   {
+    "src": "/proyectos/vitro/galeria-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Edificio Vitro con la cordillera de fondo, Ñuñoa"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living con cocina y balcón, departamento Vitro"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living comedor, departamento Vitro"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina equipada, departamento Vitro"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-05",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Balcón con vista, departamento Vitro"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-06",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Cocina, departamento Vitro"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-07",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Living, departamento Vitro"
+   },
+   {
+    "src": "/proyectos/vitro/galeria-08",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     640,
+     1280
+    ],
+    "formatos": [
+     "webp"
+    ],
+    "alt": "Dormitorio con clóset, departamento Vitro"
+   }
+  ],
+  "plantas": [
+   {
+    "src": "/proyectos/vitro/planta-01",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vitro/planta-02",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vitro/planta-03",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   },
+   {
+    "src": "/proyectos/vitro/planta-04",
+    "w": 1600,
+    "h": 1000,
+    "anchos": [
+     800,
+     1600
+    ],
+    "formatos": [
+     "webp"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,6252 @@
+{
+ "generado": "2026-11-18",
+ "fuente": "euroinmobiliaria.cl (18-nov-2026) + tabla del brief",
+ "proyectos": [
+  {
+   "slug": "alto-irarrazaval",
+   "slugOrigen": "alto-irarrazaval",
+   "nombre": "Alto Irarrázaval",
+   "comuna": "Ñuñoa",
+   "comunaSlug": "nunoa",
+   "direccion": "Av. Irarrázaval 2325",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2028,
+    "semestre": 2,
+    "corto": "Entrega 2S 2028",
+    "largo": "2do semestre 2028",
+    "orden": 20282
+   },
+   "desdeUF": 4004,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": false,
+   "plusvalia": 31,
+   "metro": null,
+   "coords": {
+    "lat": -33.454286,
+    "lng": -70.606875,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 60 cuotas",
+    "5% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $2.000.000"
+   ],
+   "descripcion": {
+    "titulo": null,
+    "parrafos": [
+     "Su propuesta combina diseño contemporáneo, espacios bien pensados y terminaciones de calidad para vivir con estilo, comodidad y alto potencial de valorización.",
+     "Departamentos modernos y bien equipados, con ventanas termopanel, piso vinílico SPC en la cocina, estar y dormitorios, en baño y terraza piso de cerámica. Cocina con cubierta porcelánica, encimera vitrocerámica, horno y campana. Departamento incluye iluminación led instalada, conexión para lavadora y cortinas roller. Ideal para quienes buscan comodidad y buenas terminaciones."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 32,
+     "supTotal": 35,
+     "precioUF": 4004,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/alto-irarrazaval/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3C)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 43,
+     "supTotal": 46,
+     "precioUF": 4690,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/alto-irarrazaval/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 48,
+     "supTotal": 52,
+     "precioUF": 5027,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/alto-irarrazaval/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (M)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 50,
+     "supTotal": 57,
+     "precioUF": 5875,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/alto-irarrazaval/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (4C)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 54,
+     "supTotal": 61,
+     "precioUF": 6116,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/alto-irarrazaval/planta-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Ñuñoa (L3 / L6)",
+       "detalle": "A pasos del eje Irarrázaval, 1 a 4 min a pie"
+      },
+      {
+       "nombre": "Paraderos Red cercanos",
+       "detalle": "227, 325, 403, 422, 505, 514 y D03, 2 a 5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Estadio Nacional / entorno deportivo",
+       "detalle": "Gran polo recreativo cercano, 31 min a pie"
+      },
+      {
+       "nombre": "Parque San Eugenio",
+       "detalle": "Mencionado como parque cercano en el sector, 14 min a pie"
+      },
+      {
+       "nombre": "Parque Bustamante",
+       "detalle": "Referencia de parque accesible desde el eje, 25 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Express de Lider",
+       "detalle": "1 a 2 min a pie"
+      },
+      {
+       "nombre": "Tricot Irarrázaval",
+       "detalle": "2 a 4 min a pie"
+      },
+      {
+       "nombre": "Farmacias Cruz Verde",
+       "detalle": "2 a 4 min a pie"
+      },
+      {
+       "nombre": "Farmacias Salcobrand",
+       "detalle": "2 a 4 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "IntegraMédica Irarrázaval",
+       "detalle": "Centro médico en la comuna, 10-20 min a pie"
+      },
+      {
+       "nombre": "CESFAM Salvador Bustos",
+       "detalle": "Atención primaria de salud en Ñuñoa, 15-25 min a pie"
+      },
+      {
+       "nombre": "Ávila Dental",
+       "detalle": "3 a 5 min a pie"
+      },
+      {
+       "nombre": "Isapre CruzBlanca",
+       "detalle": "3 a 5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Jardín Infantil Auca",
+       "detalle": "9 min a pie"
+      },
+      {
+       "nombre": "Colegio Divina Pastora",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Inacap Ñuñoa (Sede Pérez Rosales)",
+       "detalle": "25 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/alto-irarrazaval/card",
+     "w": 1250,
+     "h": 781,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Alto Irarrázaval al atardecer, Ñuñoa"
+    },
+    "hero": {
+     "src": "/proyectos/alto-irarrazaval/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Alto Irarrázaval"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/alto-irarrazaval/galeria-01",
+      "w": 1250,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Alto Irarrázaval al atardecer, Ñuñoa"
+     },
+     {
+      "src": "/proyectos/alto-irarrazaval/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con salida a la terraza, departamento Alto Irarrázaval"
+     },
+     {
+      "src": "/proyectos/alto-irarrazaval/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina americana con barra, departamento Alto Irarrázaval"
+     },
+     {
+      "src": "/proyectos/alto-irarrazaval/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Gimnasio del edificio Alto Irarrázaval"
+     },
+     {
+      "src": "/proyectos/alto-irarrazaval/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina en la azotea con vista a Santiago, Alto Irarrázaval"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/167/Alto_Irarrazaval.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/alto-irarrazaval"
+  },
+  {
+   "slug": "diagonal-vicuna",
+   "slugOrigen": "diagonal-vicuna",
+   "nombre": "Diagonal Vicuña",
+   "comuna": "Santiago Centro",
+   "comunaSlug": "santiago-centro",
+   "direccion": "Santa Elena 2000",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2027,
+    "semestre": 1,
+    "corto": "Entrega 1S 2027",
+    "largo": "1er semestre 2027",
+    "orden": 20271
+   },
+   "desdeUF": 3184,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 51,
+   "metro": "Metro Ñuble",
+   "coords": {
+    "lat": -33.469997,
+    "lng": -70.626766,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 49 cuotas",
+    "8% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": "Invierte en Diagonal Vicuña y aprovecha una gran oportunidad en Santiago Centro, con conectividad, servicios y alta proyección urbana",
+    "parrafos": [
+     "Ubicado en Santa Elena 2000 te ofrece un proyecto excepcional en una comuna con una ubicación estratégica, cerca de todo lo que necesitas para vivir y o rentar de manera conveniente. Este proyecto cuenta con años de arriendo asegurado, por lo que tendrás ingresos estables desde el primer día. Con una excelente conectividad y un gran potencial de revalorización, este edificio es ideal para quienes buscan una inversión a largo plazo en una zona de crecimiento constante.",
+     "Los departamentos están equipados con piso vinílico SPC, horno eléctrico, campana, cortinas roller, luminarias led y cocina vitrocerámica, ofreciendo un espacio moderno y funcional para los arrendatarios.",
+     "El proyecto cuenta con increíbles amenidades como plaza interior, lavandería, bicicletero, gimnasio, quincho, piscina, sala multiuso, juegos infantiles, pet spa, salón cowork y sala de niños, diseñadas para mejorar la calidad de vida de sus residentes y hacer más atractiva la oferta para arrendar. Diagonal Vicuña es el proyecto ideal para quienes buscan una inversión sólida y con alto retorno a largo plazo en una gran zona de Santiago. ¡No dejes pasar esta oportunidad! Contáctanos ahora y asegura tu inversión en Diagonal Vicuña."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 32,
+     "supTotal": 34,
+     "precioUF": 3184,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/diagonal-vicuna/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 42,
+     "supTotal": 45,
+     "precioUF": 3859,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/diagonal-vicuna/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 45,
+     "supTotal": 48,
+     "precioUF": 4109,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/diagonal-vicuna/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "Mariposa",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 49,
+     "supTotal": 51,
+     "precioUF": 4314,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/diagonal-vicuna/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 57,
+     "supTotal": 59,
+     "precioUF": 4523,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/diagonal-vicuna/planta-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Ñuble (L5 y L6)",
+       "detalle": "7 min a pie"
+      },
+      {
+       "nombre": "Metro Rodrigo de Araya (L5)",
+       "detalle": "12 min a pie"
+      },
+      {
+       "nombre": "Paraderos de Av. Vicuña Mackenna",
+       "detalle": "Múltiples recorridos del sistema RED, 5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Plaza Santa Elena",
+       "detalle": "2 min a pie, es un espacio tranquilo con juegos infantiles y máquinas de ejercicio"
+      },
+      {
+       "nombre": "Plaza Bogotá",
+       "detalle": "Tradicional plaza del barrio, 10 min a pie, conocida por su ambiente familiar y áreas sombreadas"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Supermercado Santa Isabel (Av. Santa Rosa)",
+       "detalle": "15 min a pie, ofrece una mayor variedad de productos y servicios"
+      },
+      {
+       "nombre": "Persa Bío Bío",
+       "detalle": "20 min a pie, uno de los centros comerciales y gastronómicos más grandes de la ciudad."
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Famihealth Centro Médico y Dental",
+       "detalle": "2 min a pie, ofrece atención primaria y dental"
+      },
+      {
+       "nombre": "Clínica Ñuble",
+       "detalle": "12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Escuela Reyes Católicos",
+       "detalle": "3 min a pie"
+      },
+      {
+       "nombre": "Liceo Brígida Walker",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Colegio Técnico República Argentina",
+       "detalle": "20 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/diagonal-vicuna/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Diagonal Vicuña al anochecer, Santiago Centro"
+    },
+    "hero": {
+     "src": "/proyectos/diagonal-vicuna/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Diagonal Vicuña"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Diagonal Vicuña al anochecer, Santiago Centro"
+     },
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina con barra, departamento Diagonal Vicuña"
+     },
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal con ventanal, Diagonal Vicuña"
+     },
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Quincho techado del edificio Diagonal Vicuña"
+     },
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento Diagonal Vicuña"
+     },
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño con tina, departamento Diagonal Vicuña"
+     },
+     {
+      "src": "/proyectos/diagonal-vicuna/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina en la azotea con vista a la cordillera, Diagonal Vicuña"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/269/Brochure-Diagonal-Vicu%C3%B1a.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/diagonal-vicuna"
+  },
+  {
+   "slug": "don-pepe-154",
+   "slugOrigen": "don-pepe-154",
+   "nombre": "Don Pepe 154",
+   "comuna": "La Florida",
+   "comunaSlug": "la-florida",
+   "direccion": "Don Pepe 154",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2027,
+    "semestre": 1,
+    "corto": "Entrega 1S 2027",
+    "largo": "1er semestre 2027",
+    "orden": 20271
+   },
+   "desdeUF": 3285,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 58,
+   "metro": "Estación Vicente Valdés",
+   "coords": {
+    "lat": -33.527206,
+    "lng": -70.598511,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 60 cuotas",
+    "5% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": null,
+    "parrafos": [
+     "2 años de arriendo asegurado y administración gratis. Descuento en el precio de lista de un 5% Paga el PIE hasta en 38 cuotas.",
+     "Características y terminaciones:",
+     "Piso vinílico SPC en áreas principales y cerámica en baños y terrazas, asegurando fácil mantención y mayor durabilidad. Ventanas de PVC blanco con termo panel para una óptima eficiencia térmica y acústica Encimera vitrocerámica, horno eléctrico y campana retráctil. Muebles de cocina con cubierta de porcelanato, combinando estética y funcionalidad.",
+     "Todos los departamentos cuentan con alarma en la puerta de acceso, brindando tranquilidad a propietarios e inquilinos."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 29,
+     "supTotal": 31,
+     "precioUF": 3285,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/don-pepe-154/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 42,
+     "supTotal": 44,
+     "precioUF": 3592,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/don-pepe-154/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 48,
+     "supTotal": 50,
+     "precioUF": 3747,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/don-pepe-154/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (4c)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 44,
+     "supTotal": 48,
+     "precioUF": 3979,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/don-pepe-154/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Vicente Valdés (L4 y L5)",
+       "detalle": "3 min a pie"
+      },
+      {
+       "nombre": "Metro Bellavista de La Florida (L5)",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Metro Vicuña Mackenna (L4A)",
+       "detalle": "13 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Plaza de Armas de La Florida (Paradero 14)",
+       "detalle": "Espacio público céntrico frente a la municipalidad, 12 min a pie"
+      },
+      {
+       "nombre": "Plaza la Capilla",
+       "detalle": "10 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Mallplaza Vespucio",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Supermercado Lider (Vicuña Mackenna)",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Espacio Vicente Valdés",
+       "detalle": "Centro comercial de menor escala con servicios locales, 4 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Clínica Dávila Vespucio",
+       "detalle": "Centro asistencial de alta complejidad, 14 min a pie"
+      },
+      {
+       "nombre": "Centro Médico y Dental RedSalud La Florida",
+       "detalle": "15 min a pie"
+      },
+      {
+       "nombre": "Centro Médico CLINI (Astra La Florida)",
+       "detalle": "Atención ambulatoria y de diagnóstico, 12 min a pie"
+      },
+      {
+       "nombre": "Maiposalud La Florida",
+       "detalle": "11 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Colegio Mauricio Rugendas",
+       "detalle": "2 min a pie"
+      },
+      {
+       "nombre": "Jardín Infantil y Sala Cuna Pangui",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Colegio Polivalente Vicente Valdés",
+       "detalle": "12 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/don-pepe-154/card",
+     "w": 1000,
+     "h": 625,
+     "anchos": [
+      480,
+      800
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Don Pepe 154 al atardecer, La Florida"
+    },
+    "hero": {
+     "src": "/proyectos/don-pepe-154/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Don Pepe 154"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/don-pepe-154/galeria-01",
+      "w": 1000,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Don Pepe 154 al atardecer, La Florida"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento Don Pepe 154"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con dos camas, departamento Don Pepe 154"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina equipada, departamento Don Pepe 154"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño con tina, departamento Don Pepe 154"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Don Pepe 154"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Terraza con quinchos en la azotea, Don Pepe 154"
+     },
+     {
+      "src": "/proyectos/don-pepe-154/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina en la azotea, Don Pepe 154"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/213/Brochure-Don-pepe.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/don-pepe-154"
+  },
+  {
+   "slug": "entre-vicunas",
+   "slugOrigen": "entre-vicunas",
+   "nombre": "Entre Vicuñas",
+   "comuna": "La Florida",
+   "comunaSlug": "la-florida",
+   "direccion": "Vicuña Mackenna 5970",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2027,
+    "semestre": 1,
+    "corto": "Entrega 1S 2027",
+    "largo": "1er semestre 2027",
+    "orden": 20271
+   },
+   "desdeUF": 3093,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 58,
+   "metro": "Pedrero",
+   "coords": {
+    "lat": -33.509693,
+    "lng": -70.610467,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 60 cuotas",
+    "5% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": "Descubre nuestro proyecto Entre Vicuñas, ubicado en La Florida, donde diseño, calidad y ubicación estratégica se unen para ofrecerte una excelente oportunidad.",
+    "parrafos": [
+     "Ubicado en una de las comunas con mayor crecimiento de Santiago, este proyecto destaca por su conectividad y cercanía a servicios, comercio y áreas verdes. Ideal tanto para invertir como para vivir, en una zona en constante crecimiento.",
+     "Características y terminaciones:",
+     "Los departamentos cuentan con terminaciones pensadas para tu comodidad: piso vinílico SPC, ventanas termopanel con marcos de PVC blancos que permiten un ambiente más cálido, cocina equipada con horno eléctrico, encimera vitrocerámica y campana. Un proyecto pensado para quienes buscan calidad de vida, buena ubicación y una inversión con proyección. Escríbenos y sé parte de esta gran oportunidad en La Florida."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 28,
+     "supTotal": 34,
+     "precioUF": 3093,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/entre-vicunas/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 38,
+     "supTotal": 45,
+     "precioUF": 3696,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/entre-vicunas/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 42,
+     "supTotal": 47,
+     "precioUF": 3908,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/entre-vicunas/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 53,
+     "supTotal": 56,
+     "precioUF": 4363,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/entre-vicunas/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Pedrero (L4)",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Metro Mirador (L5)",
+       "detalle": "15-20 min a pie"
+      },
+      {
+       "nombre": "Paraderos de micro en el eje Vicuña Mackenna",
+       "detalle": "Referencias a paraderos por Gerónimo de Alderete / Av. Vicuña Mackenna."
+      },
+      {
+       "nombre": "Recorridos de micro que pasan cerca del eje",
+       "detalle": "103, 210V, 320, E03, F25E, R755."
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque Isabel Riquelme",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Parque Brasil",
+       "detalle": "20 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Cenco Florida en Av. Vicuña Mackenna Oriente 6100",
+       "detalle": "5-10 min a pie"
+      },
+      {
+       "nombre": "Mall Plaza Vespucio (Vicuña Mackenna Ote. 7110)",
+       "detalle": "18–25 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Centro de Salud Astra La Florida (Clini)",
+       "detalle": "Av. Vicuña Mackenna Poniente 7255 (referencia en el mismo eje), 20-35 min a pie"
+      },
+      {
+       "nombre": "Centro de Salud La Florida (Capredena)",
+       "detalle": "Referencia de centro asistencial en la comuna, 20-35 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Colegio Alcántara la Florida",
+       "detalle": "3 min a pie"
+      },
+      {
+       "nombre": "Jardín Infantil Barco De Colores",
+       "detalle": "3 min a pie"
+      },
+      {
+       "nombre": "Liceo Bellavista n°2 (Anexo)",
+       "detalle": "18 min a pie"
+      },
+      {
+       "nombre": "Instituto Chileno Norteamericano sede La Florida",
+       "detalle": "8 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/entre-vicunas/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Entre Vicuñas, La Florida"
+    },
+    "hero": {
+     "src": "/proyectos/entre-vicunas/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Entre Vicuñas"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/entre-vicunas/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Entre Vicuñas, La Florida"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Comedor y cocina, departamento Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con dos camas, departamento Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Terraza en la azotea, Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Salón multiuso con comedor, Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Sala de lavandería, Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-09",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Gimnasio del edificio Entre Vicuñas"
+     },
+     {
+      "src": "/proyectos/entre-vicunas/galeria-10",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Terraza con vista a la cordillera, Entre Vicuñas"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/118/Brochure-Entre-Vicu%C3%B1as.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/entre-vicunas"
+  },
+  {
+   "slug": "froilan-roa-5731",
+   "slugOrigen": "froilan-roa-5731",
+   "nombre": "Froilán Roa 5731",
+   "comuna": "La Florida",
+   "comunaSlug": "la-florida",
+   "direccion": "Froilán Roa 5731",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2027,
+    "semestre": 2,
+    "corto": "Entrega 2S 2027",
+    "largo": "2do semestre 2027",
+    "orden": 20272
+   },
+   "desdeUF": 3049,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 58,
+   "metro": "Metro Mirador",
+   "coords": {
+    "lat": -33.510055,
+    "lng": -70.602264,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 62 cuotas",
+    "Hasta 9% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": null,
+    "parrafos": [
+     "Ubicado en Froilán Roa 5731 en la comuna de La Florida, te presenta una excelente oportunidad de inversión con arriendo asegurado, garantizando ingresos estables desde el primer día. Este proyecto se encuentra en una zona estratégica, ideal para quienes buscan rentabilidad a largo plazo en una comuna en constante crecimiento.",
+     "Los departamentos están diseñados para ofrecer comodidad y modernidad, con piso vinílico SPC, campana, horno eléctrico, cortinas roller, luminarias LED, ventanas de termopanel y muebles con cubierta de granito, todo pensado para brindar un espacio de alta calidad a los arrendatarios. Froilán Roa también cuenta con diversas amenidades pensadas para el bienestar de sus residentes, tales como lavandería, bicicletero, gimnasio, quincho, piscina, sala multiuso, pet spa, salón cowork y salón infantil, ideales para una vida cómoda y llena de opciones de esparcimiento. Aprovecha esta oportunidad y realiza una inversión sólida con alto potencial de valorización. Froilán Roa es el proyecto perfecto para quienes buscan una rentabilidad segura y sostenible en una de las mejores ubicaciones de La Florida. ¡No pierdas esta oportunidad única de inversión! Contáctanos y asegura tu lugar en Froilán Roa."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 31,
+     "supTotal": 34,
+     "precioUF": 3049,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/froilan-roa-5731/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 44,
+     "supTotal": 47,
+     "precioUF": 3367,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/froilan-roa-5731/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "Mariposa",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 46,
+     "supTotal": 49,
+     "precioUF": 3723,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/froilan-roa-5731/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 55,
+     "supTotal": 58,
+     "precioUF": 3883,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/froilan-roa-5731/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Mirador (L5)",
+       "detalle": "8 min a pie"
+      },
+      {
+       "nombre": "Metro Pedrero (L5)",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Paraderos de Av. Departamental y Vicuña Mackenna",
+       "detalle": "Diversos recorridos de buses RED, 5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque Ignacio Carrera Pinto",
+       "detalle": "Amplio espacio verde, 18 min a pie"
+      },
+      {
+       "nombre": "Plaza Ventura",
+       "detalle": "8 min a pie"
+      },
+      {
+       "nombre": "Parque Eduardo Frei",
+       "detalle": "Extenso pulmón verde con senderos y zonas de recreación, 18 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Cenco Florida (ex Florida Center)",
+       "detalle": "Centro comercial con multitiendas, cine y servicios, 10 min a pie"
+      },
+      {
+       "nombre": "Mallplaza Vespucio",
+       "detalle": "Uno de los centros comerciales más grandes del país, 14 min a pie"
+      },
+      {
+       "nombre": "Supermercado Jumbo (Florida Center)",
+       "detalle": "Opción principal para abastecimiento a gran escala, 10 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Clínica Dávila Vespucio",
+       "detalle": "Centro de salud privado de alta complejidad, 17 min a pie"
+      },
+      {
+       "nombre": "Hospital La Florida Dra. Eloísa Díaz",
+       "detalle": "7 min a pie"
+      },
+      {
+       "nombre": "Centro de Salud Familiar CESFAM Bella vista Transitorio",
+       "detalle": "5 min a pie"
+      },
+      {
+       "nombre": "Clínica Bupa Santiago",
+       "detalle": "5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Liceo Bellavista n°2 (Anexo)",
+       "detalle": "7 min a pie"
+      },
+      {
+       "nombre": "Colegio Alcántara",
+       "detalle": "20 min a pie"
+      },
+      {
+       "nombre": "Jardin Infantil Barco De Colores",
+       "detalle": "12 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/froilan-roa-5731/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Torres del proyecto Froilán Roa 5731 al atardecer, La Florida"
+    },
+    "hero": {
+     "src": "/proyectos/froilan-roa-5731/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Froilán Roa 5731"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Torres del proyecto Froilán Roa 5731 al atardecer, La Florida"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina y comedor, departamento Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño con ducha, departamento Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con dos camas, departamento Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina del edificio Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Sala de mascotas del edificio Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Salón con quincho, Froilán Roa 5731"
+     },
+     {
+      "src": "/proyectos/froilan-roa-5731/galeria-09",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Quincho con vista, Froilán Roa 5731"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/219/Brochure-Froilan-Roa.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/froilan-roa-5731"
+  },
+  {
+   "slug": "guillermo-mann-1401",
+   "slugOrigen": "guillermo-mann-1401",
+   "nombre": "Guillermo Mann 1401",
+   "comuna": "Ñuñoa",
+   "comunaSlug": "nunoa",
+   "direccion": "Guillermo Mann 1401",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 3461,
+   "dormitorios": {
+    "min": 2,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 34,
+   "metro": "Metro Ñuble",
+   "coords": {
+    "lat": -33.471138,
+    "lng": -70.618481,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 48 cuotas",
+    "16% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $2.000.000"
+   ],
+   "descripcion": {
+    "titulo": "Guillermo Mann 1401, inversión con arriendo asegurado en Ñuñoa",
+    "parrafos": [
+     "Ofrece un proyecto único en una comuna consolidada, a pasos de las estaciones de Metro Rodrigo de Araya y Ñuble (L5), y cerca del nuevo Mall Vivo.",
+     "Este proyecto cuenta con años de arriendo asegurado, lo que te garantiza ingresos estables desde el inicio de la inversión. Invierte en un proyecto con excelente conectividad y potencial de crecimiento.",
+     "Los departamentos cuentan con piso vinílico SPC, ventanas de PVC con vidrio termopanel, cocina equipada con granito, horno eléctrico y encimera vitrocerámica, además de alarma de seguridad en la puerta principal. Disfruta de excepcionales comodidades como sala de coworking, sala infantil, bicicletero, plaza exterior y piscina, pensadas para ofrecer una excelente calidad de vida a los arrendatarios. Un proyecto diseñado para generar ingresos sostenibles a largo plazo.",
+     "Aprovecha esta excelente oportunidad en una comuna de alto desarrollo.",
+     "¡Contáctanos y asegura tu inversión en Guillermo Mann 1401!"
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 31,
+     "supTotal": 34,
+     "precioUF": 3461,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/guillermo-mann-1401/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (Mariposa)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 51,
+     "supTotal": 54,
+     "precioUF": 4667,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/guillermo-mann-1401/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (4c)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 55,
+     "supTotal": 59,
+     "precioUF": 4753,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/guillermo-mann-1401/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Ñuble (conexión L5 + L6)",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Metro Rodrigo de Araya (L5)",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Recorridos de micro cercanos",
+       "detalle": "210, 210V, 511, D05"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Estadio Nacional",
+       "detalle": "Gran polo deportivo y áreas asociadas, 15–25 min a pie"
+      },
+      {
+       "nombre": "Cercanía a parques y clubes deportivos del sector",
+       "detalle": "5–15 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Cercano a supermercados y locales comerciales",
+       "detalle": "Servicios de barrio, 8–18 min a pie"
+      },
+      {
+       "nombre": "Buena conectividad hacia ejes comerciales",
+       "detalle": "Por Av. Vicuña Mackenna, 10–20 min a pie"
+      },
+      {
+       "nombre": "Nómades Foods",
+       "detalle": "Ideal para desayunos o almuerzos rápidos, 3 min a pie"
+      },
+      {
+       "nombre": "Cafeterías de especialidad",
+       "detalle": "30-40 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "CESFAM Rosita Renard",
+       "detalle": "10–20 min a pie"
+      },
+      {
+       "nombre": "CESFAM Salvador Bustos",
+       "detalle": "10–20 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Junta Nacional de Jardines Infantiles (JUNJI)",
+       "detalle": "1 min a pie"
+      },
+      {
+       "nombre": "Jardín Tierra de Niños",
+       "detalle": "5 min a pie"
+      },
+      {
+       "nombre": "Escuela Básica Guardia Marina Guillermo Zañartu",
+       "detalle": "14 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/guillermo-mann-1401/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Guillermo Mann 1401 con la cordillera de fondo, Ñuñoa"
+    },
+    "hero": {
+     "src": "/proyectos/guillermo-mann-1401/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Guillermo Mann 1401"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Guillermo Mann 1401 con la cordillera de fondo, Ñuñoa"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor con cocina, departamento Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal con vista, Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina equipada, departamento Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con escritorio, Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Gimnasio del edificio Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Quincho en la azotea, Guillermo Mann 1401"
+     },
+     {
+      "src": "/proyectos/guillermo-mann-1401/galeria-09",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina con jardín, Guillermo Mann 1401"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/332/Ficha-de-sostenibilidad.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/guillermo-mann-1401"
+  },
+  {
+   "slug": "independencia-4745",
+   "slugOrigen": "independencia-4745",
+   "nombre": "Independencia 4745",
+   "comuna": "Conchalí",
+   "comunaSlug": "conchali",
+   "direccion": "Independencia 4745",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 3135,
+   "dormitorios": {
+    "min": 2,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 69,
+   "metro": "Metro Vivaceta",
+   "coords": {
+    "lat": -33.385501,
+    "lng": -70.678627,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el pie hasta en 48 cuotas",
+    "24% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.500.000"
+   ],
+   "descripcion": {
+    "titulo": "Invierte en una propuesta moderna en un sector de alta plusvalía, excelente conectividad y gran proyección urbana.",
+    "parrafos": [
+     "Independencia 4745 te ofrece un proyecto único en una zona de alta plusvalía, a pasos de Av. Independencia y la estación de Metro Vivaceta (Línea 3).",
+     "Disfruta de comodidades excepcionales como lavandería, bicicletero, gimnasio, piscina, sala multiuso y salón infantil.",
+     "Los departamentos cuentan con piso vinílico SPC, ventanas de PVC con vidrio termopanel, cocina equipada con granito, horno eléctrico y encimera vitrocerámica, además de alarma de seguridad en la puerta principal.",
+     "Y para tu tranquilidad, te ofrecemos años de arriendo asegurado, eliminando cualquier preocupación por la vacancia.",
+     "Aprovecha esta excelente oportunidad de inversión en una comuna en constante crecimiento.",
+     "¡Contáctanos y asegura tu lugar en Independencia 4745!"
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 40,
+     "supTotal": 42,
+     "precioUF": 3135,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/independencia-4745/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 46,
+     "supTotal": 48,
+     "precioUF": 3291,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/independencia-4745/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "Mariposa 2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 47,
+     "supTotal": 49,
+     "precioUF": 3552,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/independencia-4745/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baño (4c)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 52,
+     "supTotal": 54,
+     "precioUF": 3663,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/independencia-4745/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Vivaceta (L3)",
+       "detalle": "2 min a pie"
+      },
+      {
+       "nombre": "Corredor Independencia",
+       "detalle": "Justo frente a la dirección pasan diversos recorridos de buses RED que recorren todo el eje de Av. Independencia"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Plaza Unesco",
+       "detalle": "Una plaza local cercana ideal para caminatas cortas, 15 min a pie"
+      },
+      {
+       "nombre": "Plaza Campanario",
+       "detalle": "7 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Lider Independencia",
+       "detalle": "12-15 min a pie"
+      },
+      {
+       "nombre": "Alvi Conchalí",
+       "detalle": "Situado al lado del Lider, ideal para compras mayoristas, 10 min a pie"
+      },
+      {
+       "nombre": "Comercio Local",
+       "detalle": "El sector cuenta con farmacias, panaderías y locales de comida rápida a lo largo de la avenida principal"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "SIS Servicio Integral de Salud",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Consulta Médica Dra. Erika Pastenes",
+       "detalle": "7 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Colegio San Diego",
+       "detalle": "3 min a pie"
+      },
+      {
+       "nombre": "Colegio Libertador San Martín",
+       "detalle": "10 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/independencia-4745/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Independencia 4745 al atardecer, Conchalí"
+    },
+    "hero": {
+     "src": "/proyectos/independencia-4745/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Independencia 4745"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/independencia-4745/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Independencia 4745 al atardecer, Conchalí"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Comedor y living, departamento Independencia 4745"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living, departamento Independencia 4745"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento Independencia 4745"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con vista a la ciudad, Independencia 4745"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con cocina americana, Independencia 4745"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, Independencia 4745"
+     },
+     {
+      "src": "/proyectos/independencia-4745/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina con barra, Independencia 4745"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/47/Brochure.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/independencia-4745"
+  },
+  {
+   "slug": "jose-pedro-alessandri",
+   "slugOrigen": "jose-pedro-alessandri",
+   "nombre": "José Pedro Alessandri",
+   "comuna": "Ñuñoa",
+   "comunaSlug": "nunoa",
+   "direccion": "Av. José Pedro Alessandri 1498",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 3401,
+   "dormitorios": {
+    "min": 1,
+    "max": 3
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 11,
+   "metro": "Estadio Nacional",
+   "coords": {
+    "lat": -33.468211,
+    "lng": -70.597866,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "12% descuento máximo aplicado",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": "Destaca por su excelente conectividad en Ñuñoa, cercano al Metro Estadio Nacional, con servicios, comercio y referentes urbanos como el principal coliseo deportivo de Santiago",
+    "parrafos": [
+     "Su propuesta combina diseño contemporáneo, espacios bien pensados y terminaciones de calidad, ideal para quienes buscan vivir o invertir en una comuna consolidada y con alta proyección.",
+     "Características y terminaciones:",
+     "Piso porcelanato parket color roble en todo el departamento. Ventanas de termopanel PVC color madera. Cocina equipada con horno eléctrico y campana que cuenta con filtro anti-grasa y anti-olores.",
+     "Todos los departamentos incluyen en el equipamiento cotinas roller y equipamiento de iluminación LED"
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 30,
+     "supTotal": 34,
+     "precioUF": 3401,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/jose-pedro-alessandri/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 51,
+     "supTotal": 55,
+     "precioUF": 4580,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/jose-pedro-alessandri/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 57,
+     "supTotal": 66,
+     "precioUF": 5148,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/jose-pedro-alessandri/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "3 dorm 2 baños",
+     "dormitorios": 3,
+     "banos": 2,
+     "supUtil": 76,
+     "supTotal": 85,
+     "precioUF": 6371,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/jose-pedro-alessandri/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Estadio Nacional (L6)",
+       "detalle": "20-25 min a pie"
+      },
+      {
+       "nombre": "Paradero",
+       "detalle": "Pd82 – Exequiel Fernández / Esq. Av. Grecia (muy cercano al eje)."
+      },
+      {
+       "nombre": "Micros",
+       "detalle": "104, 212, 224, 325, 506 (y variantes), 507 (y variantes), 510, 516, 519, 126, 106."
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque / Complejo Estadio Nacional",
+       "detalle": "Polo recreativo/deportivo cercano, 10-15 min a pie"
+      },
+      {
+       "nombre": "Áreas peatonales y entorno residencial del sector",
+       "detalle": "Estadio Nacional – Grecia – Alessandri (con plazas y bandejones), 10-15 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Cenco Ñuñoa (ex Portal Ñuñoa)",
+       "detalle": "5-12 min a pie"
+      },
+      {
+       "nombre": "Servicios y tiendas del eje",
+       "detalle": "Cine, retail asociados a “Portal Ñuñoa” en el sector, 5 min a pie"
+      },
+      {
+       "nombre": "Oferta de restaurantes y cafés",
+       "detalle": "Entorno Plaza Ñuñoa, 23 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "CESFAM Salvador Bustos",
+       "detalle": "Red de salud comunal de Ñuñoa, 10-20 min a pie"
+      },
+      {
+       "nombre": "Clínica Veterinaria Macul",
+       "detalle": "5-10 min a pie"
+      },
+      {
+       "nombre": "Sapu Ñuñoa",
+       "detalle": "2 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "UMCE (Ex-Pedagógico) Campus Macul",
+       "detalle": "11 min a pie"
+      },
+      {
+       "nombre": "Jardín Infantil Auca",
+       "detalle": "24 min a pie"
+      },
+      {
+       "nombre": "Jardín Tierra de Niños",
+       "detalle": "27 min a pie"
+      },
+      {
+       "nombre": "Facultad de Ciencias de la U. de Chile",
+       "detalle": "10 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/jose-pedro-alessandri/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Edificio José Pedro Alessandri visto desde la avenida, Ñuñoa"
+    },
+    "hero": {
+     "src": "/proyectos/jose-pedro-alessandri/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio José Pedro Alessandri"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Edificio José Pedro Alessandri visto desde la avenida, Ñuñoa"
+     },
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con salida al balcón, departamento piloto José Pedro Alessandri"
+     },
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento piloto José Pedro Alessandri"
+     },
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living, departamento piloto José Pedro Alessandri"
+     },
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño con tina, José Pedro Alessandri"
+     },
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Balcón con vista a la ciudad, José Pedro Alessandri"
+     },
+     {
+      "src": "/proyectos/jose-pedro-alessandri/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina y living, departamento piloto José Pedro Alessandri"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/181/Brochure-Jose-Pedro-Alessandri.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/jose-pedro-alessandri"
+  },
+  {
+   "slug": "mapocho-3521",
+   "slugOrigen": "mapocho-3521",
+   "nombre": "Mapocho 3521",
+   "comuna": "Quinta Normal",
+   "comunaSlug": "quinta-normal",
+   "direccion": "Rivas Vicuña 1131",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 2994,
+   "dormitorios": {
+    "min": 2,
+    "max": 3
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 89,
+   "metro": "Metro Quinta Normal",
+   "coords": {
+    "lat": -33.432198,
+    "lng": -70.683626,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 48 cuotas",
+    "20% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.500.000"
+   ],
+   "descripcion": {
+    "titulo": "Excelente conectividad, entorno con áreas verdes y alto potencial de inversión",
+    "parrafos": [
+     "Ubicado en una zona de Quinta Normal que lo tiene todo, conexión directa con el centro de la ciudad, supermercados, comercios y servicios para tu comodidad.",
+     "Además, te encontrarás rodeado de áreas verdes y una excelente conectividad gracias al transporte público y las principales avenidas.",
+     "A solo pasos del Parque Quinta Normal, disfrutarás de grandes espacios al aire libre, museos y áreas perfectas para pasar tiempo con amigos o en familia.",
+     "El proyecto cuenta con años de arriendo asegurado, brindando estabilidad y rentabilidad desde el inicio de tu inversión.",
+     "Características y terminaciones: Los departamentos cuentan con piso de gres porcelanato en todo su interior, ventanas de termopanel en marcos de PVC, y una cocina equipada con encimera vitrocerámica, horno eléctrico y campana retráctil. Los muebles de cocina tienen cubierta de granito, y además, todos los departamentos incluyen cortinas roller, iluminación LED y alarma de seguridad en la puerta de acceso.",
+     "Otros equipamientos destacados: Piscina, bicicletero, salón de niños, patio exterior, Quinchos y sala cowork. ¡Invierte ya mismo en Mapocho 3521!"
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 38,
+     "supTotal": 41,
+     "precioUF": 2994,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/mapocho-3521/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 42,
+     "supTotal": 45,
+     "precioUF": 3093,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/mapocho-3521/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "3 dorm 2 baños",
+     "dormitorios": 3,
+     "banos": 2,
+     "supUtil": 52,
+     "supTotal": 55,
+     "precioUF": 3622,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/mapocho-3521/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Quinta Normal (L5)",
+       "detalle": "12-15 min a pie"
+      },
+      {
+       "nombre": "Metro Gruta de Lourdes (L5)",
+       "detalle": "15 min a pie"
+      },
+      {
+       "nombre": "Paraderos RED",
+       "detalle": "Paraderos con recorridos que conectan directamente con el centro de Santiago y el sector oriente"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Plazoleta Ciudad de los Reyes (Sur)",
+       "detalle": "Ubicada prácticamente frente a la dirección, 6 min a pie"
+      },
+      {
+       "nombre": "Parque Quinta Normal",
+       "detalle": "Es uno de los parques más importantes de la ciudad, con lagunas, museos y amplias áreas verdes, 12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Lider Matucana",
+       "detalle": "El supermercado de gran formato más cercano, ubicado en Matucana con Mapocho (aprox. 800 m)"
+      },
+      {
+       "nombre": "Comercio en Av. Mapocho",
+       "detalle": "A pocos metros encontrarás una gran variedad de locales comerciales, ferreterías, panaderías y farmacias que abastecen al sector"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "SEM (Servicio de Especialidades Médicas)",
+       "detalle": "12 min a pie"
+      },
+      {
+       "nombre": "CESFAM Andes",
+       "detalle": "12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Colegio Politécnico Santa Ana",
+       "detalle": "11 min a pie"
+      },
+      {
+       "nombre": "Escuela Nuestra Señora de Lourdes",
+       "detalle": "12 min a pie"
+      },
+      {
+       "nombre": "Colegio Gabriela Mistral",
+       "detalle": "16 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/mapocho-3521/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Mapocho 3521 al atardecer, Quinta Normal"
+    },
+    "hero": {
+     "src": "/proyectos/mapocho-3521/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Mapocho 3521"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/mapocho-3521/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Mapocho 3521 al atardecer, Quinta Normal"
+     },
+     {
+      "src": "/proyectos/mapocho-3521/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento Mapocho 3521"
+     },
+     {
+      "src": "/proyectos/mapocho-3521/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio, departamento Mapocho 3521"
+     },
+     {
+      "src": "/proyectos/mapocho-3521/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina con barra, departamento Mapocho 3521"
+     },
+     {
+      "src": "/proyectos/mapocho-3521/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Mapocho 3521"
+     },
+     {
+      "src": "/proyectos/mapocho-3521/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina en la azotea, Mapocho 3521"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/232/Brochure-Mapocho-35211.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/mapocho-3521"
+  },
+  {
+   "slug": "marina-pacifico",
+   "slugOrigen": "mirador-pacifico",
+   "nombre": "Marina Pacífico",
+   "comuna": "Coquimbo",
+   "comunaSlug": "coquimbo",
+   "direccion": "Av. Los Pescadores 5121",
+   "region": "Coquimbo",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 2525,
+   "dormitorios": {
+    "min": 1,
+    "max": 3
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 0,
+   "metro": null,
+   "coords": {
+    "lat": -29.947893,
+    "lng": -71.290943,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 36 cuotas",
+    "Hasta 10% descuento máximo aplicado",
+    "Ingreso mínimo requerido $1.500.000"
+   ],
+   "descripcion": {
+    "titulo": "Marina Pacífico te invita a vivir una nueva experiencia frente al mar, en un proyecto con alto valor residencial y proyección de inversión.",
+    "parrafos": [
+     "Ubicado en Coquimbo, en una zona con desarrollo sostenido, este proyecto se sitúa cerca de áreas recreativas, comercio local y atractivos turísticos. Una propuesta que destaca por su entorno natural y su tranquilidad.",
+     "Los departamentos incorporan terminaciones pensadas para el uso diario y el bienestar: piso de gres porcelanato, ventanas con marcos de PVC en tono blanco y cristales termopanel que favorecen el aislamiento térmico y acústico. La cocina está equipada con encimera vitrocerámica, horno eléctrico y campana. Cada unidad está preparada con conexión para lavadora.",
+     "Además, cada departamento cuenta con alarma en la puerta principal, brindando mayor seguridad. Haz de Marina Pacífico tu nuevo lugar para comenzar o proyectar tu inversión. Escríbenos y conoce más sobre esta propuesta que combina entorno, diseño y funcionalidad."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 31,
+     "supTotal": 34,
+     "precioUF": 2525,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/marina-pacifico/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 41,
+     "supTotal": 44,
+     "precioUF": 2827,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/marina-pacifico/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 53,
+     "supTotal": 57,
+     "precioUF": 3251,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/marina-pacifico/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "3 dorm 2 baños (5c)",
+     "dormitorios": 3,
+     "banos": 2,
+     "supUtil": 66,
+     "supTotal": 76,
+     "precioUF": 4334,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/marina-pacifico/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "3 dorm 2 baños (6c)",
+     "dormitorios": 3,
+     "banos": 2,
+     "supUtil": 72,
+     "supTotal": 85,
+     "precioUF": 5004,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/marina-pacifico/planta-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Acceso Vial",
+       "detalle": "Rápida conexión con la Ruta 5 Norte, el eje principal de la región"
+      },
+      {
+       "nombre": "Transporte Público",
+       "detalle": "Por la Ruta 5 circulan diversas líneas de buses y colectivos que conectan con el centro de Coquimbo, La Serena y el sector de Sindempart"
+      }
+     ]
+    },
+    {
+     "categoria": "Entretenimiento",
+     "items": [
+      {
+       "nombre": "Playa Peñuelas",
+       "detalle": "Estás a solo metros de una de las playas más amplias y concurridas de la zona, 7 min a pie"
+      },
+      {
+       "nombre": "Enjoy Coquimbo (Casino)",
+       "detalle": "5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Pueblito Peñuelas",
+       "detalle": "Ubicado a pasos de la dirección, es un centro gastronómico y artesanal imperdible con una amplia oferta de restaurantes y productos locales, 5 min a pie"
+      },
+      {
+       "nombre": "Punto Market Peñuelas",
+       "detalle": "Minimarket cercano, 5 min a pie"
+      },
+      {
+       "nombre": "Express de Lider",
+       "detalle": "12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "UC Christus Consulta Médica",
+       "detalle": "Centro médico de prestigio ubicado en el sector de Peñuelas Norte, 11 min a pie"
+      },
+      {
+       "nombre": "Clínica Mirador de Peñuelas",
+       "detalle": "Ubicada hacia la zona alta del sector, 20 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Escuela Peñuelas",
+       "detalle": "8 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/marina-pacifico/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Edificio Marina Pacífico junto a la bahía de Coquimbo"
+    },
+    "hero": {
+     "src": "/proyectos/marina-pacifico/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Marina Pacífico"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/marina-pacifico/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Edificio Marina Pacífico junto a la bahía de Coquimbo"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Marina Pacífico"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento Marina Pacífico"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Comedor y cocina, departamento Marina Pacífico"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina con vista al mar, Marina Pacífico"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Comedor con vista, departamento Marina Pacífico"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living, departamento Marina Pacífico"
+     },
+     {
+      "src": "/proyectos/marina-pacifico/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Terraza con vista al mar, Marina Pacífico"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/62/Brochure-Marina-pacifico.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/mirador-pacifico"
+  },
+  {
+   "slug": "mirador-irarrazaval",
+   "slugOrigen": "mirador-irarrazabal",
+   "nombre": "Mirador Irarrázaval",
+   "comuna": "Ñuñoa",
+   "comunaSlug": "nunoa",
+   "direccion": "Obispo Orrego 40",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2028,
+    "semestre": 1,
+    "corto": "Entrega 1S 2028",
+    "largo": "1er semestre 2028",
+    "orden": 20281
+   },
+   "desdeUF": 4026,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": false,
+   "plusvalia": 33,
+   "metro": "Metro Monseñor Eyzaguirre (L3)",
+   "coords": {
+    "lat": -33.453714,
+    "lng": -70.618802,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 66 cuotas",
+    "5% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $2.000.000"
+   ],
+   "descripcion": {
+    "titulo": "Mirador Irarrázaval, un moderno proyecto ubicado en Ñuñoa, ideal para quienes buscan una inversión inteligente en una comuna consolidada.",
+    "parrafos": [
+     "Ubicado en un sector privilegiado, este proyecto ofrece una excelente ubicación dentro de la ciudad, rodeado de servicios, comercio, cultura y conectividad, en uno de los lugares más valorados de Ñuñoa. Es una opción atractiva tanto para vivir como para invertir, gracias a su alta demanda y entorno en constante renovación.",
+     "Los departamentos están diseñados para ofrecer comodidad: piso vinílico SPC en las áreas principales, cerámica en baños y terrazas, y ventanas con marcos de PVC blanco y termopanel que mejoran la eficiencia del hogar. La cocina viene completamente equipada con horno eléctrico, encimera vitrocerámica, campana retráctil y muebles con cubierta de granito.",
+     "Además, los departamentos incorporan conexión para lavadora y sistema de alarma en la puerta principal.",
+     "Mirador Irarrázabal está pensado para quienes buscan una vida urbana, práctica y con estilo, en una de las comunas consolidadas de la ciudad.",
+     "Contáctanos y sé parte de este gran proyecto."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 35,
+     "supTotal": 38,
+     "precioUF": 4026,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/mirador-irarrazaval/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 51,
+     "supTotal": 54,
+     "precioUF": 5019,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/mirador-irarrazaval/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (M)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 53,
+     "supTotal": 57,
+     "precioUF": 5596,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/mirador-irarrazaval/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 58,
+     "supTotal": 62,
+     "precioUF": 6010,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/mirador-irarrazaval/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Paraderos cercanos",
+       "detalle": "Pd526 (Parada 3 / Villa Olímpica), 3 min a pie"
+      },
+      {
+       "nombre": "Paraderos cercanos",
+       "detalle": "Pd644 (Parada 1 / Villa Olímpica), 4 min a pie"
+      },
+      {
+       "nombre": "Paraderos en el eje Carlos Dittborn / Esq. Obispo Orrego",
+       "detalle": "(Pd1137 / Pd836), 6 min a pie"
+      },
+      {
+       "nombre": "Estación de metro referida como cercana",
+       "detalle": "Irarrázaval (L3/L5), 11 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Estadio Nacional / Parque Deportivo",
+       "detalle": "17 min a pie"
+      },
+      {
+       "nombre": "Áreas de barrio y plazas del entorno Villa Olímpica – Irarrázaval",
+       "detalle": "Zona residencial con veredas arboladas, 5-12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Comercio y servicios típicos del eje Irarrázaval",
+       "detalle": "11 min a pie"
+      },
+      {
+       "nombre": "Polo gastronómico de Plaza Ñuñoa",
+       "detalle": "Restaurantes y bares a corta distancia en el sector"
+      },
+      {
+       "nombre": "Oferta de restaurantes del Boulevard Plaza Ñuñoa",
+       "detalle": "15-25 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Red de centros de salud comunales de Ñuñoa",
+       "detalle": "CESFAM, CECOSF, COSAM, farmacias municipales, 12-22 min a pie"
+      },
+      {
+       "nombre": "Atención primaria",
+       "detalle": "CESFAM Salvador Bustos (Ñuñoa), 15-25 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Escuela Básica Manuel Antonio Matta",
+       "detalle": "3 min a pie"
+      },
+      {
+       "nombre": "Colegio Universitario El Salvador",
+       "detalle": "9 min a pie"
+      },
+      {
+       "nombre": "Liceo Brígida Walker",
+       "detalle": "13 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/mirador-irarrazaval/card",
+     "w": 1000,
+     "h": 625,
+     "anchos": [
+      480,
+      800
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Torre Mirador Irarrázaval, Ñuñoa"
+    },
+    "hero": {
+     "src": "/proyectos/mirador-irarrazaval/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Mirador Irarrázaval"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-01",
+      "w": 1000,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Torre Mirador Irarrázaval, Ñuñoa"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con cocina y vista al cerro, Mirador Irarrázaval"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento Mirador Irarrázaval"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con dos camas, Mirador Irarrázaval"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal con vista, Mirador Irarrázaval"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Lobby del edificio Mirador Irarrázaval"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Sala de niños, Mirador Irarrázaval"
+     },
+     {
+      "src": "/proyectos/mirador-irarrazaval/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Patio con piscina, Mirador Irarrázaval"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/368/Brochure-Mirador-Irrarazaval_-%281%29.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/mirador-irarrazabal"
+  },
+  {
+   "slug": "nova-parque",
+   "slugOrigen": "nova-parque",
+   "nombre": "Nova Parque",
+   "comuna": "San Joaquín",
+   "comunaSlug": "san-joaquin",
+   "direccion": "Vicuña Mackenna 3747",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2028,
+    "semestre": 2,
+    "corto": "Entrega 2S 2028",
+    "largo": "2do semestre 2028",
+    "orden": 20282
+   },
+   "desdeUF": 2725,
+   "dormitorios": {
+    "min": 1,
+    "max": 1
+   },
+   "banos": {
+    "min": 1,
+    "max": 1
+   },
+   "subsidio": true,
+   "plusvalia": 0,
+   "metro": null,
+   "coords": {
+    "lat": -33.46987,
+    "lng": -70.624756,
+    "fuente": "OpenStreetMap (Nominatim)",
+    "precision": "aproximada"
+   },
+   "beneficios": [
+    "Paga el pie en hasta 61 cuotas",
+    "12% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": null,
+    "parrafos": [
+     "San Joaquín dejó de ser solo un cruce de autopistas hacia el oriente. Hoy es uno de los sectores con más movimiento universitario de Santiago, conectado directo por Vicuña Mackenna, Departamental y Santa Rosa, con un desarrollo urbano que recién está tomando forma.",
+     "Nova Parque te pone en el centro de ese cambio, sobre la misma Vicuña Mackenna y a pasos de la Línea 5 de Metro.",
+     "Departamentos de alta calidad, con espacios comunes cuidados y sistema de seguridad, ventanas termopanel de PVC, cocina equipada con encimera vitrocerámica, horno eléctrico y muebles de cocina.",
+     "Todos los departamentos incluyen terminaciones pensadas a tu medida."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 29,
+     "supTotal": 30,
+     "precioUF": 2725,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/nova-parque/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro San Joaquín (Línea 5)",
+       "detalle": "14 minutos caminando."
+      },
+      {
+       "nombre": "Locomoción",
+       "detalle": "Paraderos en la puerta del proyecto."
+      },
+      {
+       "nombre": "Acceso Autopista Central / Vespucio",
+       "detalle": "A minutos en auto por Departamental o Carlos Valdovinos."
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque Isabel Riquelme",
+       "detalle": "2,5 a 3 km, cerca de Metro Pedrero, extremo sur de la comuna."
+      },
+      {
+       "nombre": "Plazas y bandejones verdes",
+       "detalle": "Eje Vicuña Mackenna."
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Comercio de barrio",
+       "detalle": "Minimarkets y servicios sobre la propia Vicuña Mackenna."
+      },
+      {
+       "nombre": "Strip centers y farmacias",
+       "detalle": "Ubicados en Av. Departamental."
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "CESFAM San Joaquín y CESFAM Santa Teresa de los Andes",
+       "detalle": "Consultorios de la red comunal."
+      },
+      {
+       "nombre": "Clínicas y centros médicos privados",
+       "detalle": "Ubicados en Ñuñoa, Macul y comunas colindantes."
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Campus San Joaquín, Pontificia Universidad Católica de Chile",
+       "detalle": "Ubicada junto a Metro San Joaquín, conectado por pasarela elevada."
+      },
+      {
+       "nombre": "Campus San Joaquín, Universidad Técnica Federico Santa María e Inacap sede Santiago Sur",
+       "detalle": "Ubicados junto a Metro Camino Agrícola."
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/nova-parque/card",
+     "w": 1364,
+     "h": 853,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Nova Parque, San Joaquín"
+    },
+    "hero": {
+     "src": "/proyectos/nova-parque/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Nova Parque"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/nova-parque/galeria-01",
+      "w": 1364,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Nova Parque, San Joaquín"
+     },
+     {
+      "src": "/proyectos/nova-parque/galeria-02",
+      "w": 1600,
+      "h": 640,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Sala multiuso con vista al jardín, Nova Parque"
+     },
+     {
+      "src": "/proyectos/nova-parque/galeria-03",
+      "w": 1600,
+      "h": 828,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con cocina, departamento Nova Parque"
+     },
+     {
+      "src": "/proyectos/nova-parque/galeria-04",
+      "w": 1600,
+      "h": 694,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Lobby de acceso, Nova Parque"
+     }
+    ]
+   },
+   "brochure": null,
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/nova-parque"
+  },
+  {
+   "slug": "plaza-de-lourdes",
+   "slugOrigen": "plaza-de-lourdes",
+   "nombre": "Plaza de Lourdes",
+   "comuna": "Quinta Normal",
+   "comunaSlug": "quinta-normal",
+   "direccion": "Av. San Pablo 3770",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "futura",
+    "anio": 2028,
+    "semestre": 1,
+    "corto": "Entrega 1S 2028",
+    "largo": "1er semestre 2028",
+    "orden": 20281
+   },
+   "desdeUF": 2733,
+   "dormitorios": {
+    "min": 1,
+    "max": 3
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 89,
+   "metro": "Gruta de Lourdes",
+   "coords": {
+    "lat": -33.437199,
+    "lng": -70.686503,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 60 cuotas",
+    "7% descuento máximo aplicado, Euro te aporta el 5% del depto",
+    "2 años de arriendo asegurado",
+    "Ingreso mínimo requerido $1.500.000"
+   ],
+   "descripcion": {
+    "titulo": null,
+    "parrafos": [
+     "A pasos del Metro Gruta de Lourdes, su diseño contemporáneo y terminaciones de calidad ofrecen espacios pensados para vivir con estilo, comodidad y una excelente proyección de valor en un entorno con historia y gran conectividad.",
+     "Disponibles en formatos de 1, 2 y 3 dormitorios, cada unidad ha sido diseñada para ofrecer espacios funcionales, modernos y acogedores. Piso vinílico SPC en cocina, living comedor, dormitorios y pasillos, ideal por su resistencia y fácil mantención. Piso cerámico en baños y terrazas, aportando durabilidad y estilo. Ventanas termopanel, que mejoran el aislamiento térmico y acústico. Cocina equipada con encimera vitrocerámica, horno eléctrico, campana retráctil y muebles con cubierta de granito. Cortinas roller e iluminación LED instaladas en todos los departamentos, listos para habitar desde el primer día."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 30,
+     "supTotal": 32,
+     "precioUF": 2733,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/plaza-de-lourdes/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 38,
+     "supTotal": 40,
+     "precioUF": 3122,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/plaza-de-lourdes/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 48,
+     "supTotal": 50,
+     "precioUF": 3566,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/plaza-de-lourdes/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "Mariposa",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 48,
+     "supTotal": 50,
+     "precioUF": 3710,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/plaza-de-lourdes/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 52,
+     "supTotal": 54,
+     "precioUF": 3824,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/plaza-de-lourdes/planta-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "3 dorm 2 baños",
+     "dormitorios": 3,
+     "banos": 2,
+     "supUtil": 59,
+     "supTotal": 62,
+     "precioUF": 4246,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/plaza-de-lourdes/planta-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Gruta de Lourdes (L5)",
+       "detalle": "5-7 min a pie"
+      },
+      {
+       "nombre": "Metro Quinta Normal (L5)",
+       "detalle": "10-12 min a pie"
+      },
+      {
+       "nombre": "Corredor de Buses",
+       "detalle": "La misma Avda. San Pablo cuenta con diversos recorridos del sistema RED"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque Quinta Normal",
+       "detalle": "Uno de los parques más emblemáticos de Santiago, 10 min a pie. Alberga el Museo Nacional de Historia Natural, el Museo de Ciencia y Tecnología, y zonas de picnic"
+      },
+      {
+       "nombre": "Santuario Gruta de Lourdes",
+       "detalle": "Un importante hito religioso y patrimonial ubicado frente a la estación de metro, 3 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Lider Matucana",
+       "detalle": "Ubicado en la esquina de Matucana con Mapocho, 12 min a pie"
+      },
+      {
+       "nombre": "Santa Isabel (San Pablo)",
+       "detalle": "10 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Centro Médico y Dental Omega",
+       "detalle": "Servicios de laboratorio y atención dental, 10 min a pie"
+      },
+      {
+       "nombre": "Hospital San Juan de Dios",
+       "detalle": "12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Colegio Politécnico Santa Ana",
+       "detalle": "2 min a pie"
+      },
+      {
+       "nombre": "Escuela Nuestra Señora de Lourdes N 51",
+       "detalle": "2min a pie"
+      },
+      {
+       "nombre": "Colegio Gabriela Mistral",
+       "detalle": "6 min a pie"
+      },
+      {
+       "nombre": "Escuela Especial Santiago Apóstol",
+       "detalle": "7 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/plaza-de-lourdes/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Edificio Plaza de Lourdes con locales en el primer piso, Quinta Normal"
+    },
+    "hero": {
+     "src": "/proyectos/plaza-de-lourdes/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Plaza de Lourdes"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/plaza-de-lourdes/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Edificio Plaza de Lourdes con locales en el primer piso, Quinta Normal"
+     },
+     {
+      "src": "/proyectos/plaza-de-lourdes/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living, departamento Plaza de Lourdes"
+     },
+     {
+      "src": "/proyectos/plaza-de-lourdes/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Plaza interior del proyecto Plaza de Lourdes"
+     },
+     {
+      "src": "/proyectos/plaza-de-lourdes/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Quincho y comedor del edificio, Plaza de Lourdes"
+     },
+     {
+      "src": "/proyectos/plaza-de-lourdes/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Gimnasio, Plaza de Lourdes"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/98/Brochure-Plaza-de-lourdes.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/plaza-de-lourdes"
+  },
+  {
+   "slug": "rosas-1444",
+   "slugOrigen": "rosas-1444",
+   "nombre": "Rosas 1444",
+   "comuna": "Santiago Centro",
+   "comunaSlug": "santiago-centro",
+   "direccion": "Rosas 1438",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 2283,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 51,
+   "metro": "Metro Santa Ana",
+   "coords": {
+    "lat": -33.435842,
+    "lng": -70.657692,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 48 cuotas",
+    "32% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.700.000"
+   ],
+   "descripcion": {
+    "titulo": "Invierte en una ubicación estratégica de Santiago Centro, en un sector con historia, excelente conectividad, servicios, comercio y todo el dinamismo de la vida urbana a tu alcance",
+    "parrafos": [
+     "A solo 5 minutos del metro Santa Ana y rodeado de comercios, bancos y cafeterías, este proyecto ofrece la ubicación perfecta para tu próxima inversión.",
+     "El proyecto cuenta con años de arriendo asegurado, lo que te garantiza ingresos estables y seguros desde el primer momento.",
+     "Departamentos de alta calidad, con amplios espacios comunes y un sistema de seguridad avanzado. Disfruta de terminaciones premium: pisos de porcelanato gres, ventanas termopanel de PVC, cocina amoblada y equipada con encimera vitrocerámica, horno eléctrico y campana, y muebles de cocina con cubierta de granito.",
+     "Todos los departamentos incluyen cortinas roller y luminarias LED. Espacios pensados para tu bienestar: Piscina panorámica, pet spa, lavandería, quinchos, sala infantil, quinchos, bicicleteros y vigilancia 24/7. ¡No dejes pasar la oportunidad de invertir en el centro histórico de Santiago!"
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 31,
+     "supTotal": 33,
+     "precioUF": 2283,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/rosas-1444/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 48,
+     "supTotal": 51,
+     "precioUF": 2603,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/rosas-1444/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 50,
+     "supTotal": 52,
+     "precioUF": 4010,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/rosas-1444/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Santa Ana (L2 y L5)",
+       "detalle": "4 min a pie"
+      },
+      {
+       "nombre": "Metro Puente Cal y Canto (L2 y L3)",
+       "detalle": "8 min a pie"
+      },
+      {
+       "nombre": "Metro Plaza de Armas",
+       "detalle": "6 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque de los Reyes",
+       "detalle": "Extenso parque a orillas del río Mapocho, 10 min a pie. Cuenta con skatepark, lagunas y ferias, 15 min a pie"
+      },
+      {
+       "nombre": "Plaza de Armas",
+       "detalle": "El corazón histórico de la ciudad, 12 min a pie, rodeado de museos y edificios emblemáticos."
+      },
+      {
+       "nombre": "Parque Forestal",
+       "detalle": "15-18 min a pie hacia el oriente, ofreciendo senderos arbolados y cercanía al Museo de Bellas Artes"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Minimarket Mathy Market - Rosas",
+       "detalle": "Ubicado casi al lado, 2 min a pie, ideal para compras rápidas del día a día"
+      },
+      {
+       "nombre": "Mall Espacio M",
+       "detalle": "Centro comercial moderno, 6 min a pie. Incluye supermercado, tiendas de servicios y patio de comidas"
+      },
+      {
+       "nombre": "Mercado Central",
+       "detalle": "10 min a pie, famoso por su oferta de pescados, mariscos y gastronomía tradicional chilena"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Centro Médico Óptima Salud",
+       "detalle": "7 min a pie, ofrece diversas especialidades médicas"
+      },
+      {
+       "nombre": "RedSalud Alameda",
+       "detalle": "Centro médico y dental, 10 min a pie, calle San Martín con Alameda"
+      },
+      {
+       "nombre": "Instituto Traumatológico Dr. Teodoro Gebauer",
+       "detalle": "5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Escuela Libertadores de Chile",
+       "detalle": "5 min a pie"
+      },
+      {
+       "nombre": "Colegio de Adultos Pulmahue",
+       "detalle": "7 min a pie"
+      },
+      {
+       "nombre": "Colegio David Matarasso Sonsino",
+       "detalle": "9 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/rosas-1444/card",
+     "w": 1000,
+     "h": 625,
+     "anchos": [
+      480,
+      800
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Rosas 1444, Santiago Centro"
+    },
+    "hero": {
+     "src": "/proyectos/rosas-1444/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Rosas 1444"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/rosas-1444/galeria-01",
+      "w": 1000,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Rosas 1444, Santiago Centro"
+     },
+     {
+      "src": "/proyectos/rosas-1444/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento Rosas 1444"
+     },
+     {
+      "src": "/proyectos/rosas-1444/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina, departamento Rosas 1444"
+     },
+     {
+      "src": "/proyectos/rosas-1444/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento Rosas 1444"
+     },
+     {
+      "src": "/proyectos/rosas-1444/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Rosas 1444"
+     },
+     {
+      "src": "/proyectos/rosas-1444/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Quincho del edificio Rosas 1444"
+     }
+    ]
+   },
+   "brochure": null,
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/rosas-1444"
+  },
+  {
+   "slug": "santa-elena-1670",
+   "slugOrigen": "santa-elena-1670",
+   "nombre": "Santa Elena 1670",
+   "comuna": "Santiago Centro",
+   "comunaSlug": "santiago-centro",
+   "direccion": "Santa Elena 1670",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 2198,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": false,
+   "plusvalia": 51,
+   "metro": "Metro Ñuble",
+   "coords": {
+    "lat": -33.465914,
+    "lng": -70.628213,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 48 cuotas",
+    "hasta un 30% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.600.000"
+   ],
+   "descripcion": {
+    "titulo": "Descubre Santa Elena 1670, una propuesta única en Santiago Centro con alto potencial de inversión",
+    "parrafos": [
+     "Ubicado en una de las zonas más destacadas de la capital, Santa Elena resalta por su excelente conectividad y entorno urbano cargado de historia, arte y cultura. Un proyecto pensado para quienes buscan hacer crecer su inversión en un barrio con identidad y constante desarrollo.",
+     "Los departamentos están equipados con terminaciones de gran calidad: piso de gres porcelanato, ventanas con termopanel y marcos de PVC blanco, cocina moderna con encimera de vitrocerámica, horno eléctrico, campana y muebles de cocina con cubierta de granito.",
+     "Además, cuenta con conexión para lavadora, luces LED, cortinas roller y sistema de seguridad en el acceso principal. El edificio incorpora espacios comunes ideales para el día a día: piscina al aire libre, quinchos, gimnasio completamente equipado, sala multiuso, lavandería, zona de juegos para niños y bicicletero, todo diseñado para facilitar la vida. No dejes pasar esta opción. Escríbenos y sé propietario de este gran proyecto."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 31,
+     "supTotal": 33,
+     "precioUF": 2198,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/santa-elena-1670/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 44,
+     "supTotal": 50,
+     "precioUF": 2637,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/santa-elena-1670/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 48,
+     "supTotal": 49,
+     "precioUF": 2774,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/santa-elena-1670/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "Mariposa",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 50,
+     "supTotal": 51,
+     "precioUF": 2969,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/santa-elena-1670/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Ñuble (L5 y L6)",
+       "detalle": "8 min a pie"
+      },
+      {
+       "nombre": "Metro Irarrázaval (L3 y L5)",
+       "detalle": "15 min a pie, hacia el norte por Av. Vicuña Mackenna."
+      },
+      {
+       "nombre": "Paraderos de Av. Vicuña Mackenna",
+       "detalle": "Diversos recorridos del sistema RED, 5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Plaza Bogotá",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Parque San Eugenio",
+       "detalle": "5 min a pie"
+      },
+      {
+       "nombre": "Parque Bustamante",
+       "detalle": "Extensa área verde ideal para deportes y paseos, 7 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Aduana Market",
+       "detalle": "Minimarket conveniente para compras rápidas, 2 min a pie"
+      },
+      {
+       "nombre": "Sodimac Homecenter Ñuble",
+       "detalle": "5 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Famihealth Centro Médico y Dental",
+       "detalle": "6 min a pie"
+      },
+      {
+       "nombre": "Clínica Ñuble",
+       "detalle": "12 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Liceo Brígida Walker",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Colegio Técnico República Argentina",
+       "detalle": "14 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/santa-elena-1670/card",
+     "w": 1000,
+     "h": 625,
+     "anchos": [
+      480,
+      800
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Fachada del edificio Santa Elena 1670 al atardecer, Santiago Centro"
+    },
+    "hero": {
+     "src": "/proyectos/santa-elena-1670/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Santa Elena 1670"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-01",
+      "w": 1000,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Fachada del edificio Santa Elena 1670 al atardecer, Santiago Centro"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con escritorio, departamento Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio principal, departamento Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con dos camas, Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina con barra, departamento Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Quinchos del edificio Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina en la azotea, Santa Elena 1670"
+     },
+     {
+      "src": "/proyectos/santa-elena-1670/galeria-09",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Gimnasio, Santa Elena 1670"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/90/Sello-CEV-Santa-Elena-1670.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/santa-elena-1670"
+  },
+  {
+   "slug": "vicuna-mackenna-1432",
+   "slugOrigen": "vicuna-mackenna-1432",
+   "nombre": "Vicuña Mackenna 1432",
+   "comuna": "Ñuñoa",
+   "comunaSlug": "nunoa",
+   "direccion": "Av. Vicuña Mackenna 1432",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 3381,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": true,
+   "plusvalia": 33,
+   "metro": "Ñuble (L5 – L6)",
+   "coords": {
+    "lat": -33.460887,
+    "lng": -70.627926,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el PIE hasta en 48 cuotas",
+    "18% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.800.000"
+   ],
+   "descripcion": {
+    "titulo": null,
+    "parrafos": [
+     "Ubicado en uno de los sectores más demandados de Ñuñoa, este proyecto te ofrece una excelente oportunidad de inversión. Con conectividad ideal gracias a las estaciones de Metro Irarrázaval (Líneas 3 y 5) y Ñuble (Líneas 5 y 6), además de la plusvalía generada por la construcción del nuevo Mall Vivo, a pasos de tu futuro departamento.",
+     "El proyecto cuenta con años de arriendo asegurado, lo que te garantiza ingresos estables y seguros desde el primer momento. Adquiere un departamento en un edificio multifamily de alta calidad, con variados espacios comunes y un sistema de seguridad de primer nivel, para vivir con tranquilidad.",
+     "Características y terminaciones: Piso gres porcelanato en todo el departamento, ventanas PVC blanco con vidrio termopanel, cocina equipada con encimera vitrocerámica, horno eléctrico y campana.",
+     "Además, alarma de seguridad, cortinas roller e iluminación LED. Equipamientos destacados: Plaza interior, salón co-work, sala de niños, piscina panorámica y bicicletero, diseñados para tu comodidad."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 30,
+     "supTotal": 32,
+     "precioUF": 3381,
+     "subsidio": true,
+     "planta": {
+      "src": "/proyectos/vicuna-mackenna-1432/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 42,
+     "supTotal": 49,
+     "precioUF": 4218,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vicuna-mackenna-1432/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (M)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 46,
+     "supTotal": 52,
+     "precioUF": 4411,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vicuna-mackenna-1432/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4c)",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 48,
+     "supTotal": 51,
+     "precioUF": 4472,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vicuna-mackenna-1432/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (4c)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 55,
+     "supTotal": 60,
+     "precioUF": 4740,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vicuna-mackenna-1432/planta-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Ñuble (L5 + L6)",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Metro Irarrázaval (L3 + L5)",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Micros que circulan por el eje",
+       "detalle": "210 / 210E / 210V / 227 / 513 / D03 / H13 (entre otras)."
+      },
+      {
+       "nombre": "Paradero cercano",
+       "detalle": "Tipo “(M) Irarrázaval” a pasos (según referencia de paraderos del sector)."
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque San Eugenio",
+       "detalle": "Sector cercano a Metro Ñuble, 12-22 min a pie"
+      },
+      {
+       "nombre": "Parque Bustamante",
+       "detalle": "Accesible rápidamente por el eje, 10-25 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Locales comerciales, supermercados, bancos",
+       "detalle": "5–15 min a pie"
+      },
+      {
+       "nombre": "Barrio Italia (gastronomía, diseño y tiendas)",
+       "detalle": "Abarca parte de Ñuñoa/Providencia y queda a pocos minutos."
+      },
+      {
+       "nombre": "Conexión rápida a Plaza Ñuñoa",
+       "detalle": "Zona de restaurantes y vida urbana vía L3."
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Sapu Ñuñoa",
+       "detalle": "9 min a pie"
+      },
+      {
+       "nombre": "Cesfam Salador bustos",
+       "detalle": "8 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Jardín Infantil Anumrayen",
+       "detalle": "22 min a pie"
+      },
+      {
+       "nombre": "Universidad Mayor (Campus El Claustro)",
+       "detalle": "28 min a pie"
+      },
+      {
+       "nombre": "Escuela Básica Guardia Marina Zañartu",
+       "detalle": "20 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/vicuna-mackenna-1432/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Torre Vicuña Mackenna 1432 al atardecer, Ñuñoa"
+    },
+    "hero": {
+     "src": "/proyectos/vicuna-mackenna-1432/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Vicuña Mackenna 1432"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Torre Vicuña Mackenna 1432 al atardecer, Ñuñoa"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor con vista, departamento piloto Vicuña Mackenna 1432"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina con barra, Vicuña Mackenna 1432"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio, departamento piloto Vicuña Mackenna 1432"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina, departamento piloto Vicuña Mackenna 1432"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento piloto Vicuña Mackenna 1432"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Salón de eventos del edificio, Vicuña Mackenna 1432"
+     },
+     {
+      "src": "/proyectos/vicuna-mackenna-1432/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Piscina en la azotea, Vicuña Mackenna 1432"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/190/Brochure-Vic-Mackenna-1432.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/vicuna-mackenna-1432"
+  },
+  {
+   "slug": "vista-portugal",
+   "slugOrigen": "vista-portugal",
+   "nombre": "Vista Portugal",
+   "comuna": "Santiago Centro",
+   "comunaSlug": "santiago-centro",
+   "direccion": "Portugal 755",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 2616,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": false,
+   "plusvalia": 51,
+   "metro": "Irarrázaval",
+   "coords": {
+    "lat": -33.452205,
+    "lng": -70.634439,
+    "fuente": "OpenStreetMap (Nominatim)",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "Paga el pie hasta en 48 cuotas",
+    "17% descuento máximo aplicado, Euro te aporta el 10% del depto",
+    "4 años de arriendo asegurado y administración gratis",
+    "Ingreso mínimo requerido $1.500.000"
+   ],
+   "descripcion": {
+    "titulo": "Invierte en un ícono de Santiago Centro: entrega inmediata, altísima conectividad y una demanda de arriendo constante.",
+    "parrafos": [
+     "Vista Portugal te ofrece un proyecto único en Santiago Centro (Portugal 755 y Cuevas 758), a minutos caminando de la estación de Metro Irarrázaval (Línea 3 y 5), y rodeado de supermercados, comercios, colegios, restaurantes, bares y minimarkets que mantienen el sector siempre en movimiento.",
+     "Disfruta de comodidades excepcionales como piscina, gimnasio, quinchos, juegos infantiles, salón multiuso, lavandería y bicicletero.",
+     "Los departamentos, de 1 y 2 dormitorios, cuentan con piso de porcelanato, ventanas de PVC blanco con vidrio termopanel, cortinas roller, cocina equipada con encimera vitrocerámica eléctrica de 4 platos, horno eléctrico empotrado y campana, además de alarma de seguridad, cerradura de seguridad y Smart Eye en la puerta de acceso.",
+     "Y para tu tranquilidad, te ofrecemos 4 años de arriendo asegurado y administración gratuita, eliminando cualquier preocupación por la vacancia.",
+     "Aprovecha esta excelente oportunidad de inversión con entrega inmediata, en uno de los sectores más dinámicos y mejor conectados de la capital.",
+     "¡Contáctanos y asegura tu lugar en Vista Portugal!"
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño (2C) Cocina abierta",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 30,
+     "supTotal": 30,
+     "precioUF": 2616,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vista-portugal/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "1 dorm 1 baño (2C) Cocina abierta",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 32,
+     "supTotal": 32,
+     "precioUF": 2622,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vista-portugal/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (3C) Cocina Abierta",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 38,
+     "supTotal": 40,
+     "precioUF": 3038,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vista-portugal/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 1 baño (4C) Cocina Abierta",
+     "dormitorios": 2,
+     "banos": 1,
+     "supUtil": 37,
+     "supTotal": 45,
+     "precioUF": 3160,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vista-portugal/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (4C) Cocina Cerrada",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 53,
+     "supTotal": 55,
+     "precioUF": 3600,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vista-portugal/planta-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Irarrázaval (Línea 3)",
+       "detalle": "8 min a pie"
+      },
+      {
+       "nombre": "Corredor Av. Vicuña Mackenna",
+       "detalle": "8 min (550 m) aprox. Por ahí circulan múltiples recorridos de buses RED que conectan con el resto de Santiago Centro y Ñuñoa"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Plaza de Bolsillo Santa Isabel",
+       "detalle": "Plaza de barrio sobre Av. Santa Isabel, ideal para caminatas cortas, 10 min a pie (750 m)"
+      },
+      {
+       "nombre": "Plaza De Los Artesanos",
+       "detalle": "12-13 min a pie (900 m)"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Supermercado Tottus Vicuña Mackenna",
+       "detalle": "8 min a pie"
+      },
+      {
+       "nombre": "Supermercado Santa Isabel",
+       "detalle": "10 min a pie"
+      },
+      {
+       "nombre": "Comercio Local",
+       "detalle": "El mismo eje de Av. Portugal concentra farmacias (Cruz Verde y Ahumada, a 8 min/550 m) junto a otros locales de barrio"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "Centro Médico Monjitas, Sucursal Portugal",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Posta Central (Hospital de Urgencia Asistencia Pública)",
+       "detalle": "15 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Colegio San Francisco de Asís",
+       "detalle": "7 min a pie"
+      },
+      {
+       "nombre": "Colegio Hispano Americano",
+       "detalle": "12 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/vista-portugal/card",
+     "w": 750,
+     "h": 469,
+     "anchos": [
+      480
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Edificio Vista Portugal al anochecer, Santiago Centro"
+    },
+    "hero": {
+     "src": "/proyectos/vista-portugal/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Vista Portugal"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/vista-portugal/galeria-01",
+      "w": 750,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio, departamento piloto Vista Portugal"
+     },
+     {
+      "src": "/proyectos/vista-portugal/galeria-02",
+      "w": 750,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina, departamento piloto Vista Portugal"
+     },
+     {
+      "src": "/proyectos/vista-portugal/galeria-03",
+      "w": 750,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Baño, departamento piloto Vista Portugal"
+     },
+     {
+      "src": "/proyectos/vista-portugal/galeria-04",
+      "w": 750,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento piloto Vista Portugal"
+     },
+     {
+      "src": "/proyectos/vista-portugal/galeria-05",
+      "w": 750,
+      "h": 1000,
+      "anchos": [
+       640
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Edificio Vista Portugal al anochecer, Santiago Centro"
+     },
+     {
+      "src": "/proyectos/vista-portugal/galeria-06",
+      "w": 1404,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living y cocina, departamento piloto Vista Portugal"
+     }
+    ]
+   },
+   "brochure": "https://euroinmobiliaria.cl/storage/361/Brochure-Vista-Portugal.pdf",
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/vista-portugal"
+  },
+  {
+   "slug": "vitro",
+   "slugOrigen": "vitro",
+   "nombre": "Vitro",
+   "comuna": "Ñuñoa",
+   "comunaSlug": "nunoa",
+   "direccion": "Zañartu 980",
+   "region": "Metropolitana",
+   "entrega": {
+    "tipo": "inmediata",
+    "anio": null,
+    "semestre": null,
+    "corto": "Entrega inmediata",
+    "largo": "Entrega inmediata",
+    "orden": 0
+   },
+   "desdeUF": 2791,
+   "dormitorios": {
+    "min": 1,
+    "max": 2
+   },
+   "banos": {
+    "min": 1,
+    "max": 2
+   },
+   "subsidio": false,
+   "plusvalia": 33,
+   "metro": "Metro Ñuble",
+   "coords": {
+    "lat": -33.472889,
+    "lng": -70.622069,
+    "fuente": "euroinmobiliaria.cl",
+    "precision": "exacta"
+   },
+   "beneficios": [
+    "10% descuento máximo aplicado",
+    "4 años de arriendo asegurado y administración gratis"
+   ],
+   "descripcion": {
+    "titulo": "Edificio Vitro, vive Ñuñoa desde lo más alto, con una propuesta moderna, excelente ubicación",
+    "parrafos": [
+     "Ubicado en Zañartu 980, Ñuñoa, el Edificio Vitro combina diseño contemporáneo, equipamiento completo y una excelente conectividad, ideal para quienes buscan vivir o invertir en uno de los sectores más consolidados de la ciudad.",
+     "Los departamentos destacan por sus terminaciones de alto estándar, con porcelanato gres en todo el departamento, entregando continuidad, resistencia y una estética moderna. Las ventanas termopanel con marco de PVC blanco aseguran mayor aislación térmica y acústica, aportando confort durante todo el año.",
+     "La cocina se entrega completamente equipada con horno eléctrico, encimera vitrocerámica y campana.",
+     "Además, todos los departamentos cuentan con cortinas roller e iluminación LED ya instaladas, permitiendo disfrutar el espacio desde el primer día, sin gastos adicionales.",
+     "El edificio cuenta con completos espacios comunes diseñados para el bienestar y la vida social, que incluyen Sky Bar, piscina, quinchos, salón multiuso, sala de niños, gimnasio, lavandería y bicicleteros, entregando una experiencia urbana integral para residentes de todas las etapas de vida.",
+     "Edificio Vitro es una propuesta que combina ubicación, diseño y equipamiento, pensada para un estilo de vida moderno en el corazón de Ñuñoa."
+    ]
+   },
+   "tipologias": [
+    {
+     "nombre": "1 dorm 1 baño",
+     "dormitorios": 1,
+     "banos": 1,
+     "supUtil": 32,
+     "supTotal": 37,
+     "precioUF": 2791,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vitro/planta-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (3c)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 45,
+     "supTotal": 50,
+     "precioUF": 3644,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vitro/planta-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm 2 baños (4c)",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 50,
+     "supTotal": 53,
+     "precioUF": 3838,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vitro/planta-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    },
+    {
+     "nombre": "2 dorm (mariposa) 2 baños",
+     "dormitorios": 2,
+     "banos": 2,
+     "supUtil": 60,
+     "supTotal": 65,
+     "precioUF": 4208,
+     "subsidio": false,
+     "planta": {
+      "src": "/proyectos/vitro/planta-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       800,
+       1600
+      ],
+      "formatos": [
+       "webp"
+      ]
+     }
+    }
+   ],
+   "entorno": [
+    {
+     "categoria": "Transporte",
+     "items": [
+      {
+       "nombre": "Metro Rodrigo de Araya (L5)",
+       "detalle": "6-7 min a pie"
+      },
+      {
+       "nombre": "Metro Ñuble (L5 + L6)",
+       "detalle": "12 min a pie"
+      },
+      {
+       "nombre": "Ejes de conectividad cercanos",
+       "detalle": "Av. Zañartu y Av. Vicuña Mackenna"
+      },
+      {
+       "nombre": "Paraderos de micro",
+       "detalle": "Entorno (sobre Zañartu y vías principales)"
+      }
+     ]
+    },
+    {
+     "categoria": "Áreas Verdes",
+     "items": [
+      {
+       "nombre": "Parque San Eugenio",
+       "detalle": "10-18 min a pie"
+      },
+      {
+       "nombre": "Parque / Complejo Estadio Nacional",
+       "detalle": "18–25 min a pie"
+      },
+      {
+       "nombre": "Plazas y bandejones arbolados del sector",
+       "detalle": "Entorno residencial de Ñuñoa"
+      }
+     ]
+    },
+    {
+     "categoria": "Comercio",
+     "items": [
+      {
+       "nombre": "Supermercados cercanos",
+       "detalle": "Líder, Unimarc, 5-15 min a pie"
+      },
+      {
+       "nombre": "Farmacias y servicios básicos",
+       "detalle": "Barrio y ejes principales, 5-15 min a pie"
+      },
+      {
+       "nombre": "Oferta de restaurantes y cafés",
+       "detalle": "Ejes más activos (Sector Plaza Ñuñoa)"
+      }
+     ]
+    },
+    {
+     "categoria": "Salud",
+     "items": [
+      {
+       "nombre": "CESFAM Rosita Renard",
+       "detalle": "12–20 min a pie"
+      },
+      {
+       "nombre": "Clínica Veterinaria Macul",
+       "detalle": "12–20 min a pie"
+      }
+     ]
+    },
+    {
+     "categoria": "Educación",
+     "items": [
+      {
+       "nombre": "Jardín Infantil Tierra de Niños",
+       "detalle": "13 min a pie"
+      },
+      {
+       "nombre": "Escuela Básica Guardia Marina Guillermo Zañartu",
+       "detalle": "20 min a pie"
+      },
+      {
+       "nombre": "Cetchile",
+       "detalle": "30 min a pie"
+      }
+     ]
+    }
+   ],
+   "imagenes": {
+    "card": {
+     "src": "/proyectos/vitro/card",
+     "w": 1600,
+     "h": 1000,
+     "anchos": [
+      480,
+      800,
+      1200
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Edificio Vitro con la cordillera de fondo, Ñuñoa"
+    },
+    "hero": {
+     "src": "/proyectos/vitro/hero",
+     "w": 1920,
+     "h": 750,
+     "anchos": [
+      960,
+      1440,
+      1920
+     ],
+     "formatos": [
+      "avif",
+      "webp"
+     ],
+     "alt": "Render de la fachada del edificio Vitro"
+    },
+    "galeria": [
+     {
+      "src": "/proyectos/vitro/galeria-01",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Edificio Vitro con la cordillera de fondo, Ñuñoa"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-02",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living con cocina y balcón, departamento Vitro"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-03",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living comedor, departamento Vitro"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-04",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina equipada, departamento Vitro"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-05",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Balcón con vista, departamento Vitro"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-06",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Cocina, departamento Vitro"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-07",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Living, departamento Vitro"
+     },
+     {
+      "src": "/proyectos/vitro/galeria-08",
+      "w": 1600,
+      "h": 1000,
+      "anchos": [
+       640,
+       1280
+      ],
+      "formatos": [
+       "webp"
+      ],
+      "alt": "Dormitorio con clóset, departamento Vitro"
+     }
+    ]
+   },
+   "brochure": null,
+   "urlOrigen": "https://euroinmobiliaria.cl/proyectos/vitro"
+  }
+ ]
+}

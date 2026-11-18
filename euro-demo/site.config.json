@@ -1,0 +1,32 @@
+{
+  "$comentario": "Configuración editable de la demo. ufCLP es un valor REFERENCIAL para mostrar el equivalente en pesos; actualízalo a mano (no hay llamadas a API).",
+  "ufCLP": 40000,
+  "ufFecha": "referencial nov-2026",
+  "sitio": "https://euroinmobiliaria.cl",
+  "baseUrlDemo": "https://demo.euroinmobiliaria.cl",
+  "whatsapp": "56965749880",
+  "whatsappTexto": "+56 9 6574 9880",
+  "oficina": "Flor de Azucena 111, Piso 8, Las Condes",
+  "horario": ["Lun–Jue 9:00–18:00", "Vie 9:00–14:00"],
+  "portalClientes": "https://portalcliente.euroinmobiliaria.cl",
+  "redes": {
+    "Facebook": "https://www.facebook.com/euroinmobiliariachile",
+    "YouTube": "https://www.youtube.com/channel/UCVuJA7pD0jj0rE579jVyeEg",
+    "Instagram": "https://www.instagram.com/euroinmobiliariachile",
+    "LinkedIn": "https://cl.linkedin.com/company/euroinmobiliaria"
+  },
+  "legales": {
+    "Bases notariales": "https://euroinmobiliaria.cl/bases-notariales",
+    "Políticas de privacidad": "https://euroinmobiliaria.cl/politicas-de-privacidad",
+    "Derechos del consumidor": "https://euroinmobiliaria.cl/derechos-del-consumidor",
+    "Canal de denuncias": "https://euroinmobiliaria.cl/canal-de-denuncias",
+    "Documentación de proyectos": "https://euroinmobiliaria.cl/documentacion-de-proyectos"
+  },
+  "nav": {
+    "Inicio": "https://euroinmobiliaria.cl",
+    "Sobre Euro": "https://euroinmobiliaria.cl/sobre-euro-inmobiliaria",
+    "Novedades": "https://euroinmobiliaria.cl/novedades",
+    "Post venta": "https://euroinmobiliaria.cl/post-venta",
+    "Ayuda": "https://euroinmobiliaria.cl/ayuda"
+  }
+}

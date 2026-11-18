@@ -1,0 +1,93 @@
+{
+ "alto-irarrazaval": {
+  "lat": -33.4536235,
+  "lng": -70.6211998,
+  "match": "Avenida Irarrázaval, Barrio Javiera Carrera, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "diagonal-vicuna": {
+  "lat": -33.4700674,
+  "lng": -70.6270063,
+  "match": "2000, Santa Elena, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "don-pepe-154": {
+  "lat": -33.5270266,
+  "lng": -70.5978972,
+  "match": "Don Pepe, Arturo Prat, La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "entre-vicunas": {
+  "lat": -33.5684687,
+  "lng": -70.5840798,
+  "match": "Avenida Vicuña Mackenna, Los Quillayes, La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "froilan-roa-5731": {
+  "lat": -33.5166461,
+  "lng": -70.5965041,
+  "match": "Froilán Roa, Villa Perú, La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "guillermo-mann-1401": {
+  "lat": -33.4713045,
+  "lng": -70.6185874,
+  "match": "1401, Doctor Guillermo Mann, Villa Exequiel González Cortés, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "independencia-4745": {
+  "lat": -33.3855345,
+  "lng": -70.6785758,
+  "match": "Edificio Independencia 4745, 4745, Avenida Independencia, Población Las Mercedes, Conchalí, Provincia de Santiago, Región Metropolitana de Santiago, 8550813, Chile"
+ },
+ "jose-pedro-alessandri": {
+  "lat": -33.468437,
+  "lng": -70.597749,
+  "match": "1498, Avenida José Pedro Alessandri, Barrio José Pedro Alessandri, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "mapocho-3521": {
+  "lat": -33.4346479,
+  "lng": -70.6838607,
+  "match": "Rivas Vicuña, Quinta Normal, Provincia de Santiago, Región Metropolitana de Santiago, 8350302, Chile"
+ },
+ "marina-pacifico": {
+  "lat": -29.9544365,
+  "lng": -71.3005397,
+  "match": "Avenida Los Pescadores, Caleta Los Pescadores de Peñuelas, Peñuelas Bajo, Coquimbo, Provincia de Elqui, Región de Coquimbo, 1800016, Chile"
+ },
+ "mirador-irarrazaval": {
+  "lat": -33.4652983,
+  "lng": -70.6201252,
+  "match": "Obispo Orrego, Villa Olímpica, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "nova-parque": {
+  "lat": -33.4698698,
+  "lng": -70.6247555,
+  "match": "Avenida Vicuña Mackenna, Santiago, San Joaquín, Provincia de Santiago, Región Metropolitana de Santiago, 8361022, Chile"
+ },
+ "plaza-de-lourdes": {
+  "lat": -33.4354805,
+  "lng": -70.6774318,
+  "match": "San Pablo, Santiago, Quinta Normal, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "rosas-1444": {
+  "lat": -33.4358199,
+  "lng": -70.6575876,
+  "match": "1438, Rosas, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "santa-elena-1670": {
+  "lat": -33.4659992,
+  "lng": -70.6282044,
+  "match": "1670, Santa Elena, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+  "hn": "1670"
+ },
+ "vicuna-mackenna-1432": {
+  "lat": -33.4660586,
+  "lng": -70.6267044,
+  "match": "Avenida Vicuña Mackenna, Barrio Parque San Eugenio, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "vista-portugal": {
+  "lat": -33.4522052,
+  "lng": -70.6344392,
+  "match": "755, Avenida Portugal, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ },
+ "vitro": {
+  "lat": -33.4725046,
+  "lng": -70.60432,
+  "match": "Barrio Plaza Zañartu, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+ }
+}

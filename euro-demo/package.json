@@ -1,0 +1,37 @@
+{
+  "name": "euro-proyectos-demo",
+  "version": "1.0.0",
+  "description": "Demo /proyectos de Euro Inmobiliaria con el sistema de diseño de Grus",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "images": "node scripts/images.mjs",
+    "build": "node scripts/build.ts",
+    "build:artifact": "node scripts/build.ts --explicit-index",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . && tsc --noEmit",
+    "test": "node --test tests/",
+    "serve": "node scripts/serve.mjs",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",
+    "@fontsource/barlow-semi-condensed": "^5.1.0",
+    "@types/leaflet": "^1.9.14",
+    "@types/node": "^22.20.5",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.14.0",
+    "leaflet": "^1.9.4",
+    "lighthouse": "^12.2.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "private": true,
+  "type": "module"
+}

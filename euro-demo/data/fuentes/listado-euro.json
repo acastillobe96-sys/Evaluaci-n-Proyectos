@@ -1,0 +1,798 @@
+{
+ "proyectos": [
+  {
+   "id": 9,
+   "slug": "alto-irarrazaval",
+   "nombre": "Alto Irarrázaval",
+   "comuna_id": 99,
+   "comuna_slug": "nunoa",
+   "comuna_nombre": "Ñuñoa",
+   "direccion": "Avda. Irarrázaval 2325",
+   "entrega": "2do semestre 2028",
+   "lat": -33.4542863,
+   "lng": -70.6068752,
+   "min_price": 4004,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/160/conversions/01KJ5KDYN85FHZ84C1DN7XC8GE-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 4004,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 4690,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 5027,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 5875,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 6116,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "slug": "diagonal-vicuna",
+   "nombre": "Diagonal Vicuña",
+   "comuna_id": 86,
+   "comuna_slug": "santiago-centro",
+   "comuna_nombre": "Santiago Centro",
+   "direccion": "Santa Elena 2000",
+   "entrega": "1er semestre 2027",
+   "lat": -33.469997,
+   "lng": -70.626766,
+   "min_price": 3184,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/259/conversions/01KJ9F0RND29Q92VFVX92JYPRH-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 3184,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3859,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 4109,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4314,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4523,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "slug": "don-pepe-154",
+   "nombre": "Don Pepe 154",
+   "comuna_id": 109,
+   "comuna_slug": "la-florida",
+   "comuna_nombre": "La Florida",
+   "direccion": "Calle Don Pepe N°154",
+   "entrega": "1er semestre 2027",
+   "lat": -33.5272057,
+   "lng": -70.5985107,
+   "min_price": 3285,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/203/conversions/01KJ6B9705E5T8WEPZ9FDBARYM-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 3285,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3592,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3747,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3979,
+     "subsidio": true
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "slug": "entre-vicunas",
+   "nombre": "Entre Vicuñas",
+   "comuna_id": 109,
+   "comuna_slug": "la-florida",
+   "comuna_nombre": "La Florida",
+   "direccion": "Vicuña Mackenna 5970",
+   "entrega": "1er semestre 2027",
+   "lat": -33.5096928,
+   "lng": -70.6104673,
+   "min_price": 3093,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/68/conversions/01KHTFRJ9W6V7WQRXBTNCY1WBZ-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 3093,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3696,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3908,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4363,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "slug": "froilan-roa-5731",
+   "nombre": "Froilán Roa 5731",
+   "comuna_id": 109,
+   "comuna_slug": "la-florida",
+   "comuna_nombre": "La Florida",
+   "direccion": "Froilán Roa 5731",
+   "entrega": "2do semestre 2027",
+   "lat": -33.510055,
+   "lng": -70.6022644,
+   "min_price": 3049,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/217/conversions/01KJ6RZVKQ0TAFERK3CMXYXC52-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 3049,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3367,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3723,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3883,
+     "subsidio": true
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "slug": "guillermo-mann-1401",
+   "nombre": "Guillermo Mann 1401",
+   "comuna_id": 99,
+   "comuna_slug": "nunoa",
+   "comuna_nombre": "Ñuñoa",
+   "direccion": "Guillermo Mann 1401",
+   "entrega": "Entrega inmediata",
+   "lat": -33.4711378,
+   "lng": -70.6184812,
+   "min_price": 3461,
+   "bedrooms": "2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/281/conversions/01KJ9VGGT3Q8MMQ2KRVJ5PR5X7-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3461,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4667,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4753,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "slug": "independencia-4745",
+   "nombre": "Independencia 4745",
+   "comuna_id": 115,
+   "comuna_slug": "conchali",
+   "comuna_nombre": "Conchalí",
+   "direccion": "Independencia 4745",
+   "entrega": "Entrega inmediata",
+   "lat": -33.3855014,
+   "lng": -70.6786269,
+   "min_price": 3135,
+   "bedrooms": "2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/11/conversions/750x450_independencia-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3135,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3291,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3552,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3663,
+     "subsidio": true
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "slug": "jose-pedro-alessandri",
+   "nombre": "José Pedro Alessandri",
+   "comuna_id": 99,
+   "comuna_slug": "nunoa",
+   "comuna_nombre": "Ñuñoa",
+   "direccion": "Avda. José Pedro Alessandri 1498",
+   "entrega": "Entrega inmediata",
+   "lat": -33.4682111,
+   "lng": -70.5978662,
+   "min_price": 3401,
+   "bedrooms": "1 a 3",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/173/conversions/01KJ5XPQX77FC8FPJ6KS9PVNSD-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 3401,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 4580,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 5148,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 3,
+     "banos": 2,
+     "precio": 6371,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "slug": "mapocho-3521",
+   "nombre": "Mapocho 3521",
+   "comuna_id": 93,
+   "comuna_slug": "quinta-normal",
+   "comuna_nombre": "Quinta Normal",
+   "direccion": "Rivas Vicuña 1131",
+   "entrega": "Entrega inmediata",
+   "lat": -33.4321984,
+   "lng": -70.6836263,
+   "min_price": 2994,
+   "bedrooms": "2 a 3",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/233/conversions/01KJ95S7ZGG40Y9365VRF14V3W-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 2994,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3093,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 3,
+     "banos": 2,
+     "precio": 3622,
+     "subsidio": true
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "slug": "mirador-pacifico",
+   "nombre": "Marina Pacífico",
+   "comuna_id": 31,
+   "comuna_slug": "coquimbo",
+   "comuna_nombre": "Coquimbo",
+   "direccion": "Av. Los Pescadores 5121",
+   "entrega": "Entrega inmediata",
+   "lat": -29.9478931,
+   "lng": -71.2909427,
+   "min_price": 2525,
+   "bedrooms": "1 a 3",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/53/conversions/01KHT91PBR2Z4WWRV656EK3XZC-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2525,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 2827,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3251,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 3,
+     "banos": 2,
+     "precio": 4334,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 3,
+     "banos": 2,
+     "precio": 5004,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "slug": "mirador-irarrazabal",
+   "nombre": "Mirador Irarrázaval",
+   "comuna_id": 99,
+   "comuna_slug": "nunoa",
+   "comuna_nombre": "Ñuñoa",
+   "direccion": "Obispo Orrego 40",
+   "entrega": "1er semestre 2028",
+   "lat": -33.453714,
+   "lng": -70.6188024,
+   "min_price": 4026,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/31/conversions/750x450_irarrazaval-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 4026,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 5019,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 5596,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 6010,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "slug": "nova-parque",
+   "nombre": "Nova Parque",
+   "comuna_id": 90,
+   "comuna_slug": "san-joaquin",
+   "comuna_nombre": "San Joaquín",
+   "direccion": "Vicuña Mackenna 3747",
+   "entrega": "2do semestre 2028",
+   "lat": null,
+   "lng": null,
+   "min_price": 2725,
+   "bedrooms": "1",
+   "bathrooms": "1",
+   "imagen": "https://euroinmobiliaria.cl/storage/369/conversions/01M20TRPRJJTJ2DSGCFKK3C1ZQ-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2725,
+     "subsidio": true
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "slug": "plaza-de-lourdes",
+   "nombre": "Plaza de Lourdes",
+   "comuna_id": 93,
+   "comuna_slug": "quinta-normal",
+   "comuna_nombre": "Quinta Normal",
+   "direccion": "Avda. San Pablo 3770",
+   "entrega": "1er semestre 2028",
+   "lat": -33.437199,
+   "lng": -70.686503,
+   "min_price": 2733,
+   "bedrooms": "1 a 3",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/73/conversions/01KHWBJW6215GWP4Y8VFNX09RS-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2733,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3122,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3566,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3710,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3824,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 3,
+     "banos": 2,
+     "precio": 4246,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "slug": "rosas-1444",
+   "nombre": "Rosas 1444",
+   "comuna_id": 86,
+   "comuna_slug": "santiago-centro",
+   "comuna_nombre": "Santiago Centro",
+   "direccion": "Rosas 1438",
+   "entrega": "Entrega inmediata",
+   "lat": -33.4358424,
+   "lng": -70.6576922,
+   "min_price": 2283,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/246/conversions/01KJ9C7DV4569XVK1PT43B7GZZ-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2283,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 2603,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4010,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "slug": "santa-elena-1670",
+   "nombre": "Santa Elena 1670",
+   "comuna_id": 86,
+   "comuna_slug": "santiago-centro",
+   "comuna_nombre": "Santiago Centro",
+   "direccion": "Santa Elena 1670",
+   "entrega": "Entrega inmediata",
+   "lat": -33.4659141,
+   "lng": -70.6282128,
+   "min_price": 2198,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2198,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 2637,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 2774,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 2969,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "slug": "vicuna-mackenna-1432",
+   "nombre": "Vicuña Mackenna 1432",
+   "comuna_id": 99,
+   "comuna_slug": "nunoa",
+   "comuna_nombre": "Ñuñoa",
+   "direccion": "Avda. Vicuña Mackenna 1432",
+   "entrega": "Entrega inmediata",
+   "lat": -33.4608873,
+   "lng": -70.6279257,
+   "min_price": 3381,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/188/conversions/01KJ67F0BS60BMYNGCQB6TCS6G-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 3381,
+     "subsidio": true
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 4218,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4411,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 4472,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4740,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "slug": "vista-portugal",
+   "nombre": "Vista Portugal",
+   "comuna_id": 86,
+   "comuna_slug": "santiago-centro",
+   "comuna_nombre": "Santiago Centro",
+   "direccion": "Portugal 755",
+   "entrega": "Entrega inmediata",
+   "lat": null,
+   "lng": null,
+   "min_price": 2616,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/353/conversions/01M0BGSP9W193RB8NCSGNJ960C-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2616,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2622,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3038,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 1,
+     "precio": 3160,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3600,
+     "subsidio": false
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "slug": "vitro",
+   "nombre": "Vitro",
+   "comuna_id": 99,
+   "comuna_slug": "nunoa",
+   "comuna_nombre": "Ñuñoa",
+   "direccion": "Zañartu 980",
+   "entrega": "Entrega inmediata",
+   "lat": -33.472889,
+   "lng": -70.6220695,
+   "min_price": 2791,
+   "bedrooms": "1 a 2",
+   "bathrooms": "1 a 2",
+   "imagen": "https://euroinmobiliaria.cl/storage/65/conversions/01KHTDE7KJHWGY12C2ZV2J74NJ-main.webp",
+   "modelos": [
+    {
+     "dormitorios": 1,
+     "banos": 1,
+     "precio": 2791,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3644,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 3838,
+     "subsidio": false
+    },
+    {
+     "dormitorios": 2,
+     "banos": 2,
+     "precio": 4208,
+     "subsidio": false
+    }
+   ]
+  }
+ ],
+ "priceRanges": [
+  {
+   "value": "1000-2000",
+   "label": "De 1.000 a 2.000 UF",
+   "min": 1000,
+   "max": 2000
+  },
+  {
+   "value": "2001-3000",
+   "label": "De 2.001 a 3.000 UF",
+   "min": 2001,
+   "max": 3000
+  },
+  {
+   "value": "3001-4000",
+   "label": "De 3.001 a 4.000 UF",
+   "min": 3001,
+   "max": 4000
+  },
+  {
+   "value": "4001-5000",
+   "label": "De 4.001 a 5.000 UF",
+   "min": 4001,
+   "max": 5000
+  },
+  {
+   "value": "5001+",
+   "label": "Más de 5.000 UF",
+   "min": 5001,
+   "max": null
+  }
+ ]
+}
