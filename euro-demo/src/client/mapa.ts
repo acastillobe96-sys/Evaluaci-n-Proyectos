@@ -1,6 +1,7 @@
 // Mapas con Leaflet (se carga solo cuando hace falta). Mosaicos estándar de OpenStreetMap;
 // en modo oscuro se invierten por CSS (.leaflet-tile-pane). Para producción, usar un proveedor con clave.
 import L from 'leaflet';
+import { animate, stagger } from 'motion';
 import type { ProyectoLigero } from '../lib/types.ts';
 import { formatCLPAprox, formatUF } from '../lib/format.ts';
 import { escapeHtml, reduceMotion } from './dom.ts';
@@ -108,7 +109,14 @@ export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c:
         volver.addEventListener('click', () => { map.fitBounds(bounds, { padding: [56, 56], maxZoom: 15, animate: anim }); volver.hidden = true; });
         extra.append(volver);
       }
-      requestAnimationFrame(() => { map.invalidateSize(); compacto(); });
+      requestAnimationFrame(() => {
+        map.invalidateSize(); compacto();
+        // Los pines caen en cascada
+        if (anim) {
+          const pins = markers.map((m) => m.getElement()?.querySelector<HTMLElement>('.pin')).filter((x): x is HTMLElement => Boolean(x));
+          animate(pins, { opacity: [0, 1], y: [-24, 0] }, { type: 'spring', stiffness: 380, damping: 18, delay: stagger(0.035) });
+        }
+      });
     },
   };
 }

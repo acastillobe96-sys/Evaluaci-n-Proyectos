@@ -56,7 +56,10 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 ## Qué incluye
 
 **/proyectos**
-- Hero compacto con un contador que sale de los datos (18 proyectos, 7 comunas, 10 con entrega inmediata) y un banner de Subsidio a la tasa que aplica el filtro.
+- **Hero-película: el edificio se construye con el scroll.** Pasa por terreno, fundaciones, obra gruesa piso a piso con grúa, terminaciones y entrega con las luces encendidas al anochecer.
+  - Es un canvas 2,5D con inercia que depende del tiempo y no de los FPS (`src/client/obra.ts`, `pelicula.ts`).
+  - Cada etapa muestra los proyectos reales en ese estado: 2028 en verde, 2027 en obra, subsidio y entrega inmediata. Un botón aplica ese filtro y baja a los resultados.
+  - Tiene un riel de etapas, un contador de pisos, una barra de progreso y un botón "Ir al buscador".
 - Barra de filtros fija al hacer scroll: comuna (multi), dormitorios (1/2/3), entrega (Inmediata/2027/2028), precio "desde" (slider en UF) y subsidio.
 - Orden por nombre, precio ascendente o descendente, y entrega más próxima.
 - Filtros **en vivo** y sincronizados con la URL (`?comuna=nunoa&dorm=2`). Se restauran al recargar y funcionan con atrás/adelante.
@@ -64,6 +67,19 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 - En celular, un botón "Filtros" abre un **bottom sheet** que usa el mismo DOM que la barra de escritorio.
 - **Grilla** (3/2/1 columnas) o **Mapa**: pines con precio y mini card al hacer clic. Con poco zoom los pines pasan a ser puntos para no superponerse, y hay un acceso directo a Coquimbo.
 - Estado vacío **solo** con 0 resultados, y bloque de confianza con cifras publicadas por Euro.
+
+**Movimiento (Motion 11, la librería de Framer Motion sin React)**
+- **Animación "layout" al filtrar u ordenar:** las cards se deslizan a su nueva posición (FLIP con resorte).
+- **Entradas:** las cards entran en cascada, los titulares aparecen palabra por palabra desde una máscara y las cifras cuentan hacia arriba.
+- **Resortes:** los chips de filtros y los pines del mapa (que caen en cascada) entran con resorte.
+- **Transición entre páginas** (View Transitions): la foto y el nombre de la card se transforman en el hero de la ficha.
+- **Ficha:**
+  - parallax en el hero;
+  - la galería se descubre con clip-path;
+  - "Avance de obra" construye ese edificio hasta su etapa según la fecha de entrega (ilustrativo);
+  - una barra inferior con precio y "Cotizar" sube con resorte.
+- **Accesibilidad:** con `prefers-reduced-motion` todo queda quieto y la película sigue el scroll sin inercia.
+- **LCP:** el titular principal se anima con CSS a partir de spans generados en el HTML, para no retrasarlo.
 
 **/proyectos/[slug]** (18 fichas; la muestra principal es Mapocho 3521)
 - Hero, resumen clave (desde UF + CLP, entrega "1er semestre 2027", tipologías y metro) y beneficios vigentes.
@@ -111,15 +127,22 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 | **Beneficios y precios** | Copiados de cada ficha (18-nov-2026). Están sujetos a las bases notariales y cambian seguido. |
 | **"+35 años"** | Cifras de `euroinmobiliaria.cl/sobre-euro-inmobiliaria`: +35 años, +20.000 unidades vendidas en 15 años y +9.000 en desarrollo. |
 
+## Demo navegable (marca ficticia)
+
+`npm run build:demo` genera `dist-demo/`: el mismo sitio con una marca ficticia ("Inmobiliaria Demo"), proyectos inventados e ilustraciones SVG en vez de fotos.
+- Todo va en línea, con Leaflet y Motion desde CDN.
+- El mapa es esquemático y los filtros van en el `#` de la URL.
+- Es la versión publicada como artefacto para probarla en el navegador. **No usa la marca, los datos de contacto ni las fotos de Euro.**
+
 ## Lighthouse (móvil, mediana de 3 corridas, servidor local)
 
 | Página | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
-| `/proyectos/` | 91 (91/91/92) | 100 | 100 | 69* |
-| `/proyectos/mapocho-3521/` | 98 | 100 | 100 | 69* |
-| `/proyectos/vitro/` | 98 | 100 | 100 | 69* |
+| `/proyectos/` | 95 (95/95/96) | 100 | 100 | 69* |
+| `/proyectos/mapocho-3521/` | 99 | 100 | 100 | 69* |
+| `/proyectos/vitro/` | 99 | 100 | 100 | 69* |
 
-\* La demo lleva `noindex` y `robots.txt` con `Disallow` a propósito, para que no la indexen. Con `node scripts/build.ts --indexable`, SEO da **100** en ambas plantillas. CLS 0 en todas las páginas. El LCP de `/proyectos/` (3,4 s con la red móvil simulada) es el titular; es lo primero que conviene optimizar si se lleva a producción, por ejemplo con CSS crítico en línea.
+\* La demo lleva `noindex` y `robots.txt` con `Disallow` a propósito, para que no la indexen. Con `node scripts/build.ts --indexable`, SEO da **100** en ambas plantillas. CLS ≤ 0,001 en todas las páginas. LCP con la red móvil simulada: 2,9 s en `/proyectos/` y 1,9 s en las fichas, con el servidor local comprimiendo con gzip como cualquier hosting real.
 
 ## Verificación
 

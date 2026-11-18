@@ -11,8 +11,8 @@ const ICONO_CATEGORIA: Record<string, string> = {
 function heroFicha(ctx: Ctx, p: Proyecto): Raw {
   const img = p.imagenes.hero;
   return html`<section id="inicio" class="relative isolate overflow-hidden bg-deep-2 text-white">
-  <div class="absolute inset-0 -z-10">
-    ${img ? picture(ctx, img, { sizes: '100vw', cls: 'size-full object-cover object-right', eager: true, priority: true }) : ''}
+  <div class="absolute inset-0 -z-10 overflow-hidden" style="view-transition-name: foto-${p.slug}">
+    <div class="size-full" data-parallax>${img ? picture(ctx, img, { sizes: '100vw', cls: 'size-full object-cover object-right', eager: true, priority: true }) : ''}</div>
     <div class="absolute inset-0" aria-hidden="true" style="background: linear-gradient(90deg, rgb(var(--deep-2)) 0%, rgb(var(--deep-2) / .82) 34%, rgb(var(--deep-2) / .1) 72%), linear-gradient(0deg, rgb(var(--deep-2) / .9) 0%, transparent 45%);"></div>
   </div>
   <div class="wrap flex min-h-[min(62svh,560px)] md:min-h-[min(78svh,680px)] flex-col justify-end pb-28 pt-[calc(var(--header-h)+2.5rem)] md:pb-32">
@@ -29,7 +29,7 @@ function heroFicha(ctx: Ctx, p: Proyecto): Raw {
       ${p.entrega.tipo === 'inmediata' ? html`<span class="badge badge-accent">${icon('key', 'size-3.5')} Entrega inmediata</span>` : html`<span class="badge badge-glass">${icon('calendar', 'size-3.5')} ${p.entrega.corto}</span>`}
       ${p.subsidio ? html`<span class="badge badge-glass">${icon('percent', 'size-3.5')} Subsidio a la tasa</span>` : ''}
     </div>
-    <h1 class="enter-lcp mt-4 max-w-3xl font-display font-extrabold uppercase leading-[.88] [animation-delay:120ms]" style="font-size: clamp(3rem, 9vw, 7.5rem)">${p.nombre}<span class="dot">.</span></h1>
+    <h1 class="enter-lcp mt-4 max-w-3xl font-display font-extrabold uppercase leading-[.88] [animation-delay:120ms]" style="font-size: clamp(3rem, 9vw, 7.5rem); view-transition-name: titulo-${p.slug}; width: fit-content">${p.nombre}<span class="dot">.</span></h1>
     <p class="enter mt-4 flex items-center gap-2 text-lg text-white/90 [animation-delay:180ms]">${icon('pin', 'size-5 shrink-0')} ${p.direccion}, ${p.comuna}</p>
   </div>
 </section>`;
@@ -81,6 +81,34 @@ function descripcion(cfg: SiteConfig, p: Proyecto): Raw {
     </ul>
     ${cfg.demo ? html`<p class="mt-5 text-xs text-muted">Beneficios de ejemplo.</p>` : html`<p class="mt-5 text-xs text-muted">Según la ficha del proyecto en euroinmobiliaria.cl. Sujetos a <a class="underline" href="https://euroinmobiliaria.cl/bases-notariales">bases notariales</a>.</p>`}
   </aside>` : ''}
+</section>`;
+}
+
+/** Etapa ilustrativa de la obra según la fecha de entrega (no es el avance real). */
+function etapaObra(p: Proyecto): { p: number; etiqueta: string } {
+  const e = p.entrega;
+  if (e.tipo === 'inmediata') return { p: 1, etiqueta: 'Terminado, con entrega inmediata' };
+  if (e.anio === 2027) return e.semestre === 1 ? { p: 0.72, etiqueta: 'Terminaciones' } : { p: 0.62, etiqueta: 'Comienzo de terminaciones' };
+  return e.semestre === 1 ? { p: 0.45, etiqueta: 'Obra gruesa' } : { p: 0.32, etiqueta: 'Obra gruesa en sus primeros pisos' };
+}
+
+function avance(cfg: SiteConfig, p: Proyecto): Raw {
+  const e = etapaObra(p);
+  return html`<section id="avance" class="relative overflow-hidden bg-deep-2 text-white" aria-labelledby="av-t" data-avance="${e.p}" data-semilla="${p.slug}">
+  <div class="relative h-[min(86svh,760px)] min-h-[520px]">
+    <canvas class="avance-canvas absolute inset-0" aria-hidden="true"></canvas>
+    <div class="absolute inset-0" aria-hidden="true" style="background: linear-gradient(90deg, rgb(6 14 36 / .7), rgb(6 14 36 / .2) 50%, transparent 70%)"></div>
+    <div class="wrap relative flex h-full flex-col justify-center">
+      <p class="eyebrow text-accent">Avance de obra</p>
+      <h2 id="av-t" class="h-section mt-3 max-w-xl !text-white">${e.etiqueta}<span class="dot">.</span></h2>
+      <p class="mt-4 max-w-md text-white/85">${p.entrega.tipo === 'inmediata' ? 'El edificio está listo: puedes visitarlo, elegir tu departamento y recibir las llaves.' : `Entrega estimada para el ${p.entrega.largo}. Mientras más temprano compras, más plazo tienes para el pie.`}</p>
+      <div class="mt-6 flex items-center gap-4">
+        <div class="h-1.5 w-48 overflow-hidden rounded-full bg-white/15"><span class="block h-full origin-left bg-accent" data-avance-barra style="transform: scaleX(0)"></span></div>
+        <span class="font-mono text-sm text-white/80" data-avance-pct>0%</span>
+      </div>
+      <p class="mt-6 text-xs text-white/60">${cfg.demo ? 'Ilustración.' : 'Ilustración según la fecha de entrega; no muestra el avance real de la obra.'}</p>
+    </div>
+  </div>
 </section>`;
 }
 
@@ -289,13 +317,21 @@ export function paginaFicha(ctx: Ctx, cfg: SiteConfig, p: Proyecto, todos: Proye
   ${resumen(cfg, p)}
   ${descripcion(cfg, p)}
   ${galeria(ctx, p)}
+  ${avance(cfg, p)}
   ${tipologias(ctx, cfg, p)}
   ${ubicacion(cfg, p)}
   ${formulario(cfg, p)}
   ${otros(ctx, cfg, p, todos)}
 </main>
 ${footer(ctx, cfg)}
-${cfg.whatsapp
-  ? html`<a id="wa-float" data-visible="false" class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg max-sm:btn-icon max-sm:!w-14" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-6')}<span class="max-sm:hidden">Cotizar por WhatsApp</span></a>`
-  : html`<a id="wa-float" data-visible="false" class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg" href="#cotizar">${icon('calendar', 'size-5')} Cotizar</a>`}`;
+<div id="barra-cot" class="barra-cot" data-visible="false">
+  <div class="mx-auto flex max-w-page items-center gap-3">
+    <div class="min-w-0 flex-1">
+      <p class="truncate text-sm font-bold">${p.nombre} <span class="font-normal text-muted">· ${p.comuna}</span></p>
+      <p class="font-display text-xl font-extrabold leading-none">Desde ${formatUF(p.desdeUF)}</p>
+    </div>
+    ${cfg.whatsapp ? html`<a id="wa-float" class="btn btn-outline btn-sm max-sm:btn-icon" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-4')}<span class="max-sm:hidden">WhatsApp</span></a>` : ''}
+    <a class="btn btn-primary btn-sm" href="#cotizar">Cotizar</a>
+  </div>
+</div>`;
 }

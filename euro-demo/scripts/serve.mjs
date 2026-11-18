@@ -2,6 +2,7 @@
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
+import { gzipSync } from 'node:zlib';
 
 const ROOT = new URL(`../${process.env.DIR ?? 'dist'}/`, import.meta.url).pathname;
 const PORT = Number(process.env.PORT ?? 4173);
@@ -16,9 +17,12 @@ createServer(async (req, res) => {
       if (!path.endsWith('/')) { res.writeHead(301, { Location: path + '/' }).end(); return; }
       f = join(f, 'index.html');
     }
-    const body = await readFile(f);
+    let body = await readFile(f);
     const largo = /\.(webp|avif|woff2|js|css)$/.test(f);
-    res.writeHead(200, { 'Content-Type': TIPOS[extname(f)] ?? 'application/octet-stream', 'Cache-Control': largo ? 'public, max-age=31536000, immutable' : 'no-cache' });
+    const headers = { 'Content-Type': TIPOS[extname(f)] ?? 'application/octet-stream', 'Cache-Control': largo ? 'public, max-age=31536000, immutable' : 'no-cache' };
+    // gzip para texto, como haría cualquier hosting real
+    if (/\.(html|css|js|json|svg|xml|txt)$/.test(f) && /gzip/.test(req.headers['accept-encoding'] ?? '')) { body = gzipSync(body); headers['Content-Encoding'] = 'gzip'; headers['Vary'] = 'Accept-Encoding'; }
+    res.writeHead(200, headers);
     res.end(body);
   } catch {
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('404');

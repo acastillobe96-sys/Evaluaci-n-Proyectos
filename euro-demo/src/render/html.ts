@@ -70,3 +70,10 @@ export function picture(ctx: Ctx, img: Omit<Imagen, 'alt'> & { alt?: string }, o
 export function icon(name: string, cls = 'size-5'): Raw {
   return html`<svg class="${cls}" aria-hidden="true" focusable="false"><use href="#i-${name}"></use></svg>`;
 }
+
+/** Titular partido en palabras desde el HTML (sin tocar el DOM después: no retrasa el LCP).
+ *  La animación es CSS (.split-css), con un retardo por palabra. */
+export function palabras(texto: string, despues: Raw | string = ''): Raw {
+  const ws = texto.split(/\s+/).filter(Boolean);
+  return html`${ws.map((w, i) => html`<span class="split-w"><span style="--i:${i}">${w}${i === ws.length - 1 ? despues : ''}</span></span>${i < ws.length - 1 ? ' ' : ''}`)}`;
+}

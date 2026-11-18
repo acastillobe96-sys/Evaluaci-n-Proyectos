@@ -36,7 +36,7 @@ rmSync(tmp);
 async function bundle(entry: string): Promise<string> {
   const r = await esbuild.build({
     entryPoints: [entry], bundle: true, format: 'iife', minify: true, target: 'es2020', write: false, legalComments: 'none',
-    alias: { leaflet: './src/demo/leaflet-global.ts' },
+    alias: { leaflet: './src/demo/leaflet-global.ts', motion: './src/demo/motion-global.ts' },
   });
   return r.outputFiles[0]!.text.replace(/<\/script/gi, '<\\/script');
 }

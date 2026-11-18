@@ -1,7 +1,7 @@
 import type { Proyecto, ProyectoLigero, SiteConfig } from '../lib/types.ts';
 import { DORMITORIOS, ENTREGAS, ORDENES, rangoPrecios } from '../lib/filtros.ts';
 import { formatUF, plural, whatsappUrl } from '../lib/format.ts';
-import { html, icon, picture, raw, url, type Ctx, type Raw } from './html.ts';
+import { html, icon, palabras, raw, url, type Ctx, type Raw } from './html.ts';
 import { cardProyecto } from './card.ts';
 import { footer, header, type Comuna } from './layout.ts';
 
@@ -16,34 +16,55 @@ export function ligero(p: Proyecto): ProyectoLigero {
   };
 }
 
-function hero(ctx: Ctx, ps: Proyecto[], comunas: Comuna[], fondo: Proyecto): Raw {
-  const conSubsidio = ps.filter((p) => p.subsidio).length;
+/** Hero-película: el edificio se construye con el scroll; cada etapa enlaza con los proyectos en ese estado. */
+function peliculaObra(ctx: Ctx, ps: Proyecto[], comunas: Comuna[]): Raw {
+  const n = (f: (p: Proyecto) => boolean) => ps.filter(f).length;
+  const e2028 = n((p) => p.entrega.anio === 2028);
+  const e2027 = n((p) => p.entrega.anio === 2027);
+  const inm = n((p) => p.entrega.tipo === 'inmediata');
+  const sub = n((p) => p.subsidio);
   const desde = Math.min(...ps.map((p) => p.desdeUF));
-  const inmediatas = ps.filter((p) => p.entrega.tipo === 'inmediata').length;
-  return html`<section id="inicio" class="relative isolate overflow-hidden bg-deep-2 text-white">
-  <div class="absolute inset-0 -z-10" aria-hidden="true">
-    ${fondo.imagenes.hero ? picture(ctx, fondo.imagenes.hero, { sizes: '100vw', cls: 'size-full object-cover object-right opacity-70', eager: true, priority: true, alt: '' }) : ''}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgb(var(--deep-2)) 0%, rgb(var(--deep-2) / .92) 38%, rgb(var(--deep-2) / .35) 75%, rgb(var(--deep-2) / .15) 100%), linear-gradient(0deg, rgb(var(--deep-2)) 0%, transparent 40%);"></div>
-  </div>
-  <div class="wrap grid gap-8 pb-8 pt-[calc(var(--header-h)+2rem)] md:pb-14 md:pt-[calc(var(--header-h)+3rem)] lg:grid-cols-[1fr_380px] lg:items-end">
-    <div>
-      <p class="eyebrow enter text-accent">${ctx.demo ? 'Demo · Datos ficticios' : 'Proyectos · Santiago y Coquimbo'}</p>
-      <h1 class="enter-lcp mt-4 font-display font-extrabold uppercase leading-[.9] [animation-delay:60ms]" style="font-size: clamp(2.6rem, 6vw, 5rem);">Encuentra tu próximo departamento<span class="dot">.</span></h1>
-      <p class="enter mt-4 max-w-xl text-white/85 md:mt-5 md:text-lg [animation-delay:120ms]">Entrega inmediata o en verde, desde ${formatUF(desde)}. Compara precio, entrega y beneficios en un solo lugar.</p>
-      <dl class="enter mt-6 grid max-w-xl grid-cols-3 gap-4 border-t border-white/20 pt-5 [animation-delay:180ms]">
-        <div class="flex flex-col-reverse"><dt class="text-sm text-white/80">proyectos</dt><dd class="font-display text-4xl font-extrabold leading-none md:text-5xl" id="hero-count">${ps.length}</dd></div>
-        <div class="flex flex-col-reverse"><dt class="text-sm text-white/80">comunas</dt><dd class="font-display text-4xl font-extrabold leading-none md:text-5xl">${comunas.length}</dd></div>
-        <div class="flex flex-col-reverse"><dt class="text-sm text-white/80">con entrega inmediata</dt><dd class="font-display text-4xl font-extrabold leading-none md:text-5xl">${inmediatas}</dd></div>
-      </dl>
-    </div>
-    <aside class="glass enter rounded-[22px] p-5 md:grid md:grid-cols-[1fr_auto] md:items-end md:gap-x-8 md:p-6 lg:block [animation-delay:240ms]" aria-labelledby="subsidio-t">
-      <div>
-      <p class="eyebrow text-accent">Beneficio vigente</p>
-      <h2 id="subsidio-t" class="mt-2 font-display text-[1.75rem] md:text-[2rem] font-extrabold uppercase leading-[.95]">Subsidio a la tasa<span class="dot">.</span></h2>
-      <p class="mt-2 text-[.9375rem] text-white/85 md:mt-3 md:text-base">0,6 puntos menos en tu tasa de interés para viviendas nuevas de hasta 4.000 UF. Hay ${conSubsidio} proyectos con tipologías que califican.</p>
+  const etapas: Array<{ id: string; at: number; num: string; titulo: string; texto: string; chip?: { txt: string; q: string } }> = [
+    { id: 'terreno', at: 0.05, num: '01', titulo: 'Todo parte en un buen barrio', texto: `Elegimos terrenos con metro, comercio y áreas verdes cerca. Hoy tenemos proyectos en ${comunas.length} comunas.`, chip: { txt: `Ver las ${comunas.length} comunas`, q: '' } },
+    { id: 'verde', at: 0.17, num: '02', titulo: 'En verde: más plazo para el pie', texto: 'Comprar antes de que el edificio exista te da más tiempo para juntar el pie, en cuotas.', chip: { txt: `${e2028} proyectos entregan en 2028`, q: 'entrega=2028' } },
+    { id: 'gruesa', at: 0.4, num: '03', titulo: 'Obra gruesa, piso a piso', texto: 'La estructura sube cada semana. Ya puedes elegir piso, orientación y tipología.', chip: { txt: `${e2027} proyectos entregan en 2027`, q: 'entrega=2027' } },
+    { id: 'terminaciones', at: 0.68, num: '04', titulo: 'Terminaciones y subsidio', texto: 'Ventanas termopanel, cocina equipada y piso porcelanato. En viviendas de hasta 4.000 UF, el subsidio baja tu tasa.', chip: { txt: `Subsidio a la tasa en ${sub} proyectos`, q: 'subsidio=1' } },
+    { id: 'entrega', at: 0.88, num: '05', titulo: 'Llegar y vivir', texto: 'Departamentos terminados, con recepción municipal. Firmas, recibes las llaves y te cambias.', chip: { txt: `${inm} proyectos con entrega inmediata`, q: 'entrega=inmediata' } },
+  ];
+  return html`<section id="inicio" class="obra" aria-labelledby="obra-h1" data-obra>
+  <div class="obra-sticky">
+    <canvas class="obra-canvas" aria-hidden="true"></canvas>
+    <div class="obra-shade" aria-hidden="true"></div>
+    <div class="wrap obra-ui">
+      <div class="obra-intro" data-intro>
+        <p class="eyebrow enter text-accent">${ctx.demo ? 'Demo · Datos ficticios' : 'Proyectos · Santiago y Coquimbo'}</p>
+        <h1 id="obra-h1" class="mt-4 font-display font-extrabold uppercase leading-[.9] text-white" style="font-size: clamp(2.6rem, 6.2vw, 5.4rem);" aria-label="Encuentra tu próximo departamento."><span class="split-css" aria-hidden="true">${palabras('Encuentra tu próximo departamento', html`<span class="dot">.</span>`)}</span></h1>
+        <p class="enter-lcp mt-5 max-w-lg text-white/85 md:text-lg [animation-delay:200ms]">Desde ${formatUF(desde)}. Baja y mira cómo se construye un edificio, y qué proyectos hay en cada etapa.</p>
+        <dl class="enter mt-7 grid max-w-md grid-cols-3 gap-4 border-t border-white/20 pt-5 [animation-delay:320ms]">
+          <div class="flex flex-col-reverse"><dt class="text-sm text-white/75">proyectos</dt><dd class="font-display text-4xl font-extrabold leading-none text-white md:text-5xl" data-contar="${ps.length}">${ps.length}</dd></div>
+          <div class="flex flex-col-reverse"><dt class="text-sm text-white/75">comunas</dt><dd class="font-display text-4xl font-extrabold leading-none text-white md:text-5xl" data-contar="${comunas.length}">${comunas.length}</dd></div>
+          <div class="flex flex-col-reverse"><dt class="text-sm text-white/75">entrega inmediata</dt><dd class="font-display text-4xl font-extrabold leading-none text-white md:text-5xl" data-contar="${inm}">${inm}</dd></div>
+        </dl>
       </div>
-      <a class="btn btn-primary mt-4 w-full md:mt-0 md:w-auto lg:mt-5 lg:w-full" href="${url(ctx, 'proyectos/?subsidio=1')}" data-aplicar-subsidio>Ver proyectos con subsidio ${icon('arrow-right', 'size-4')}</a>
-    </aside>
+      <ol class="obra-etapas" aria-label="Etapas de un proyecto">
+        ${etapas.map((e) => html`<li class="obra-etapa" data-at="${e.at}" id="etapa-${e.id}">
+          <p class="eyebrow text-accent"><span class="font-mono">${e.num}</span> / ${e.id === 'verde' ? 'En verde' : e.id === 'gruesa' ? 'En obra' : e.id === 'terreno' ? 'Terreno' : e.id === 'terminaciones' ? 'Terminaciones' : 'Entrega'}</p>
+          <h2 class="mt-3 font-display text-[clamp(2rem,4.2vw,3.5rem)] font-extrabold uppercase leading-[.92] text-white">${e.titulo}<span class="dot">.</span></h2>
+          <p class="mt-3 max-w-md text-white/85">${e.texto}</p>
+          ${e.chip ? html`<a class="btn btn-glass btn-sm mt-5" href="${url(ctx, `proyectos/${e.chip.q ? `?${e.chip.q}` : ''}`)}" data-aplicar="${e.chip.q}">${e.chip.txt} ${icon('arrow-right', 'size-4')}</a>` : ''}
+        </li>`)}
+      </ol>
+    </div>
+    <div class="obra-hud" aria-hidden="true">
+      <span class="font-mono text-xs uppercase tracking-[.16em] text-white/70">Piso</span>
+      <span class="font-mono text-2xl font-medium text-white" data-piso>00</span>
+      <span class="font-mono text-xs text-white/60" data-pisos></span>
+    </div>
+    <nav class="obra-rail" aria-label="Ir a una etapa">
+      ${etapas.map((e) => html`<button type="button" data-ir="${e.at}" aria-label="Ir a la etapa ${e.num}"><span class="obra-rail-dot"></span><span class="obra-rail-txt">${e.num}</span></button>`)}
+    </nav>
+    <a href="#proyectos" class="obra-skip btn btn-glass btn-sm" data-saltar>${icon('chevron-down', 'size-4')} Ir al buscador</a>
+    <div class="obra-progress" aria-hidden="true"><span data-barra></span></div>
   </div>
 </section>`;
 }
@@ -222,10 +243,9 @@ function confianza(cfg: SiteConfig): Raw {
 
 export function paginaProyectos(ctx: Ctx, cfg: SiteConfig, ps: Proyecto[], comunas: Comuna[]): Raw {
   const lig = ps.map(ligero);
-  const fondo = ps.find((p) => p.slug === 'vitro') ?? ps[0]!;
   return html`${header(ctx, cfg, comunas, 'proyectos', false)}
 <main id="contenido">
-  ${hero(ctx, ps, comunas, fondo)}
+  ${peliculaObra(ctx, ps, comunas)}
   ${toolbar(lig, comunas)}
   <section id="proyectos" class="wrap pb-[clamp(4rem,9vw,7rem)] pt-4" aria-labelledby="resultados-t">
     <div class="flex flex-wrap items-center justify-between gap-3 pb-5 pt-2">

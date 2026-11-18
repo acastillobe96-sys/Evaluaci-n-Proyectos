@@ -14,7 +14,10 @@ let menuAbierto = false;
 let megaAbierto = false;
 function pintarHeader(): void {
   if (!header) return;
-  const solido = header.dataset['solidFixed'] === 'true' || window.scrollY > 24 || menuAbierto || megaAbierto;
+  // Sobre la película de obra el header queda transparente hasta que termina
+  const obra = document.querySelector<HTMLElement>('[data-obra]');
+  const umbral = obra ? obra.offsetTop + obra.offsetHeight - (header.offsetHeight || 72) : 24;
+  const solido = header.dataset['solidFixed'] === 'true' || window.scrollY > umbral || menuAbierto || megaAbierto;
   const v = solido ? 'true' : 'false';
   if (header.dataset['solid'] !== v) header.dataset['solid'] = v;
 }

@@ -78,11 +78,16 @@ await caso('slider de precio filtra por "desde"', async (page) => {
   assert.equal(await page.locator('#precio-out').textContent(), 'Hasta UF 2.800');
 });
 
-await caso('banner de subsidio aplica el filtro', async (page) => {
+await caso('película de obra: el riel lleva a cada etapa y su botón aplica el filtro', async (page) => {
   await page.goto(`${BASE}/proyectos/`);
-  await page.click('[data-aplicar-subsidio]');
+  assert.equal(await page.locator('.obra-etapa').count(), 5);
+  await page.click('.obra-rail [data-ir="0.68"]');
+  await page.waitForFunction(() => document.querySelector('#etapa-terminaciones')?.dataset.activa === 'true');
+  assert.notEqual(await page.locator('[data-piso]').textContent(), '00');
+  await page.locator('#etapa-terminaciones [data-aplicar]').click();
   assert.equal(await visibles(page), 13);
   assert.equal(await page.locator('#subsidio').getAttribute('aria-checked'), 'true');
+  assert.match(page.url(), /subsidio=1/);
 });
 
 await caso('vista mapa: pines por proyecto y popup', async (page) => {
@@ -176,9 +181,9 @@ await caso('ficha: validación y éxito simulado del formulario', async (page) =
 await caso('ficha: mapa diferido y WhatsApp prellenado', async (page) => {
   await page.goto(`${BASE}/proyectos/mapocho-3521/`);
   const wa = await page.locator('#wa-float').getAttribute('href');
-  assert.equal(await page.locator('#wa-float').getAttribute('data-visible'), 'false');
+  assert.equal(await page.locator('#barra-cot').getAttribute('data-visible'), 'false');
   await page.evaluate(() => window.scrollTo(0, 1400));
-  await page.waitForFunction(() => document.querySelector('#wa-float')?.dataset.visible === 'true');
+  await page.waitForFunction(() => document.querySelector('#barra-cot')?.dataset.visible === 'true');
   assert.match(decodeURIComponent(wa), /wa\.me\/56965749880\?text=.*Mapocho 3521/);
   await page.locator('#mapa-ficha').scrollIntoViewIfNeeded();
   await page.waitForSelector('#mapa-ficha .leaflet-tile-loaded', { timeout: 10000 });

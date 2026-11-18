@@ -1,5 +1,8 @@
 // Ficha de proyecto: lightbox, mapa diferido, preselección de tipología y formulario con validación (solo front).
-import { $, $$ } from './dom.ts';
+import { animate, scroll } from 'motion';
+import { $, $$, reduceMotion } from './dom.ts';
+import { cascada, revelarImagenes, revelarTitulares } from './motion-fx.ts';
+import { Obra } from './obra.ts';
 import { iniciarLightbox } from './lightbox.ts';
 import { validarCotizacion, type CamposCotizacion } from '../lib/validacion.ts';
 
@@ -18,16 +21,58 @@ if (mapaEl) {
   io.observe(mapaEl);
 }
 
-// WhatsApp flotante: aparece cuando los CTA del resumen salen de la vista (y se oculta sobre el formulario)
-const wa = $<HTMLElement>('#wa-float');
+// Barra de cotización: sube con resorte cuando el resumen sale de la vista; se oculta sobre el formulario
+const barraCot = $<HTMLElement>('#barra-cot');
 const resumen = $<HTMLElement>('#resumen');
 const cotizar = $<HTMLElement>('#cotizar');
-if (wa && resumen) {
-  let pasoResumen = false, enFormulario = false;
-  const pintar = () => { wa.dataset['visible'] = String(pasoResumen && !enFormulario); };
+if (barraCot && resumen) {
+  let pasoResumen = false, enFormulario = false, visible = false;
+  const pintar = () => {
+    const v = pasoResumen && !enFormulario;
+    if (v === visible) return;
+    visible = v;
+    barraCot.dataset['visible'] = String(v);
+    if (reduceMotion()) barraCot.style.transform = v ? 'none' : 'translateY(110%)';
+    else animate(barraCot, { y: v ? '0%' : '110%' }, v ? { type: 'spring', stiffness: 320, damping: 30 } : { duration: 0.25, ease: 'easeIn' });
+  };
   new IntersectionObserver(([e]) => { pasoResumen = !e!.isIntersecting && e!.boundingClientRect.top < 0; pintar(); }).observe(resumen);
-  if (cotizar) new IntersectionObserver(([e]) => { enFormulario = e!.isIntersecting; pintar(); }, { threshold: 0.25 }).observe(cotizar);
+  if (cotizar) new IntersectionObserver(([e]) => { enFormulario = e!.isIntersecting; pintar(); }, { threshold: 0.2 }).observe(cotizar);
 }
+
+// Parallax del hero (la foto baja más lento que el contenido)
+const parallax = $<HTMLElement>('[data-parallax]');
+const heroSec = $<HTMLElement>('#inicio');
+if (parallax && heroSec && !reduceMotion()) {
+  scroll(animate(parallax, { y: ['0%', '18%'], scale: [1.04, 1.12] }, { ease: 'linear' }), { target: heroSec, offset: ['start start', 'end start'] });
+}
+
+// Avance de obra: el edificio se construye hasta su etapa mientras la sección cruza la pantalla
+const avanceSec = $<HTMLElement>('[data-avance]');
+if (avanceSec) {
+  const meta = Number(avanceSec.dataset['avance']);
+  const lienzo = $<HTMLCanvasElement>('.avance-canvas', avanceSec)!;
+  const obra = new Obra(lienzo, { semilla: avanceSec.dataset['semilla'] ?? 'x', x: 0.7, xMovil: 0.62 });
+  const barraAv = $<HTMLElement>('[data-avance-barra]', avanceSec)!;
+  const pct = $<HTMLElement>('[data-avance-pct]', avanceSec)!;
+  const pintarAv = (t: number) => {
+    const p = meta * Math.min(1, Math.max(0, t));
+    obra.dibujar(p);
+    barraAv.style.transform = `scaleX(${p.toFixed(3)})`;
+    pct.textContent = `${Math.round(p * 100)}%`;
+  };
+  if (reduceMotion()) pintarAv(1);
+  else {
+    pintarAv(0);
+    scroll((t: number) => pintarAv(t), { target: avanceSec, offset: ['start end', 'center center'] });
+  }
+  window.addEventListener('resize', () => obra.medir());
+  void document.fonts?.ready.then(() => obra.medir());
+}
+
+revelarTitulares();
+revelarImagenes('.gal-grid > li');
+cascada('#tipologias ul');
+cascada('section[aria-labelledby="otros-t"] ul');
 
 // "Cotizar" en una tipología → preselecciona en el formulario
 const tipSel = $<HTMLSelectElement>('#f-tip');

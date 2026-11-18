@@ -3,6 +3,8 @@ import type { Filtros, ProyectoLigero, Vista } from '../lib/types.ts';
 import { ENTREGAS, aplicarFiltros, cantidadActivos, escribirFiltros, leerFiltros, ordenar, rangoPrecios } from '../lib/filtros.ts';
 import { formatUF, plural } from '../lib/format.ts';
 import { $, $$, escapeHtml, onEscape, trapFocus } from './dom.ts';
+import { cascada, contarCifras, contarHasta, flip, resorte, revelarTitulares } from './motion-fx.ts';
+import { iniciarPelicula } from './pelicula.ts';
 
 interface Datos {
   proyectos: ProyectoLigero[];
@@ -73,7 +75,9 @@ function chip(etiqueta: string, quitar: () => void): HTMLButtonElement {
   return b;
 }
 
+let chipsPrevios = new Set<string>();
 function pintarChips(): void {
+  const antes = chipsPrevios;
   chips.replaceChildren();
   for (const c of f.comunas) chips.append(chip(nombreComuna.get(c) ?? c, () => { f.comunas = f.comunas.filter((x) => x !== c); }));
   for (const d of f.dormitorios) chips.append(chip(`${d} dorm`, () => { f.dormitorios = f.dormitorios.filter((x) => x !== d); }));
@@ -89,21 +93,30 @@ function pintarChips(): void {
     chips.append(limpiar);
   }
   chips.hidden = chips.childElementCount === 0;
+  chipsPrevios = new Set($$<HTMLButtonElement>('.chip', chips).map((c) => c.textContent ?? ''));
+  $$<HTMLButtonElement>('.chip', chips).forEach((c) => { if (!antes.has(c.textContent ?? '')) resorte(c); });
 }
 
 function pintarResultados(): void {
   resultado = ordenar(aplicarFiltros(todos, f), f.orden);
   const visibles = new Set(resultado.map((p) => p.slug));
   // Reordena y oculta sin recrear nodos (conserva imágenes ya cargadas)
-  const frag = document.createDocumentFragment();
-  for (const p of resultado) { const li = items.get(p.slug); if (li) frag.append(li); }
-  for (const [slug, li] of items) if (!visibles.has(slug)) { li.hidden = true; frag.append(li); }
-  for (const p of resultado) { const li = items.get(p.slug); if (li) li.hidden = false; }
-  grilla.append(frag);
+  // Reacomodo animado (FLIP): las cards se deslizan a su nueva posición
+  flip([...items.values()], () => {
+    const frag = document.createDocumentFragment();
+    for (const p of resultado) { const li = items.get(p.slug); if (li) frag.append(li); }
+    for (const [slug, li] of items) if (!visibles.has(slug)) { li.hidden = true; frag.append(li); }
+    for (const p of resultado) { const li = items.get(p.slug); if (li) li.hidden = false; }
+    grilla.append(frag);
+    vacio.hidden = resultado.length !== 0;
+    grilla.hidden = resultado.length === 0 || f.vista !== 'grilla';
+  });
 
   const n = resultado.length;
   const comunasRes = new Set(resultado.map((p) => p.comunaSlug)).size;
-  resCount.textContent = plural(n, 'proyecto', 'proyectos');
+  const previo = Number(resCount.dataset['n'] ?? n);
+  resCount.dataset['n'] = String(n);
+  contarHasta(resCount, previo, n, (x) => plural(x, 'proyecto', 'proyectos'));
   resSub.textContent = n ? `en ${plural(comunasRes, 'comuna', 'comunas')}` : '';
   const ver = $('#ver-n');
   if (ver) ver.textContent = n ? `Ver ${plural(n, 'proyecto', 'proyectos')}` : 'Sin resultados';
@@ -184,12 +197,13 @@ $$<HTMLButtonElement>('[data-vista]').forEach((b) => b.addEventListener('click',
   actualizar({ historial: true });
 }));
 $$<HTMLButtonElement>('[data-limpiar]').forEach((b) => b.addEventListener('click', limpiarTodo));
-$$<HTMLAnchorElement>('[data-aplicar-subsidio]').forEach((a) => a.addEventListener('click', (e) => {
-  e.preventDefault();
-  f.subsidio = true;
+// Desde la película de obra: aplica el filtro de la etapa y baja a los resultados
+function aplicarDesde(query: string): void {
+  const { orden, vista } = f;
+  f = { ...leerFiltros(new URLSearchParams(query), comunasValidas), orden, vista };
   actualizar({ historial: true });
-  document.getElementById('proyectos')?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
-}));
+  document.getElementById('barra')?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+}
 const restaurar = () => { f = leerFiltros(estadoUrl(), comunasValidas); actualizar(); };
 window.addEventListener('popstate', restaurar);
 if (datos.demo) window.addEventListener('hashchange', restaurar);
@@ -262,3 +276,7 @@ new IntersectionObserver(([e]) => { barra.dataset['stuck'] = String(!e?.isInters
 
 // Al cambiar filtros con la grilla fuera de vista, no saltar; el contador anuncia el cambio (aria-live).
 actualizar();
+iniciarPelicula(aplicarDesde);
+revelarTitulares();
+contarCifras();
+cascada('#grilla');

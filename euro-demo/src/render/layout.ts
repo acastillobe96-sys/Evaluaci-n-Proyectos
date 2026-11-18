@@ -218,7 +218,7 @@ export function footer(ctx: Ctx, cfg: SiteConfig): Raw {
 export function page(ctx: Ctx, cfg: SiteConfig, m: Meta, body: Raw): string {
   if (cfg.demo) {
     // El visor envuelve la página principal en su propio <html>/<head>/<body>; las demás páginas van completas
-    const scripts = m.inline ? html`${m.inline.leaflet ? html`<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>` : ''}${m.inline.js.map((j) => html`<script>${raw(j)}</script>`)}` : html``;
+    const scripts = m.inline ? html`<script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>${m.inline.leaflet ? html`<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>` : ''}${m.inline.js.map((j) => html`<script>${raw(j)}</script>`)}` : html``;
     if (m.fragmento) {
       return html`${head(ctx, cfg, m)}
 <script>document.documentElement.lang='es-CL'</script>
