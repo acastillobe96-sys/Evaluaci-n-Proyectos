@@ -25,13 +25,13 @@ function peliculaObra(ctx: Ctx, ps: Proyecto[], comunas: Comuna[]): Raw {
   const sub = n((p) => p.subsidio);
   const desde = Math.min(...ps.map((p) => p.desdeUF));
   const etapas: Array<{ id: string; at: number; num: string; titulo: string; texto: string; chip?: { txt: string; q: string } }> = [
-    { id: 'terreno', at: 0.05, num: '01', titulo: 'Todo parte en un buen barrio', texto: `Elegimos terrenos con metro, comercio y áreas verdes cerca. Hoy tenemos proyectos en ${comunas.length} comunas.`, chip: { txt: `Ver las ${comunas.length} comunas`, q: '' } },
-    { id: 'verde', at: 0.17, num: '02', titulo: 'En verde: más plazo para el pie', texto: 'Comprar antes de que el edificio exista te da más tiempo para juntar el pie, en cuotas.', chip: { txt: `${e2028} proyectos entregan en 2028`, q: 'entrega=2028' } },
-    { id: 'gruesa', at: 0.4, num: '03', titulo: 'Obra gruesa, piso a piso', texto: 'La estructura sube cada semana. Ya puedes elegir piso, orientación y tipología.', chip: { txt: `${e2027} proyectos entregan en 2027`, q: 'entrega=2027' } },
-    { id: 'terminaciones', at: 0.68, num: '04', titulo: 'Terminaciones y subsidio', texto: 'Ventanas termopanel, cocina equipada y piso porcelanato. En viviendas de hasta 4.000 UF, el subsidio baja tu tasa.', chip: { txt: `Subsidio a la tasa en ${sub} proyectos`, q: 'subsidio=1' } },
-    { id: 'entrega', at: 0.88, num: '05', titulo: 'Llegar y vivir', texto: 'Departamentos terminados, con recepción municipal. Firmas, recibes las llaves y te cambias.', chip: { txt: `${inm} proyectos con entrega inmediata`, q: 'entrega=inmediata' } },
+    { id: 'terreno', at: 0.03, num: '01', titulo: 'Todo parte en un buen barrio', texto: `Se despeja el terreno en una zona con transporte, comercio y áreas verdes. Hoy tenemos proyectos en ${comunas.length} comunas.`, chip: { txt: `Ver las ${comunas.length} comunas`, q: '' } },
+    { id: 'verde', at: 0.11, num: '02', titulo: 'En verde: más plazo para el pie', texto: 'Excavación y fundaciones. Comprar en esta etapa te da más tiempo para juntar el pie, en cuotas.', chip: { txt: `${e2028} proyectos entregan en 2028`, q: 'entrega=2028' } },
+    { id: 'gruesa', at: 0.38, num: '03', titulo: 'Obra gruesa, piso a piso', texto: 'La estructura sube cada semana. Ya puedes elegir piso, orientación y tipología.', chip: { txt: `${e2027} proyectos entregan en 2027`, q: 'entrega=2027' } },
+    { id: 'terminaciones', at: 0.74, num: '04', titulo: 'Terminaciones y subsidio', texto: 'Ventanas termopanel, cocina equipada y piso porcelanato. En viviendas de hasta 4.000 UF, el subsidio baja tu tasa.', chip: { txt: `Subsidio a la tasa en ${sub} proyectos`, q: 'subsidio=1' } },
+    { id: 'entrega', at: 0.91, num: '05', titulo: 'Llegar y vivir', texto: 'Departamentos terminados, con recepción municipal. Firmas, recibes las llaves y te cambias.', chip: { txt: `${inm} proyectos con entrega inmediata`, q: 'entrega=inmediata' } },
   ];
-  return html`<section id="inicio" class="obra" aria-labelledby="obra-h1" data-obra>
+  return html`<section id="inicio" class="obra" aria-labelledby="obra-h1" data-obra data-frames="150" data-frames-base="${ctx.root}video/obra/" data-meses="31">
   <div class="obra-sticky">
     <canvas class="obra-canvas" aria-hidden="true"></canvas>
     <div class="obra-shade" aria-hidden="true"></div>
@@ -39,7 +39,7 @@ function peliculaObra(ctx: Ctx, ps: Proyecto[], comunas: Comuna[]): Raw {
       <div class="obra-intro" data-intro>
         <p class="eyebrow enter text-accent">${ctx.demo ? 'Demo · Datos ficticios' : 'Proyectos · Santiago y Coquimbo'}</p>
         <h1 id="obra-h1" class="mt-4 font-display font-extrabold uppercase leading-[.9] text-white" style="font-size: clamp(2.6rem, 6.2vw, 5.4rem);" aria-label="Encuentra tu próximo departamento."><span class="split-css" aria-hidden="true">${palabras('Encuentra tu próximo departamento', html`<span class="dot">.</span>`)}</span></h1>
-        <p class="enter-lcp mt-5 max-w-lg text-white/85 md:text-lg [animation-delay:200ms]">Desde ${formatUF(desde)}. Baja y mira cómo se construye un edificio, y qué proyectos hay en cada etapa.</p>
+        <p class="enter-lcp mt-5 max-w-lg text-white/85 md:text-lg [animation-delay:200ms]">Desde ${formatUF(desde)}. Baja y mira 31 meses de obra real en un minuto, y qué proyectos hay en cada etapa.</p>
         <dl class="enter mt-7 grid max-w-md grid-cols-3 gap-4 border-t border-white/20 pt-5 [animation-delay:320ms]">
           <div class="flex flex-col-reverse"><dt class="text-sm text-white/75">proyectos</dt><dd class="font-display text-4xl font-extrabold leading-none text-white md:text-5xl" data-contar="${ps.length}">${ps.length}</dd></div>
           <div class="flex flex-col-reverse"><dt class="text-sm text-white/75">comunas</dt><dd class="font-display text-4xl font-extrabold leading-none text-white md:text-5xl" data-contar="${comunas.length}">${comunas.length}</dd></div>
@@ -56,14 +56,15 @@ function peliculaObra(ctx: Ctx, ps: Proyecto[], comunas: Comuna[]): Raw {
       </ol>
     </div>
     <div class="obra-hud" aria-hidden="true">
-      <span class="font-mono text-xs uppercase tracking-[.16em] text-white/70">Piso</span>
-      <span class="font-mono text-2xl font-medium text-white" data-piso>00</span>
-      <span class="font-mono text-xs text-white/60" data-pisos></span>
+      <span class="font-mono text-xs uppercase tracking-[.16em] text-white/70">Mes</span>
+      <span class="font-mono text-2xl font-medium text-white" data-mes>01</span>
+      <span class="font-mono text-xs text-white/60" data-meses></span>
     </div>
     <nav class="obra-rail" aria-label="Ir a una etapa">
       ${etapas.map((e) => html`<button type="button" data-ir="${e.at}" aria-label="Ir a la etapa ${e.num}"><span class="obra-rail-dot"></span><span class="obra-rail-txt">${e.num}</span></button>`)}
     </nav>
     <a href="#proyectos" class="obra-skip btn btn-glass btn-sm" data-saltar>${icon('chevron-down', 'size-4')} Ir al buscador</a>
+    <p class="obra-credito">Timelapse real: edificio residencial en Zúrich, abr. 2020 – nov. 2022. <a href="https://commons.wikimedia.org/wiki/File:Time-lapse_of_building_demolition_and_reconstruction_in_Zurich.webm" target="_blank" rel="noopener">Construction Camera Sietec Swiss</a>, CC BY 3.0, recortado.</p>
     <div class="obra-progress" aria-hidden="true"><span data-barra></span></div>
   </div>
 </section>`;

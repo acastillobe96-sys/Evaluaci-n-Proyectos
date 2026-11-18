@@ -2,7 +2,7 @@
 // Todo el CSS y JS va en línea; Leaflet desde cdnjs; ilustraciones SVG en lugar de fotos.
 //   node scripts/build-demo.ts → dist-demo/
 import { execFileSync } from 'node:child_process';
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import * as esbuild from 'esbuild';
 import type { Proyecto, SiteConfig } from '../src/lib/types.ts';
@@ -25,6 +25,8 @@ const comunas = agruparComunas(proyectos);
 
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
+// Timelapse real (cuadros WebP, CC BY 3.0) para el hero-película
+cpSync('public/video', join(OUT, 'video'), { recursive: true });
 
 // CSS: Tailwind compilado, sin @font-face locales (las fuentes vienen de Google Fonts) + CSS de Leaflet
 const tmp = join(OUT, '.app.css');

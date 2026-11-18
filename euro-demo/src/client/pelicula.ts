@@ -2,7 +2,7 @@
 // dependiente del tiempo, no de los FPS), cambia de etapa con Motion y actualiza piso, riel y barra.
 import { animate, stagger } from 'motion';
 import { $, $$, reduceMotion } from './dom.ts';
-import { Obra } from './obra.ts';
+import { Secuencia } from './secuencia.ts';
 
 const EASE = [0.23, 1, 0.32, 1] as const;
 
@@ -11,14 +11,16 @@ export function iniciarPelicula(aplicar: (query: string) => void): void {
   const canvas = $<HTMLCanvasElement>('.obra-canvas', sec ?? document);
   if (!sec || !canvas) return;
 
-  const obra = new Obra(canvas, { semilla: 'hogar', pisos: 16, palabra: 'HOGAR', x: 0.68, xMovil: 0.5 });
+  // Timelapse real (cuadros WebP) ligado al scroll
+  const seq = new Secuencia(canvas, sec.dataset['framesBase'] ?? 'video/obra/', Number(sec.dataset['frames'] ?? 150));
+  const meses = Number(sec.dataset['meses'] ?? 31);
   const intro = $<HTMLElement>('[data-intro]', sec)!;
   const etapas = $$<HTMLElement>('.obra-etapa', sec);
   const ats = etapas.map((e) => Number(e.dataset['at']));
   const rail = $$<HTMLButtonElement>('[data-ir]', sec);
-  const piso = $<HTMLElement>('[data-piso]', sec)!;
+  const mesEl = $<HTMLElement>('[data-mes]', sec)!;
   const barra = $<HTMLElement>('[data-barra]', sec)!;
-  $<HTMLElement>('[data-pisos]', sec)!.textContent = `/ ${String(obra.totalPisos).padStart(2, '0')}`;
+  $<HTMLElement>('[data-meses]', sec)!.textContent = `/ ${meses}`;
 
   let objetivo = 0, actual = 0, ultimo = performance.now(), activa = -2, visible = true, raf = 0;
   const sinMov = reduceMotion();
@@ -58,12 +60,12 @@ export function iniciarPelicula(aplicar: (query: string) => void): void {
     return i;
   }
 
-  let pisoTxt = '';
+  let mesTxt = '';
   function pintar(p: number): void {
-    obra.dibujar(p);
+    seq.dibujar(p);
     mostrarEtapa(etapaPara(p));
-    const t = String(obra.pisoEn(p)).padStart(2, '0');
-    if (t !== pisoTxt) { pisoTxt = t; piso.textContent = t; }
+    const t = String(1 + Math.round(p * (meses - 1))).padStart(2, '0');
+    if (t !== mesTxt) { mesTxt = t; mesEl.textContent = t; }
     barra.style.transform = `scaleX(${p.toFixed(4)})`;
   }
 
@@ -84,9 +86,13 @@ export function iniciarPelicula(aplicar: (query: string) => void): void {
   medir(); actual = objetivo; pintar(actual);
 
   window.addEventListener('scroll', despertar, { passive: true });
-  window.addEventListener('resize', () => { obra.medir(); despertar(); });
+  window.addEventListener('resize', () => { seq.medir(); despertar(); });
   new IntersectionObserver(([e]) => { visible = Boolean(e?.isIntersecting); if (visible) despertar(); }).observe(sec);
-  void document.fonts?.ready.then(() => obra.medir());
+  // Cuando llega un cuadro nuevo se redibuja el actual
+  seq.onCuadro = () => seq.dibujar(actual);
+  // Los cuadros se descargan después de la carga (no compiten con el primer pintado)
+  const empezar = () => seq.cargar();
+  if (document.readyState === 'complete') setTimeout(empezar, 50); else window.addEventListener('load', () => setTimeout(empezar, 50), { once: true });
 
   // Riel de etapas
   rail.forEach((b) => b.addEventListener('click', () => {

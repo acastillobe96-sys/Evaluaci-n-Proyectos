@@ -56,8 +56,9 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 ## Qué incluye
 
 **/proyectos**
-- **Hero-película: el edificio se construye con el scroll.** Pasa por terreno, fundaciones, obra gruesa piso a piso con grúa, terminaciones y entrega con las luces encendidas al anochecer.
-  - Es un canvas 2,5D con inercia que depende del tiempo y no de los FPS (`src/client/obra.ts`, `pelicula.ts`).
+- **Hero-película con un timelapse real que avanza con el scroll.** Son 31 meses de obra de un edificio residencial en Zúrich (abr. 2020 – nov. 2022): demolición, terreno, excavación, estructura, fachada y edificio terminado.
+  - Son 150 cuadros WebP (`public/video/obra/`) que se dibujan en canvas, con descarga progresiva, decodificación solo cerca del cuadro actual, fundido entre cuadros e inercia que depende del tiempo (`src/client/secuencia.ts`, `pelicula.ts`).
+  - Un contador muestra el mes de obra.
   - Cada etapa muestra los proyectos reales en ese estado: 2028 en verde, 2027 en obra, subsidio y entrega inmediata. Un botón aplica ese filtro y baja a los resultados.
   - Tiene un riel de etapas, un contador de pisos, una barra de progreso y un botón "Ir al buscador".
 - Barra de filtros fija al hacer scroll: comuna (multi), dormitorios (1/2/3), entrega (Inmediata/2027/2028), precio "desde" (slider en UF) y subsidio.
@@ -102,6 +103,13 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 8. El subsidio se marca por tipología en la ficha y por proyecto en la card.
 9. Cumple AA. En modo claro, el naranja de Euro se usa como fondo con texto oscuro, porque el blanco sobre naranja no pasa AA.
 
+## Créditos
+
+- **Timelapse:** "Time-lapse of building demolition and reconstruction in Zurich", de Construction Camera Sietec Swiss, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Time-lapse_of_building_demolition_and_reconstruction_in_Zurich.webm).
+  - **Cambios:** se recortaron el título inicial y la placa final, y se convirtió a 150 cuadros de 960×540. El crédito también aparece sobre el video, en la página.
+  - **Para regenerar los cuadros:** `ffmpeg -ss 7.5 -to 136 -i zurich.webm -vf "fps=150/128.5,scale=960:540" -c:v libwebp -quality 58 -start_number 0 public/video/obra/f%03d.webp`.
+- **"Avance de obra" en la ficha:** sigue siendo una ilustración en canvas generada por proyecto (`src/client/obra.ts`).
+
 ## Supuestos
 
 - **Dormitorios y baños:** las dos columnas sin etiqueta del sitio actual se interpretan como dormitorios y baños (se confirma con las tipologías de cada ficha).
@@ -138,7 +146,7 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 
 | Página | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
-| `/proyectos/` | 95 (95/95/96) | 100 | 100 | 69* |
+| `/proyectos/` | 95 (95/96) | 100 | 100 | 69* |
 | `/proyectos/mapocho-3521/` | 99 | 100 | 100 | 69* |
 | `/proyectos/vitro/` | 99 | 100 | 100 | 69* |
 
