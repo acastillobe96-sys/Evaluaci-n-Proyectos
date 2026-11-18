@@ -23,13 +23,10 @@ export function cardProyecto(ctx: Ctx, cfg: SiteConfig, p: Proyecto, i: number):
     <p class="eyebrow text-muted">${p.comuna}</p>
     <h3 class="mt-1 text-xl font-bold leading-tight" id="t-${p.slug}"><a class="card-link" href="${href}">${p.nombre}</a></h3>
     <p class="mt-1 flex items-center gap-1.5 text-[.9375rem] text-muted">${icon('pin', 'size-4 shrink-0')} ${p.direccion}</p>
-    <div class="mt-4 flex items-end justify-between gap-3 border-t border-line pt-4">
-      <div>
-        <p class="text-xs font-bold text-muted">Desde</p>
-        <p class="font-display text-[1.75rem] font-extrabold leading-none tracking-tight">${formatUF(p.desdeUF)}</p>
-        <p class="mt-1 text-xs text-muted">${formatCLPAprox(p.desdeUF, cfg.ufCLP)}</p>
-      </div>
-      <p class="flex items-center gap-1.5 text-sm font-bold" title="Dormitorios y baños">${icon('bed', 'size-4 text-muted')} ${formatTipologia(p.dormitorios, p.banos)}</p>
+    <p class="mt-3 flex items-center gap-1.5 text-sm font-bold">${icon('bed', 'size-4 shrink-0 text-muted')} ${formatTipologia(p.dormitorios, p.banos)}</p>
+    <div class="mt-4 border-t border-line pt-4">
+      <p class="text-xs font-bold text-muted">Desde</p>
+      <p class="flex flex-wrap items-baseline gap-x-2.5"><span class="font-display text-[1.75rem] font-extrabold leading-none tracking-tight">${formatUF(p.desdeUF)}</span><span class="text-xs text-muted">${formatCLPAprox(p.desdeUF, cfg.ufCLP)}</span></p>
     </div>
     <div class="above mt-5 grid grid-cols-2 gap-2">
       <a class="btn btn-dark btn-sm" href="${href}" tabindex="-1" aria-hidden="true">Ver proyecto</a>

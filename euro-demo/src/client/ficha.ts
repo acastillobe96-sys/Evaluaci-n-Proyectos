@@ -18,6 +18,17 @@ if (mapaEl) {
   io.observe(mapaEl);
 }
 
+// WhatsApp flotante: aparece cuando los CTA del resumen salen de la vista (y se oculta sobre el formulario)
+const wa = $<HTMLElement>('#wa-float');
+const resumen = $<HTMLElement>('#resumen');
+const cotizar = $<HTMLElement>('#cotizar');
+if (wa && resumen) {
+  let pasoResumen = false, enFormulario = false;
+  const pintar = () => { wa.dataset['visible'] = String(pasoResumen && !enFormulario); };
+  new IntersectionObserver(([e]) => { pasoResumen = !e!.isIntersecting && e!.boundingClientRect.top < 0; pintar(); }).observe(resumen);
+  if (cotizar) new IntersectionObserver(([e]) => { enFormulario = e!.isIntersecting; pintar(); }, { threshold: 0.25 }).observe(cotizar);
+}
+
 // "Cotizar" en una tipología → preselecciona en el formulario
 const tipSel = $<HTMLSelectElement>('#f-tip');
 $$<HTMLAnchorElement>('[data-tipologia]').forEach((a) => a.addEventListener('click', () => {

@@ -14,6 +14,8 @@ import type { Ctx } from '../src/render/html.ts';
 
 const OUT = 'dist';
 const explicitIndex = process.argv.includes('--explicit-index');
+// Por defecto la demo NO se indexa (noindex + robots.txt Disallow). --indexable lo quita (producción).
+const indexable = process.argv.includes('--indexable');
 const cfg = JSON.parse(readFileSync('site.config.json', 'utf8')) as SiteConfig;
 const proyectos = (JSON.parse(readFileSync('data/proyectos.json', 'utf8')) as { proyectos: Proyecto[] }).proyectos;
 const comunas = agruparComunas(proyectos);
@@ -115,6 +117,12 @@ for (const p of proyectos) {
 // Raíz → /proyectos/ ; 404 ; robots ; sitemap
 const destino = explicitIndex ? 'proyectos/index.html' : 'proyectos/';
 write('index.html', `<!doctype html><html lang="es-CL"><head><meta charset="utf-8"><title>Euro Inmobiliaria · Proyectos</title><meta http-equiv="refresh" content="0; url=${destino}"><link rel="canonical" href="${abs('/proyectos/')}"><meta name="robots" content="noindex"></head><body><a href="${destino}">Ver proyectos</a></body></html>`);
-write('robots.txt', 'User-agent: *\nDisallow: /\n# Versión de prueba: no indexar.\n');
+write('robots.txt', indexable ? `User-agent: *\nAllow: /\nSitemap: ${abs('/sitemap.xml')}\n` : 'User-agent: *\nDisallow: /\n# Versión de prueba: no indexar.\n');
+if (indexable) {
+  // Quita el noindex de todas las páginas generadas
+  const { readdirSync, statSync } = await import('node:fs');
+  const recorrer = (d: string): string[] => readdirSync(d).flatMap((f) => { const x = join(d, f); return statSync(x).isDirectory() ? recorrer(x) : x.endsWith('.html') ? [x] : []; });
+  for (const f of recorrer(OUT)) writeFileSync(f, readFileSync(f, 'utf8').replace('<meta name="robots" content="noindex, nofollow">\n', ''));
+}
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/proyectos/', ...proyectos.map((p) => `/proyectos/${p.slug}/`)].map((u) => `  <url><loc>${abs(u)}</loc></url>`).join('\n')}\n</urlset>\n`);
-console.log(`dist/ listo: ${proyectos.length + 1} páginas · v=${v}${explicitIndex ? ' · enlaces explícitos' : ''}`);
+console.log(`dist/ listo: ${proyectos.length + 1} páginas · v=${v}${explicitIndex ? ' · enlaces explícitos' : ''}${indexable ? ' · indexable' : ' · noindex'}`);

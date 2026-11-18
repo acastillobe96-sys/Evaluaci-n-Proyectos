@@ -175,7 +175,10 @@ await caso('ficha: validación y éxito simulado del formulario', async (page) =
 
 await caso('ficha: mapa diferido y WhatsApp prellenado', async (page) => {
   await page.goto(`${BASE}/proyectos/mapocho-3521/`);
-  const wa = await page.locator('.wa-float').getAttribute('href');
+  const wa = await page.locator('#wa-float').getAttribute('href');
+  assert.equal(await page.locator('#wa-float').getAttribute('data-visible'), 'false');
+  await page.evaluate(() => window.scrollTo(0, 1400));
+  await page.waitForFunction(() => document.querySelector('#wa-float')?.dataset.visible === 'true');
   assert.match(decodeURIComponent(wa), /wa\.me\/56965749880\?text=.*Mapocho 3521/);
   await page.locator('#mapa-ficha').scrollIntoViewIfNeeded();
   await page.waitForSelector('#mapa-ficha .leaflet-tile-loaded', { timeout: 10000 });

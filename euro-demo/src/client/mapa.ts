@@ -44,6 +44,9 @@ export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c:
   capaBase(map);
   const capa = L.layerGroup().addTo(map);
   const anim = !reduceMotion();
+  // Etiquetas de precio solo desde zoom 14; antes, puntos (evita superposición en Ñuñoa/Santiago Centro)
+  const compacto = () => el.classList.toggle('map-compact', map.getZoom() < 14);
+  map.on('zoomend', compacto);
 
   return {
     actualizar(ps) {
@@ -56,7 +59,7 @@ export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c:
           html: `<span class="pin${p.precision === 'aproximada' ? ' border-dashed' : ''}">${formatUF(p.desdeUF)}</span>`,
           iconSize: [0, 0],
         });
-        const m = L.marker([p.lat, p.lng], { icon, title: `${p.nombre}, desde ${formatUF(p.desdeUF)}`, alt: p.nombre, keyboard: true, riseOnHover: true })
+        const m = L.marker([p.lat, p.lng], { icon, title: `${p.nombre}, desde ${formatUF(p.desdeUF)}`, zIndexOffset: 0, alt: p.nombre, keyboard: true, riseOnHover: true })
           .bindPopup(popup(c, p), { maxWidth: 260, minWidth: 260, offset: [0, -30], autoPanPadding: [24, 24] });
         m.on('popupopen', () => m.getElement()?.querySelector('.pin')?.classList.add('is-active'));
         m.on('popupclose', () => m.getElement()?.querySelector('.pin')?.classList.remove('is-active'));
@@ -91,7 +94,7 @@ export async function crearMapaProyectos(el: HTMLElement, extra: HTMLElement, c:
         volver.addEventListener('click', () => { map.fitBounds(bounds, { padding: [56, 56], maxZoom: 15, animate: anim }); volver.hidden = true; });
         extra.append(volver);
       }
-      requestAnimationFrame(() => map.invalidateSize());
+      requestAnimationFrame(() => { map.invalidateSize(); compacto(); });
     },
   };
 }

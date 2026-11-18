@@ -29,18 +29,18 @@ function heroFicha(ctx: Ctx, p: Proyecto): Raw {
       ${p.entrega.tipo === 'inmediata' ? html`<span class="badge badge-accent">${icon('key', 'size-3.5')} Entrega inmediata</span>` : html`<span class="badge badge-glass">${icon('calendar', 'size-3.5')} ${p.entrega.corto}</span>`}
       ${p.subsidio ? html`<span class="badge badge-glass">${icon('percent', 'size-3.5')} Subsidio a la tasa</span>` : ''}
     </div>
-    <h1 class="enter mt-4 max-w-3xl font-display font-extrabold uppercase leading-[.88] [animation-delay:120ms]" style="font-size: clamp(3rem, 9vw, 7.5rem)">${p.nombre}<span class="dot">.</span></h1>
+    <h1 class="enter-lcp mt-4 max-w-3xl font-display font-extrabold uppercase leading-[.88] [animation-delay:120ms]" style="font-size: clamp(3rem, 9vw, 7.5rem)">${p.nombre}<span class="dot">.</span></h1>
     <p class="enter mt-4 flex items-center gap-2 text-lg text-white/90 [animation-delay:180ms]">${icon('pin', 'size-5 shrink-0')} ${p.direccion}, ${p.comuna}</p>
   </div>
 </section>`;
 }
 
 function resumen(cfg: SiteConfig, p: Proyecto): Raw {
-  const item = (ic: string, t: string, v: Raw | string, s?: string) => html`<div class="flex gap-3 p-5 md:p-6">
-    <span class="grid size-10 shrink-0 place-items-center rounded-full bg-surface-2 text-accent-ink">${icon(ic, 'size-5')}</span>
-    <div><dt class="text-xs font-bold uppercase tracking-[.12em] text-muted">${t}</dt><dd class="mt-1 font-bold leading-snug">${v}${s ? html`<span class="block text-sm font-normal text-muted">${s}</span>` : ''}</dd></div>
+  const item = (ic: string, t: string, v: Raw | string, s?: string) => html`<div class="p-5 md:p-6">
+    <dt class="flex items-center gap-2 text-xs font-bold uppercase tracking-[.12em] text-muted"><span class="grid size-8 shrink-0 place-items-center rounded-full bg-surface-2 text-accent-ink">${icon(ic, 'size-4')}</span>${t}</dt>
+    <dd class="mt-2 font-bold leading-snug">${v}${s ? html`<span class="block text-sm font-normal text-muted">${s}</span>` : ''}</dd>
   </div>`;
-  return html`<section aria-label="Resumen del proyecto" class="wrap relative z-10 -mt-20">
+  return html`<section aria-label="Resumen del proyecto" id="resumen" class="wrap relative z-10 -mt-20">
   <div class="enter overflow-hidden rounded-[22px] bg-surface [animation-delay:240ms]" style="box-shadow: var(--shadow-2)">
     <div class="grid lg:grid-cols-[1.15fr_2.6fr_auto]">
       <div class="border-b border-line p-6 lg:border-b-0 lg:border-r">
@@ -295,5 +295,5 @@ export function paginaFicha(ctx: Ctx, cfg: SiteConfig, p: Proyecto, todos: Proye
   ${otros(ctx, cfg, p, todos)}
 </main>
 ${footer(ctx, cfg)}
-<a class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg max-sm:btn-icon max-sm:!w-14" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-6')}<span class="max-sm:hidden">Cotizar por WhatsApp</span></a>`;
+<a id="wa-float" data-visible="false" class="wa-float btn btn-primary !min-h-[56px] !rounded-full shadow-lg max-sm:btn-icon max-sm:!w-14" href="${whatsappUrl(cfg.whatsapp, p.nombre)}" target="_blank" rel="noopener" aria-label="Cotizar ${p.nombre} por WhatsApp">${icon('whatsapp', 'size-6')}<span class="max-sm:hidden">Cotizar por WhatsApp</span></a>`;
 }

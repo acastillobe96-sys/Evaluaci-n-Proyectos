@@ -27,7 +27,7 @@ function hero(ctx: Ctx, ps: Proyecto[], comunas: Comuna[], fondo: Proyecto): Raw
   <div class="wrap grid gap-8 pb-8 pt-[calc(var(--header-h)+2rem)] md:pb-14 md:pt-[calc(var(--header-h)+3rem)] lg:grid-cols-[1fr_380px] lg:items-end">
     <div>
       <p class="eyebrow enter text-accent">Proyectos · Santiago y Coquimbo</p>
-      <h1 class="enter mt-4 font-display font-extrabold uppercase leading-[.9] [animation-delay:60ms]" style="font-size: clamp(2.6rem, 6vw, 5rem);">Encuentra tu próximo departamento<span class="dot">.</span></h1>
+      <h1 class="enter-lcp mt-4 font-display font-extrabold uppercase leading-[.9] [animation-delay:60ms]" style="font-size: clamp(2.6rem, 6vw, 5rem);">Encuentra tu próximo departamento<span class="dot">.</span></h1>
       <p class="enter mt-4 max-w-xl text-white/85 md:mt-5 md:text-lg [animation-delay:120ms]">Entrega inmediata o en verde, desde ${formatUF(desde)}. Compara precio, entrega y beneficios en un solo lugar.</p>
       <dl class="enter mt-6 grid max-w-xl grid-cols-3 gap-4 border-t border-white/20 pt-5 [animation-delay:180ms]">
         <div class="flex flex-col-reverse"><dt class="text-sm text-white/80">proyectos</dt><dd class="font-display text-4xl font-extrabold leading-none md:text-5xl" id="hero-count">${ps.length}</dd></div>
@@ -35,11 +35,13 @@ function hero(ctx: Ctx, ps: Proyecto[], comunas: Comuna[], fondo: Proyecto): Raw
         <div class="flex flex-col-reverse"><dt class="text-sm text-white/80">con entrega inmediata</dt><dd class="font-display text-4xl font-extrabold leading-none md:text-5xl">${inmediatas}</dd></div>
       </dl>
     </div>
-    <aside class="glass enter rounded-[22px] p-5 md:p-6 [animation-delay:240ms]" aria-labelledby="subsidio-t">
+    <aside class="glass enter rounded-[22px] p-5 md:grid md:grid-cols-[1fr_auto] md:items-end md:gap-x-8 md:p-6 lg:block [animation-delay:240ms]" aria-labelledby="subsidio-t">
+      <div>
       <p class="eyebrow text-accent">Beneficio vigente</p>
       <h2 id="subsidio-t" class="mt-2 font-display text-[1.75rem] md:text-[2rem] font-extrabold uppercase leading-[.95]">Subsidio a la tasa<span class="dot">.</span></h2>
       <p class="mt-2 text-[.9375rem] text-white/85 md:mt-3 md:text-base">0,6 puntos menos en tu tasa de interés para viviendas nuevas de hasta 4.000 UF. Hay ${conSubsidio} proyectos con tipologías que califican.</p>
-      <a class="btn btn-primary mt-4 w-full md:mt-5" href="${url(ctx, 'proyectos/?subsidio=1')}" data-aplicar-subsidio>Ver proyectos con subsidio ${icon('arrow-right', 'size-4')}</a>
+      </div>
+      <a class="btn btn-primary mt-4 w-full md:mt-0 md:w-auto lg:mt-5 lg:w-full" href="${url(ctx, 'proyectos/?subsidio=1')}" data-aplicar-subsidio>Ver proyectos con subsidio ${icon('arrow-right', 'size-4')}</a>
     </aside>
   </div>
 </section>`;
@@ -120,14 +122,14 @@ function toolbar(ps: ProyectoLigero[], comunas: Comuna[]): Raw {
       <div class="ml-auto flex items-center gap-2">
         <label class="sr-only" for="orden">Ordenar por</label>
         <div class="relative">
-          <select id="orden" class="field !min-h-[40px] !rounded-full !py-0 !pl-4 !pr-9 text-sm font-bold appearance-none">
+          <select id="orden" class="field min-w-[10.5rem] !min-h-[40px] !rounded-full !py-0 !pl-4 !pr-9 text-sm font-bold appearance-none">
             ${ORDENES.map((o) => html`<option value="${o.valor}">${o.etiqueta}</option>`)}
           </select>
           ${icon('chevron-down', 'size-4 pointer-events-none absolute right-3 top-1/2 -translate-y-1/2')}
         </div>
         <div class="seg" role="group" aria-label="Vista">
-          <button type="button" data-vista="grilla" aria-pressed="true">${icon('grid', 'size-4')}<span class="max-sm:sr-only">Grilla</span></button>
-          <button type="button" data-vista="mapa" aria-pressed="false">${icon('map', 'size-4')}<span class="max-sm:sr-only">Mapa</span></button>
+          <button type="button" data-vista="grilla" aria-pressed="true" aria-label="Vista grilla">${icon('grid', 'size-4')}<span class="max-sm:sr-only lg:max-xl:sr-only">Grilla</span></button>
+          <button type="button" data-vista="mapa" aria-pressed="false" aria-label="Vista mapa">${icon('map', 'size-4')}<span class="max-sm:sr-only lg:max-xl:sr-only">Mapa</span></button>
         </div>
       </div>
     </div>
