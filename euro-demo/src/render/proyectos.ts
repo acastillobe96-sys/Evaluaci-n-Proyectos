@@ -26,12 +26,12 @@ function peliculaObra(ctx: Ctx, ps: Proyecto[], comunas: Comuna[]): Raw {
   const desde = Math.min(...ps.map((p) => p.desdeUF));
   const etapas: Array<{ id: string; at: number; num: string; titulo: string; texto: string; chip?: { txt: string; q: string } }> = [
     { id: 'terreno', at: 0.02, num: '01', titulo: 'Todo parte en un buen barrio', texto: `Se despeja el terreno en una zona con transporte, comercio y áreas verdes. Hoy tenemos proyectos en ${comunas.length} comunas.`, chip: { txt: `Ver las ${comunas.length} comunas`, q: '' } },
-    { id: 'verde', at: 0.14, num: '02', titulo: 'En verde: más plazo para el pie', texto: 'Excavación y fundaciones. Comprar en esta etapa te da más tiempo para juntar el pie, en cuotas.', chip: { txt: `${e2028} proyectos entregan en 2028`, q: 'entrega=2028' } },
+    { id: 'verde', at: 0.1, num: '02', titulo: 'En verde: más plazo para el pie', texto: 'Excavación y fundaciones. Comprar en esta etapa te da más tiempo para juntar el pie, en cuotas.', chip: { txt: `${e2028} proyectos entregan en 2028`, q: 'entrega=2028' } },
     { id: 'gruesa', at: 0.36, num: '03', titulo: 'Obra gruesa, piso a piso', texto: 'La estructura sube cada semana. Ya puedes elegir piso, orientación y tipología.', chip: { txt: `${e2027} proyectos entregan en 2027`, q: 'entrega=2027' } },
-    { id: 'terminaciones', at: 0.62, num: '04', titulo: 'Terminaciones y subsidio', texto: 'Ventanas termopanel, cocina equipada y piso porcelanato. En viviendas de hasta 4.000 UF, el subsidio baja tu tasa.', chip: { txt: `Subsidio a la tasa en ${sub} proyectos`, q: 'subsidio=1' } },
+    { id: 'terminaciones', at: 0.64, num: '04', titulo: 'Terminaciones y subsidio', texto: 'Ventanas termopanel, cocina equipada y piso porcelanato. En viviendas de hasta 4.000 UF, el subsidio baja tu tasa.', chip: { txt: `Subsidio a la tasa en ${sub} proyectos`, q: 'subsidio=1' } },
     { id: 'entrega', at: 0.86, num: '05', titulo: 'Llegar y vivir', texto: 'Departamentos terminados, con recepción municipal. Firmas, recibes las llaves y te cambias.', chip: { txt: `${inm} proyectos con entrega inmediata`, q: 'entrega=inmediata' } },
   ];
-  return html`<section id="inicio" class="obra" aria-labelledby="obra-h1" data-obra data-frames="150" data-frames-base="${ctx.root}video/obra/">
+  return html`<section id="inicio" class="obra" aria-labelledby="obra-h1" data-obra data-frames="210" data-frames-base="${ctx.root}video/obra/">
   <div class="obra-sticky">
     <canvas class="obra-canvas" aria-hidden="true"></canvas>
     <div class="obra-shade" aria-hidden="true"></div>

@@ -57,7 +57,7 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 
 **/proyectos**
 - **Hero-película: el edificio se construye con el scroll.** Es una animación generada con IA: terreno, excavación, fundaciones, estructura que sube, fachada y edificio terminado de noche.
-  - Son 150 cuadros WebP (`public/video/obra/`) armados desde 6 cuadros clave con la misma cámara, con fundidos y revelados de abajo hacia arriba (`scripts/timelapse-ia.mjs`).
+  - Son 210 cuadros WebP (`public/video/obra/`) armados desde 6 cuadros clave con la misma cámara, en "modo timelapse": la obra avanza por pasos (parches de excavación, estructura y fachada piso a piso, luces departamento por departamento) y cada paso entra con un fundido suave para que el recorrido con scroll se vea fluido (`scripts/timelapse-ia.mjs`).
   - Se dibujan en canvas, con descarga progresiva, decodificación solo cerca del cuadro actual e inercia que depende del tiempo (`src/client/secuencia.ts`, `pelicula.ts`).
   - Un contador muestra el % de avance.
   - Cada etapa muestra los proyectos reales en ese estado: 2028 en verde, 2027 en obra, subsidio y entrega inmediata. Un botón aplica ese filtro y baja a los resultados.

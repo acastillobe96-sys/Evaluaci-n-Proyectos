@@ -12,7 +12,7 @@ export function iniciarPelicula(aplicar: (query: string) => void): void {
   if (!sec || !canvas) return;
 
   // Secuencia de cuadros (animación de obra generada con IA) ligada al scroll
-  const seq = new Secuencia(canvas, sec.dataset['framesBase'] ?? 'video/obra/', Number(sec.dataset['frames'] ?? 150));
+  const seq = new Secuencia(canvas, sec.dataset['framesBase'] ?? 'video/obra/', Number(sec.dataset['frames'] ?? 210));
   const intro = $<HTMLElement>('[data-intro]', sec)!;
   const etapas = $$<HTMLElement>('.obra-etapa', sec);
   const ats = etapas.map((e) => Number(e.dataset['at']));

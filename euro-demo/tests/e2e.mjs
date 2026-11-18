@@ -81,7 +81,7 @@ await caso('slider de precio filtra por "desde"', async (page) => {
 await caso('película de obra: el riel lleva a cada etapa y su botón aplica el filtro', async (page) => {
   await page.goto(`${BASE}/proyectos/`);
   assert.equal(await page.locator('.obra-etapa').count(), 5);
-  await page.click('.obra-rail [data-ir="0.62"]');
+  await page.click('.obra-rail [data-ir="0.64"]');
   await page.waitForFunction(() => document.querySelector('#etapa-terminaciones')?.dataset.activa === 'true');
   assert.notEqual(await page.locator('[data-avance-obra]').textContent(), '0');
   await page.locator('#etapa-terminaciones [data-aplicar]').click();
