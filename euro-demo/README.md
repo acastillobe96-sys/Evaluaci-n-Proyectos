@@ -56,9 +56,10 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 ## Qué incluye
 
 **/proyectos**
-- **Hero-película con un timelapse real que avanza con el scroll.** Son 31 meses de obra de un edificio residencial en Zúrich (abr. 2020 – nov. 2022): demolición, terreno, excavación, estructura, fachada y edificio terminado.
-  - Son 150 cuadros WebP (`public/video/obra/`) que se dibujan en canvas, con descarga progresiva, decodificación solo cerca del cuadro actual, fundido entre cuadros e inercia que depende del tiempo (`src/client/secuencia.ts`, `pelicula.ts`).
-  - Un contador muestra el mes de obra.
+- **Hero-película: el edificio se construye con el scroll.** Es una animación generada con IA: terreno, excavación, fundaciones, estructura que sube, fachada y edificio terminado de noche.
+  - Son 150 cuadros WebP (`public/video/obra/`) armados desde 6 cuadros clave con la misma cámara, con fundidos y revelados de abajo hacia arriba (`scripts/timelapse-ia.mjs`).
+  - Se dibujan en canvas, con descarga progresiva, decodificación solo cerca del cuadro actual e inercia que depende del tiempo (`src/client/secuencia.ts`, `pelicula.ts`).
+  - Un contador muestra el % de avance.
   - Cada etapa muestra los proyectos reales en ese estado: 2028 en verde, 2027 en obra, subsidio y entrega inmediata. Un botón aplica ese filtro y baja a los resultados.
   - Tiene un riel de etapas, un contador de pisos, una barra de progreso y un botón "Ir al buscador".
 - Barra de filtros fija al hacer scroll: comuna (multi), dormitorios (1/2/3), entrega (Inmediata/2027/2028), precio "desde" (slider en UF) y subsidio.
@@ -105,9 +106,9 @@ data/          proyectos.json + fuentes/ (datos crudos extraídos, para trazabil
 
 ## Créditos
 
-- **Timelapse:** "Time-lapse of building demolition and reconstruction in Zurich", de Construction Camera Sietec Swiss, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Time-lapse_of_building_demolition_and_reconstruction_in_Zurich.webm).
-  - **Cambios:** se recortaron el título inicial y la placa final, y se convirtió a 150 cuadros de 960×540. El crédito también aparece sobre el video, en la página.
-  - **Para regenerar los cuadros:** `ffmpeg -ss 7.5 -to 136 -i zurich.webm -vf "fps=150/128.5,scale=960:540" -c:v libwebp -quality 58 -start_number 0 public/video/obra/f%03d.webp`.
+- **Animación de obra:** 6 cuadros clave generados con IA en Canva (imagen a imagen, a partir del edificio terminado, para mantener la cámara), exportados a 1920×1080.
+  - La secuencia se arma con `node scripts/timelapse-ia.mjs <carpeta con k1…k6.jpg>`.
+  - Es ilustrativa y no corresponde a un proyecto real; así lo dice el crédito sobre la animación.
 - **"Avance de obra" en la ficha:** sigue siendo una ilustración en canvas generada por proyecto (`src/client/obra.ts`).
 
 ## Supuestos

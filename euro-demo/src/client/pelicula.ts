@@ -11,16 +11,14 @@ export function iniciarPelicula(aplicar: (query: string) => void): void {
   const canvas = $<HTMLCanvasElement>('.obra-canvas', sec ?? document);
   if (!sec || !canvas) return;
 
-  // Timelapse real (cuadros WebP) ligado al scroll
+  // Secuencia de cuadros (animación de obra generada con IA) ligada al scroll
   const seq = new Secuencia(canvas, sec.dataset['framesBase'] ?? 'video/obra/', Number(sec.dataset['frames'] ?? 150));
-  const meses = Number(sec.dataset['meses'] ?? 31);
   const intro = $<HTMLElement>('[data-intro]', sec)!;
   const etapas = $$<HTMLElement>('.obra-etapa', sec);
   const ats = etapas.map((e) => Number(e.dataset['at']));
   const rail = $$<HTMLButtonElement>('[data-ir]', sec);
-  const mesEl = $<HTMLElement>('[data-mes]', sec)!;
+  const avanceEl = $<HTMLElement>('[data-avance-obra]', sec)!;
   const barra = $<HTMLElement>('[data-barra]', sec)!;
-  $<HTMLElement>('[data-meses]', sec)!.textContent = `/ ${meses}`;
 
   let objetivo = 0, actual = 0, ultimo = performance.now(), activa = -2, visible = true, raf = 0;
   const sinMov = reduceMotion();
@@ -60,12 +58,12 @@ export function iniciarPelicula(aplicar: (query: string) => void): void {
     return i;
   }
 
-  let mesTxt = '';
+  let avanceTxt = '';
   function pintar(p: number): void {
     seq.dibujar(p);
     mostrarEtapa(etapaPara(p));
-    const t = String(1 + Math.round(p * (meses - 1))).padStart(2, '0');
-    if (t !== mesTxt) { mesTxt = t; mesEl.textContent = t; }
+    const t = String(Math.round(p * 100));
+    if (t !== avanceTxt) { avanceTxt = t; avanceEl.textContent = t; }
     barra.style.transform = `scaleX(${p.toFixed(4)})`;
   }
 
