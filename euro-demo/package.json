@@ -12,9 +12,10 @@
     "build:artifact": "node scripts/build.ts --explicit-index",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . && tsc --noEmit",
-    "test": "node --test tests/",
+    "test": "node --test 'tests/*.test.ts'",
     "serve": "node scripts/serve.mjs",
-    "screenshots": "node scripts/screenshots.mjs"
+    "screenshots": "node scripts/screenshots.mjs",
+    "test:e2e": "node tests/e2e.mjs"
   },
   "license": "ISC",
   "devDependencies": {
